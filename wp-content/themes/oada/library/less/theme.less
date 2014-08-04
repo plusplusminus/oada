@@ -266,38 +266,40 @@ width: 100%;
 .experiences {
 	margin-top:35px;
 	margin-bottom: 35px;
-	.experience a {
-		display: block;
-		position: relative;
-		overflow: hidden;
-		&:hover{
-			.experience-info {
-				background: @brand-warning;
-				.inner-info {
-					max-height: 200px;
+	.experience 
+		margin-bottom: 30px;
+		a {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			&:hover{
+				.experience-info {
+					background: @brand-warning;
+					.inner-info {
+						max-height: 200px;
+					}
 				}
 			}
-		}
-		.experience-info {
-			.inner-info {
-				max-height: 0px;
-				overflow: hidden;
+			.experience-info {
+				.inner-info {
+					max-height: 0px;
+					overflow: hidden;
+				}
+				opacity: 1;
+				position: absolute;
+				left:0;
+				bottom: 0;
+				right:0;
+				width: 100%;
+				.transition(.8s);
+				background: rgba(0,0,0,0.5);
+				color: #fff;
+				padding-left: 15px;
+				padding-right: 15px;
+				padding-top: 15px;
+				padding-bottom: 15px;
 			}
-			opacity: 1;
-			position: absolute;
-			left:0;
-			bottom: 0;
-			right:0;
-			width: 100%;
-			.transition(.8s);
-			background: rgba(0,0,0,0.5);
-			color: #fff;
-			padding-left: 15px;
-			padding-right: 15px;
-			padding-top: 15px;
-			padding-bottom: 15px;
 		}
-	}
 }
 
 .search {
