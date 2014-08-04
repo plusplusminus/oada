@@ -39,54 +39,42 @@ query_posts( $query_args );
           <?php global $brew_options; ?>
           <h1>Blog</h1>
 
-          <?php if (have_posts()) :  $count=0;
-            while (have_posts()) : the_post(); $count++; ?>
+          <?php if (have_posts()) :  $count=0; ?>
+            <div class="row">
+              <?php  while (have_posts()) : the_post(); $count++; ?>
 
-            <div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
+              <div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
+                <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
 
-                <a href="<?php the_permalink();?>">
-                      <?php the_post_thumbnail('large',$default); ?>
-                      <div class="experience-info">
-                        <div class="row">
-                          <div class="col-md-9">
-                            <h4 class="trunc"><?php the_title();?></h4>
-                          </div>
-                          <div class="col-md-3">
-                            <?php $rating = get_post_meta($post->ID,'_ppm_experience_rating',true); ?>
-                            <?php echo ppm_star_rating($rating); ?>
+                  <a href="<?php the_permalink();?>">
+                        <?php the_post_thumbnail('large',$default); ?>
+                        <div class="experience-info">
+                          <div class="row">
+                            <div class="col-md-9">
+                              <h4 class="trunc"><?php the_title();?></h4>
+                            </div>
+                            <div class="col-md-3">
+                              <?php $rating = get_post_meta($post->ID,'_ppm_experience_rating',true); ?>
+                              <?php echo ppm_star_rating($rating); ?>
+                            </div>
                           </div>
                         </div>
-                        <?php $terms = wp_get_post_terms($post->ID, 'category', array("fields" => "all"));
-                      if ( !empty( $terms ) && !is_wp_error( $terms ) ){
-                      echo '<ul class="list-inline terms">';
-                      foreach ( $terms as $term ) { ?>
-                        <li>
-                              <span class="fa-stack fa-lg">
-                              <i class="fa <?php echo $term->description;?> fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <span><?php echo $term->name; ?></span>
-                          </li>
-                      <?php }
-                        echo '</ul>';
-                      }
-                    ?>
-                      </div>
-                  </a>
-                  <?php if ($count <= 2) : ?>
-                    <footer class="article-footer clearfix">
-                      <?php the_excerpt();?>
-                      <?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
-                    </footer> <?php // end article footer ?>
-                  <?php endif; ?>
+                    </a>
+                    <?php if ($count <= 2) : ?>
+                      <footer class="article-footer clearfix">
+                        <?php the_excerpt();?>
+                        <?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
+                      </footer> <?php // end article footer ?>
+                    <?php endif; ?>
 
-              </article> <?php // end article ?>
+                </article> <?php // end article ?>
 
-            </div>
-            <?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>
+              </div>
+              <?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>
 
-          <?php endwhile; ?>
+            <?php endwhile; ?>
+          </div>
 
               <?php if (function_exists("emm_paginate")) { ?>
                   <?php emm_paginate(); ?>
