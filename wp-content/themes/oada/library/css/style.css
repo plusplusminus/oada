@@ -8480,9 +8480,6 @@ This is just for the sample BREW site.  Feel free to delete
 .archive #content {
   margin-top: 100px;
 }
-.archive .hentry {
-  margin-bottom: 0;
-}
 .archive .article-footer {
   background: #fff;
 }
