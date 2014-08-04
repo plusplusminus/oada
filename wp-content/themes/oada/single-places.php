@@ -6,7 +6,6 @@ global $post;
 
 <div class="header-hero">
 	<?php $default = array('class'=>'img-responsive');?>
-	<?php the_post_thumbnail('slide-image',$default);?>
 	<?php $image_header = get_post_meta($post->ID,'_ppm_header_image_id',true); ?>
 	<?php if (!empty($image_header)) : ?>
 		 <?php echo wp_get_attachment_image( $image_header , 'slide-image','',$default ); ?>
