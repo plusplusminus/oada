@@ -44,7 +44,7 @@ query_posts( $query_args );
 
             <div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
+              <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience archive' ); ?> role="article">
 
                 <a href="<?php the_permalink();?>">
                       <?php the_post_thumbnail('large',$default); ?>
