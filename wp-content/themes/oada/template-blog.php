@@ -34,7 +34,7 @@ query_posts( $query_args );
 
       <div id="content" class="clearfix row">
 
-        <div id="main" class="col-md-12 clearfix experiences" role="main">
+        <div id="main" class="col-md-12 clearfix experiences archive" role="main">
 
           <?php global $brew_options; ?>
           <h1>Blog</h1>
@@ -44,7 +44,7 @@ query_posts( $query_args );
 
             <div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience archive' ); ?> role="article">
+              <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
 
                 <a href="<?php the_permalink();?>">
                       <?php the_post_thumbnail('large',$default); ?>
