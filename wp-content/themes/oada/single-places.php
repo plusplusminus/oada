@@ -7,7 +7,16 @@ global $post;
 <div class="header-hero">
 	<?php $default = array('class'=>'img-responsive');?>
 	<?php the_post_thumbnail('slide-image',$default);?>
-	<div class="container">
+	<?php $image_header = get_post_meta($post->ID,'_ppm_header_image_id',true); ?>
+	<?php if (!empty($image_header)) : ?>
+		 <?php echo wp_get_attachment_image( $image_header , 'slide-image','',$default ); ?>
+	<?php elseif (has_post_thumbnail()) : ?>
+		<?php the_post_thumbnail('slide-image',$default);?>
+	<?php else: ?>
+		<img class="img-responsive" src="http://placehold.it/1600x650&text=.">
+	<?php endif; ?>
+
+ 	<div class="container">
 	  	<div class="post-info">
 	  		<div class="circle-text">
 	  			<div>
@@ -88,7 +97,7 @@ global $post;
 					    <?php while ( $connected->have_posts() ) : $connected->the_post(); $count++; ?>
 					    	<?php $exclude[] = $post->ID; ?>
 					    	<div class="highlight-image col-md-8">
-							        <?php the_post_thumbnail('full',$default); ?>
+							        <?php the_post_thumbnail('large',$default); ?>
 					        </div>
 					        <div class="highlight-content col-md-4">
 					        	<span class="highlight-heading">Place Highlight:</span>

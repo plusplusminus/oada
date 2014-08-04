@@ -141,6 +141,25 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_ppm_';
 
+    $meta_boxes['image_metabox'] = array(
+            'id'         => 'image_metabox',
+            'title'      => __( 'Image Options', 'cmb' ),
+            'description' => __(''),
+            'pages'      => array( 'trips','post','places'), // Post type
+            'context'    => 'side',
+            'priority'   => 'low',
+            'show_names' => true, // Show field names on the left
+            // 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
+            'fields'     => array(
+                array(
+                    'name' => 'Overide Feature Image',
+                    'desc' => 'Select the header image...',
+                    'id' => $prefix . 'header_image',
+                    'type' => 'file',
+                ),
+            )
+        );
+
     $meta_boxes['trip_metabox'] = array(
             'id'         => 'trip_metabox',
             'title'      => __( 'Trip Information', 'cmb' ),
