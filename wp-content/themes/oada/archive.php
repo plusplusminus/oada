@@ -84,8 +84,6 @@
 										?>
 							        </div>
 							    </a>
-
-							</article> <?php // end article ?>
 							<footer class="article-footer clearfix">
 								<?php
 								if (!is_post_type_archive('trip')) :
@@ -111,6 +109,9 @@
 						        <?php $count <= 2 ? the_excerpt() : '';?>
 								<?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
 							</footer> <?php // end article footer ?>
+
+							</article> <?php // end article ?>
+							
 						</div>
 						<?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>
 
