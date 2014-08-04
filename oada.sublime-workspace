@@ -536,11 +536,24 @@
 			}
 		},
 		{
+			"contents": "<?php\n/* PPM Functions */\n\nadd_action( 'wp_enqueue_scripts', 'ppm_scripts_and_styles', 999 );\n\nfunction ppm_scripts_and_styles() {\n    global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way\n    global $brew_options;\n    if (!is_admin()) {\n\n        wp_register_script( 'third-party', get_stylesheet_directory_uri() . '/includes/js/third-party.js', array('jquery'), '3.0.0',true);\n        wp_register_script( 'ppm', get_stylesheet_directory_uri() . '/includes/js/ppm.js', array('third-party','jquery'), '3.0.0',true);\n        \n        \n        wp_enqueue_script('third-party');\n        wp_enqueue_script('ppm');\n\n\n    }\n}\n\nadd_image_size('slide-image',1600,650,true);\n\nfunction child_sections($sections){\n    //$sections = array();\n    $sections[] = array(\n        'icon'          => 'ok',\n        'icon_class'    => 'fa fa-gears',\n        'title'         => __('Theme Options', 'peadig-framework'),\n        'desc'          => __('<p class=\"description\">Theme modifications</p>', 'ppm'),\n        'fields' => array(\n                array(\n                        'id'=>'site_logo',\n                        'type' => 'media', \n                        'url'=> true,\n                        'title' => __('Site Logo', 'ppm'),\n                        'compiler' => 'true',\n                        //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.\n                        'desc'=> __('Select main logo from media gallery', 'ppm'),\n                        'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),\n                        ),\n                array(\n                        'id'=>'site_logo_1',\n                        'type' => 'media', \n                        'url'=> true,\n                        'title' => __('Site Logo Inverse', 'ppm'),\n                        'compiler' => 'true',\n                        //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.\n                        'desc'=> __('Select inverseo logo from media gallery', 'ppm'),\n                        'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),\n                        ),\n                array(\n                        'id'=>'site_favicon',\n                        'type' => 'media', \n                        'url'=> true,\n                        'title' => __('Site Icon', 'ppm'),\n                        'compiler' => 'true',\n                        //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.\n                        'desc'=> __('Add a website icon', 'ppm'),\n                        'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),\n                        ),  \n        )\n    );\n\n     $sections[] = array(\n        'icon'          => 'ok',\n        'icon_class'    => 'fa fa-heart',\n        'title'         => __('Social Profiles', 'ppm-framework'),\n        'desc'          => __('<p class=\"description\">Social Network URLS</p>', 'ppm'),\n        'fields' => array(\n           \n            array(\n                        'id'=>'twitter_url',\n                        'type' => 'text',\n                        'title' => __('Twitter', 'redux-framework-demo'),\n                        'desc' => __('Enter your twitter handle', 'redux-framework-demo'),\n                        ),  \n            array(\n                        'id'=>'googleplus_url',\n                        'type' => 'text',\n                        'title' => __('Google Plus', 'redux-framework-demo'),\n                        'desc' => __('Enter your Google+ url', 'redux-framework-demo'),\n                        ),  \n            array(\n                        'id'=>'address',\n                        'type' => 'textarea',\n                        'title' => __('Address', 'redux-framework-demo'),\n                        'desc' => __('Enter your business address', 'redux-framework-demo'),\n                        ),    \n             array(\n                        'id'=>'telephone',\n                        'type' => 'textarea',\n                        'title' => __('Telephone Numebrs', 'redux-framework-demo'),\n                        'desc' => __('Enter your business telephone numbers', 'redux-framework-demo'),\n                        ),\n            array(\n                    'id'=>'email',\n                    'type' => 'text',\n                    'title' => __('Email Address', 'redux-framework-demo'),\n                    'desc' => __('Enter your business email address', 'redux-framework-demo'),\n                    ),   \n        )\n    );\n\n    return $sections;\n}\n\nregister_nav_menus( array( 'secondary-nav' => __( 'Secondary Nav', 'woothemes' ) ) );\n// Secondary Nav\nfunction secondary_nav() {\n    // display the wp3 menu if available\n    wp_nav_menu(array(\n        'container' => false,                                       // remove nav container\n        'container_class' => 'menu clearfix',                       // class of container (should you choose to use it)\n        'menu' => __( 'The Main Menu', 'bonestheme' ),              // nav name\n        'menu_class' => 'nav navbar-nav navbar-right',              // adding custom nav class\n        'theme_location' => 'secondary-nav',                             // where it's located in the theme\n        'before' => '',                                             // before the menu\n      'after' => '',                                            // after the menu\n      'link_before' => '',                                      // before each link\n      'link_after' => '',                                       // after each link\n      'depth' => 2,                                             // limit the depth of the nav\n      'fallback_cb' => 'wp_bootstrap_navwalker::fallback',  // fallback\n        'walker' => new wp_bootstrap_navwalker()                    // for bootstrap nav\n    ));\n} /* end bones main nav */\n\n\nadd_filter( 'cmb_meta_boxes', 'cmb_sample_metaboxes' );\n/**\n * Define the metabox and field configurations.\n *\n * @param  array $meta_boxes\n * @return array\n */\nfunction cmb_sample_metaboxes( array $meta_boxes ) {\n\n    // Start with an underscore to hide fields from custom fields list\n    $prefix = '_ppm_';\n\n    $meta_boxes['trip_metabox'] = array(\n            'id'         => 'trip_metabox',\n            'title'      => __( 'Trip Information', 'cmb' ),\n            'pages'      => array( 'trip', ), // Post type\n            'context'    => 'normal',\n            'priority'   => 'high',\n            'show_names' => true, // Show field names on the left\n            // 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend\n            'fields'     => array(\n                array(\n                    'name' => 'Trip Summary',\n                    'desc' => 'Enter the trip summary...',\n                    'id' => $prefix . 'trip_summary',\n                    'type' => 'textarea',\n                ),\n                array(\n                    'name' => 'Trip Date',\n                    'desc' => 'Enter the trip date...',\n                    'id' => $prefix . 'trip_date',\n                    'type' => 'text',\n                ),\n                array(\n                    'name' => __( 'Trip Rating', 'cmb' ),\n                    'desc' => __( 'enter the trip rating...', 'cmb' ),\n                    'id'   => $prefix . 'trip_rating',\n                    'type' => 'text',\n                ),\n                array(\n                    'name' => 'Trip Location',\n                    'desc' => 'Drag the marker to set the exact location',\n                    'id' => $prefix . 'trip_location',\n                    'type' => 'pw_map',\n                    'sanitization_cb' => 'pw_map_sanitise',\n                ),\n            )\n        );\n\n        $meta_boxes['experience_metabox'] = array(\n            'id'         => 'experience_metabox',\n            'title'      => __( 'Experience Information', 'cmb' ),\n            'pages'      => array( 'post', ), // Post type\n            'context'    => 'normal',\n            'priority'   => 'high',\n            'show_names' => true, // Show field names on the left\n            // 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend\n            'fields'     => array(\n                array(\n                    'name' => 'Experience Date',\n                    'desc' => 'Enter the trip date...',\n                    'id' => $prefix . 'experience_date',\n                    'type' => 'text',\n                ),\n                array(\n                    'name' => __( 'Overall Experience Rating', 'cmb' ),\n                    'desc' => __( 'enter the trip rating...', 'cmb' ),\n                    'id'   => $prefix . 'experience_rating',\n                    'type' => 'text',\n                ),\n                array(\n                    'name' => 'Experience Location',\n                    'desc' => 'Drag the marker to set the exact location',\n                    'id' => $prefix . 'experience_location',\n                    'type' => 'pw_map',\n                    'sanitization_cb' => 'pw_map_sanitise',\n                ),\n                array(\n                    'id'          => $prefix . 'rating_group',\n                    'type'        => 'group',\n                    'description' => __( 'Add Experience Ratings', 'cmb' ),\n                    'options'     => array(\n                        'group_title'   => __( 'Entry {#}', 'cmb' ), // since version 1.1.4, {#} gets replaced by row number\n                        'add_button'    => __( 'Add Another Entry', 'cmb' ),\n                        'remove_button' => __( 'Remove Entry', 'cmb' ),\n                        'sortable'      => true, // beta\n                    ),\n                    // Fields array works the same, except id's only need to be unique for this group. Prefix is not needed.\n                    'fields'      => array(\n                        array(\n                            'name' => 'Rating Name',\n                            'id'   => 'title',\n                            'type' => 'text',\n                        ),\n                        array(\n                            'name' => 'Rating Score',\n                            'description' => 'Write a short description for this entry',\n                            'id'   => 'score',\n                            'type' => 'text',\n                        ),\n                    ),\n                ),\n            )\n        );\n\n        $meta_boxes['place_metabox'] = array(\n            'id'         => 'place_metabox',\n            'title'      => __( 'Place Information', 'cmb' ),\n            'pages'      => array( 'places', ), // Post type\n            'context'    => 'normal',\n            'priority'   => 'high',\n            'show_names' => true, // Show field names on the left\n            // 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend\n            'fields'     => array(\n                array(\n                    'name' => 'Place Summary',\n                    'desc' => 'Enter the place summary...',\n                    'id' => $prefix . 'place_summary',\n                    'type' => 'textarea',\n                ),\n                array(\n                    'name' => 'Visit Date',\n                    'desc' => 'Enter the visit date...',\n                    'id' => $prefix . 'place_date',\n                    'type' => 'text',\n                ),\n                array(\n                    'name' => __( 'Place Rating', 'cmb' ),\n                    'desc' => __( 'enter the place rating...', 'cmb' ),\n                    'id'   => $prefix . 'place_rating',\n                    'type' => 'text',\n                ),\n                array(\n                    'name'    => __( 'Place Highlight', 'cmb' ),\n                    'desc'    => __( 'select the place highlight', 'cmb' ),\n                    'id'      => $prefix . 'place_highlight',\n                    'type'    => 'post_select',\n                    'post_type' => 'post'\n                    ),\n                array(\n                    'name' => 'Place Location',\n                    'desc' => 'Drag the marker to set the exact location',\n                    'id' => $prefix . 'place_location',\n                    'type' => 'pw_map',\n                    'sanitization_cb' => 'pw_map_sanitise',\n                ),\n\n            )\n        );\n\n    return $meta_boxes;\n}\n\n\nadd_filter('redux/options/brew_options/sections', 'child_sections');\n\n// let's create the function for the custom type\nfunction trips_post_example() { \n    // creating (registering) the custom type \n    register_post_type( 'trip', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */\n        // let's now add all the options for this post type\n        array( 'labels' => array(\n            'name' => __( 'Trips', 'bonestheme' ), /* This is the Title of the Group */\n            'singular_name' => __( 'Trip', 'bonestheme' ), /* This is the individual type */\n            'all_items' => __( 'All Trips', 'bonestheme' ), /* the all items menu item */\n            'add_new' => __( 'Add New', 'bonestheme' ), /* The add new menu item */\n            'add_new_item' => __( 'Add New Trip', 'bonestheme' ), /* Add New Display Title */\n            'edit' => __( 'Edit', 'bonestheme' ), /* Edit Dialog */\n            'edit_item' => __( 'Edit Trip Types', 'bonestheme' ), /* Edit Display Title */\n            'new_item' => __( 'New Trip Type', 'bonestheme' ), /* New Display Title */\n            'view_item' => __( 'View Trip Type', 'bonestheme' ), /* View Display Title */\n            'search_items' => __( 'Search Trip Type', 'bonestheme' ), /* Search Custom Type Title */ \n            'not_found' =>  __( 'Nothing found in the Database.', 'bonestheme' ), /* This displays if there are no entries yet */ \n            'not_found_in_trash' => __( 'Nothing found in Trash', 'bonestheme' ), /* This displays if there is nothing in the trash */\n            'parent_item_colon' => ''\n            ), /* end of arrays */\n            'public' => true,\n            'publicly_queryable' => true,\n            'exclude_from_search' => false,\n            'show_ui' => true,\n            'query_var' => true,\n            'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */ \n            'menu_icon' => get_template_directory_uri() . '/library/images/custom-post-icon.png', /* the icon for the custom post type menu */\n            'rewrite'   => array( 'slug' => 'trip', 'with_front' => false ), /* you can specify its url slug */\n            'has_archive' => 'trip', /* you can rename the slug here */\n            'capability_type' => 'post',\n            'hierarchical' => false,\n            /* the next one is important, it tells what's enabled in the post editor */\n            'supports' => array( 'title', 'editor', 'thumbnail')\n        ) /* end of options */\n    ); /* end of register post type */\n\n    register_post_type( 'places', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */\n        // let's now add all the options for this post type\n        array( 'labels' => array(\n            'name' => __( 'Places', 'bonestheme' ), /* This is the Title of the Group */\n            'singular_name' => __( 'Place', 'bonestheme' ), /* This is the individual type */\n            'all_items' => __( 'All Places', 'bonestheme' ), /* the all items menu item */\n            'add_new' => __( 'Add New', 'bonestheme' ), /* The add new menu item */\n            'add_new_item' => __( 'Add New Place', 'bonestheme' ), /* Add New Display Title */\n            'edit' => __( 'Edit', 'bonestheme' ), /* Edit Dialog */\n            'edit_item' => __( 'Edit Place Types', 'bonestheme' ), /* Edit Display Title */\n            'new_item' => __( 'New Place Type', 'bonestheme' ), /* New Display Title */\n            'view_item' => __( 'View Place Type', 'bonestheme' ), /* View Display Title */\n            'search_items' => __( 'Search Place Type', 'bonestheme' ), /* Search Custom Type Title */ \n            'not_found' =>  __( 'Nothing found in the Database.', 'bonestheme' ), /* This displays if there are no entries yet */ \n            'not_found_in_trash' => __( 'Nothing found in Trash', 'bonestheme' ), /* This displays if there is nothing in the trash */\n            'parent_item_colon' => ''\n            ), /* end of arrays */\n            'public' => true,\n            'publicly_queryable' => true,\n            'exclude_from_search' => false,\n            'show_ui' => true,\n            'query_var' => true,\n            'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */ \n            'menu_icon' => get_template_directory_uri() . '/library/images/custom-post-icon.png', /* the icon for the custom post type menu */\n            'rewrite'   => array( 'slug' => 'place', 'with_front' => false ), /* you can specify its url slug */\n            'has_archive' => 'place', /* you can rename the slug here */\n            'capability_type' => 'post',\n            'hierarchical' => false,\n            /* the next one is important, it tells what's enabled in the post editor */\n            'supports' => array( 'title', 'editor', 'thumbnail')\n        ) /* end of options */\n    ); /* end of register post type */\n    \n    /* this adds your post categories to your custom post type */\n    register_taxonomy_for_object_type( 'category', 'trip' );\n    /* this adds your post tags to your custom post type */\n    register_taxonomy_for_object_type( 'post_tag', 'trip' );\n\n    register_taxonomy_for_object_type( 'post_tag', 'places' );\n    \n} \n\n    // adding the function to the Wordpress init\n    add_action( 'init', 'trips_post_example');\n\nfunction my_connection_types() {\n    p2p_register_connection_type( array(\n        'name' => 'places_to_trips',\n        'from' => 'places',\n        'to' => 'trip',\n        'sortable' => 'any',\n    ) );\n\n    p2p_register_connection_type( array(\n        'name' => 'places_to_places',\n        'from' => 'places',\n        'to' => 'places',\n        'reciprocal' => true,\n    ) );\n\n    p2p_register_connection_type( array(\n        'name' => 'posts_to_trips',\n        'from' => 'post',\n        'to' => 'trip',\n        'sortable' => 'any',  // this must be set to 'any' or ``true``\n        'cardinality' => 'many-to-one', //optional\n        'fields' => array(\n            'featured' => array(\n                'title' => 'Trip Highlight',\n                'type' => 'checkbox',\n            ),\n        ),\n    ));\n\n    p2p_register_connection_type( array(\n        'name' => 'posts_to_places',\n        'from' => 'post',\n        'to' => 'places',\n        'cardinality' => 'many-to-one', //optional\n        'fields' => array(\n            'featured' => array(\n                'title' => 'Place Highlight',\n                'type' => 'checkbox',\n            ),\n        ),\n    ) ); \n}\nadd_action( 'p2p_init', 'my_connection_types' );\n\nadd_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );\n\nfunction sm_cmb_render_post_select( $field, $meta ) {\n\n    $post_type = ($field['post_type'] ? $field['post_type'] : 'post');\n    $limit = ($field['limit'] ? $field['limit'] : '-1');\n    echo '<select class=\"select2\" name=\"', $field['id'], '\" id=\"', $field['id'], '\">';\n    $posts = get_posts('post_type='.$post_type.'&numberposts='.$limit.'&posts_per_page='.$limit);\n    \n    foreach ( $posts as $art ) {\n        if (in_array($art->ID, $meta)) {\n            echo '<option value=\"'. $art->ID .'\" selected>' . get_the_title($art->ID) . '</option>';\n        }\n        elseif ($art->ID == $meta ) {\n            echo '<option value=\"'. $art->ID .'\" selected>' . get_the_title($art->ID) . '</option>';\n        } else {\n            echo '<option value=\"'. $art->ID . '\">' . get_the_title($art->ID) . '</option>';\n        }\n    }\n    echo '</select>';\n    echo '<p class=\"cmb_metabox_description\">', $field['desc'], '</p>';\n}\n\n\nfunction sergio($str)\n{\n    echo '<pre>';\n    print_r($str);\n    echo '</pre>';\n}\n\nfunction woo_story_sharing($title='Share:')\n{\n    global $post;\n\n    $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail');?>\n    <ul class=\"social list-inline\">  \n        <li class=\"share\"><?php _e($title,'ppm');?></li>\n        <?php $url = get_permalink();?>\n        <?php $title = get_the_title();?>\n        <?php $summary = get_the_excerpt();?>\n        <li>\n            <a href=\"#\" class=\"social\" onclick=\"window.open('http://www.facebook.com/sharer.php?s=100&p[title]=<?php echo urlencode($title); ?>&p[summary]=<?php echo urlencode($summary); ?>&p[url]=<?php echo urlencode($url); ?>&p[images][0]=<?php echo urlencode($thumb[0]); ?>', 'sharer', 'toolbar=0,status=0,width=626,height=436');return false;\">\n                <span class=\"fa-stack fa-lg\">\n                    <i class=\"fa fa-circle fa-stack-2x\"></i>\n                    <i class=\"fa fa-facebook fa-stack-1x fa-inverse\"></i>\n                </span>\n            </a>\n        </li>\n        <li>    \n            <a target=\"_blank\" class=\"social\" href=\"https://twitter.com/share/?counturl=<?php the_permalink();?>&amp;url=<?php the_permalink();?>&amp;text=<?php the_title();?>\">\n                <span class=\"fa-stack fa-lg\">\n                    <i class=\"fa fa-circle fa-stack-2x\"></i>\n                    <i class=\"fa fa-twitter fa-stack-1x fa-inverse\"></i>\n                </span>\n            </a>\n        </li>\n        <li>\n            <a class=\"social\" target=\"_blank\" onclick=\"window.open('//pinterest.com/pin/create/button/?url=<?php the_permalink();?>&amp;media=<?php echo $thumb[0];?>', 'sharer', 'toolbar=0,status=0,width=626,height=436');return false;\" href=\"#\">\n                <span class=\"fa-stack fa-lg\">\n                    <i class=\"fa fa-circle fa-stack-2x\"></i>\n                    <i class=\"fa fa-pinterest fa-stack-1x fa-inverse\"></i>\n                </span>\n            </a>\n        </li>\n        <li>\n            <a class=\"social\" href=\"#\">\n                <span class=\"fa-stack fa-lg\">\n                    <i class=\"fa fa-circle fa-stack-2x\"></i>\n                    <i class=\"fa fa-star fa-stack-1x fa-inverse\"></i>\n                </span>\n            </a>\n        </li>\n    </ul>\n    <div class=\"clearfix\"></div>\n    <?php\n}\nWe are not an agency. We are people. PlusPlusMinus was founded in 2009 and can boast more than 30 years of collective website building experience. When we say that we love the internet, we mean it. We were those geeks who downloaded emails on a Nokia 3310. We built our own computers, rejoiced at the arrival of 56 kbit/s dial-up modems, had LAN-parties, still nostalgically reminisce about DOS and still peek at the code that created your favourite websites. If you have no idea what the previous sentences meant, don’t worry. The only thing we get more excited about than the Internet, are the possibilities your business or organisation can realise with meaningful, user friendly design + development + strategy –\nif (!function_exists('woo_postnav')) {\n    function woo_postnav($id) {\n\n        if ( is_single() ) {\n            $items = p2p_type('posts_to_trips')->get_adjacent_items($id);\n            ?>\n            <div class=\"post-entries\">\n                <?php if (!empty($items['previous'])) : ?>\n                    <div class=\"col-md-6 nav-entries-holder\">\n                        <a href=\"<?php echo get_permalink($items['previous']);?>\">\n                        <div class=\"nav-prev pull-left\">\n                            <i class=\"fa fa-angle-left fa-5x\"></i>\n                            <div class=\"nav-content\">\n                                <span class=\"nav-trip\"><?php echo get_the_title($items['parent']);?></span>\n                                <p><?php echo get_the_title($items['previous']);?></p>\n                            </div>\n                            <div class=\"clearfix\"></div>\n                        </div>\n                        </a>\n                    </div>\n                <?php endif; ?>\n                <?php if (!empty($items['next'])) : ?>\n                    <div class=\"col-md-6 nav-entries-holder pull-right\">\n                        <a href=\"<?php echo get_permalink($items['next']);?>\">\n                        <div class=\"nav-next pull-right\">\n                            <i class=\"fa fa-angle-right fa-5x\"></i>\n                            <div class=\"nav-content\">\n                               <span class=\"nav-trip\"><?php echo get_the_title($items['parent']);?></span>\n                                <p><?php echo get_the_title($items['next']); ?></p>\n                            </div>\n                            <div class=\"clearfix\"></div>\n                        </div>\n                        </a>\n                    </div>\n                <?php endif; ?>\n            <div class=\"clearfix\"></div>\n            </div><!--/.post-entires-->\n        <?php\n        }\n    }\n}\n\n// Bootstrap Style Breadcrumbs\n// http://mkoerner.de/breadcrumbs-for-wordpress-themes-with-bootstrap-3/\n\nfunction ppm_custom_breadcrumb() {\n    global $post;\n    global $item_place;\n    global $item_trip;\n\n  if(!is_home()) {\n    echo '<ol class=\"breadcrumb\">';\n    echo '<li><a href=\"'.get_option('home').'\">Home</a></li>';\n    if (is_single()) {\n        echo '<li><a href=\"'.get_post_type_archive_link( 'trip' ).'\">Trips</a></li>';\n        $trip = new WP_Query( array(\n          'connected_type' => 'posts_to_trips',\n          'connected_items' => $post->ID,\n          'nopaging' => true,\n        ) );\n\n        // Display connected pages\n        if ($trip->have_posts() ) : ?>\n        <?php while ( $trip->have_posts() ) : $trip->the_post(); ?>\n            <?php $item_trip = $post->ID; ?>\n            <li><a href=\"<?php the_permalink(); ?>\"><?php the_title(); ?></a></li>\n        <?php endwhile; ?>\n        <?php \n        // Prevent weirdness\n        wp_reset_postdata();\n        endif;\n\n        $place = new WP_Query( array(\n          'connected_type' => 'posts_to_places',\n          'connected_items' => $post->ID,\n          'nopaging' => true,\n        ) );\n\n        // Display connected pages\n        if ( $place->have_posts() ) : ?>\n        <?php while ( $place->have_posts() ) : $place->the_post(); ?>\n            <?php $item_place = $post->ID; ?>\n            <li><a href=\"<?php the_permalink(); ?>\"><?php the_title(); ?></a></li>\n        <?php endwhile; ?>\n        <?php \n        // Prevent weirdness\n        wp_reset_postdata();\n        endif;\n        \n      if (is_single()) {\n        echo '<li>';\n        the_title();\n        echo '</li>';\n      }\n    } elseif (is_category()) {\n      echo '<li>';\n      single_cat_title();\n      echo '</li>';\n    } elseif (is_page()) {\n      echo '<li>';\n      the_title();\n      echo '</li>';\n    } elseif (is_tag()) {\n      echo '<li>Tag: ';\n      single_tag_title();\n      echo '</li>';\n    } elseif (is_day()) {\n      echo'<li>Archive for ';\n      the_time('F jS, Y');\n      echo'</li>';\n    } elseif (is_month()) {\n      echo'<li>Archive for ';\n      the_time('F, Y');\n      echo'</li>';\n    } elseif (is_year()) {\n      echo'<li>Archive for ';\n      the_time('Y');\n      echo'</li>';\n    } elseif (is_author()) {\n      echo'<li>Author Archives';\n      echo'</li>';\n    } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) {\n      echo '<li>Blog Archives';\n      echo'</li>';\n    } elseif (is_search()) {\n      echo'<li>Search Results';\n      echo'</li>';\n    }\n    echo '</ol>';\n  }\n}\n\nfunction ppm_star_rating($num) {\n        for ($i=0; $i < $num; $i++) { \n            $html .= '<span class=\"fa fa-star\"></span>';\n        }\n    return $html;\n}\n\nfunction get_ratings($id) {\n    $ratings = get_post_meta($id,'_ppm_rating_group',true); \n    $overall = get_post_meta($id,'_ppm_experience_rating',true); \n    $html = '<div class=\"row\">';\n        $html .= '<div class=\"col-md-4 text-center\">';\n        switch ($overall){\n            case 5:\n                $html .= '<p class=\"lead\">Amazing</p>';\n                break;\n            case 4:\n                $html .= '<p class=\"lead\">Excellent</p>';\n                break;\n            case 3:\n                $html .= '<p class=\"lead\">Good</p>';\n                break;\n            case 2:\n                $html .= '<p class=\"lead\">Average</p>';\n                break;\n            case 1:\n                $html .= '<p class=\"lead\">Below Average</p>';\n                break;\n        }\n        $html .= '<h2>'.$overall.'/5</h2>';\n        $html .= '</div>';\n        $html .= '<div class=\"col-md-8\">';\n            $html .= '<ul>';\n                foreach ($ratings as $key => $value) {\n                    $html .= '<li>'.$value['title'].'<span class=\"pull-right\">'.ppm_star_rating($value['score']).'</span></li>';\n                }\n            $html .=  '</ul>';\n        $html .= '</div>';\n    $html .= '</div>';\n    echo $html;\n\n}\n\nfunction add_query_vars($aVars) {\n$aVars[] = \"trips\"; // represents the name of the product category as shown in the URL\n$aVars[] = \"places\"; // represents the name of the product category as shown in the URL\n$aVars[] = \"type\"; // represents the name of the product category as shown in the URL\n$aVars[] = \"cats\"; // represents the name of the product category as shown in the URL\nreturn $aVars;\n}\n \n// hook add_query_vars function into query_vars\nadd_filter('query_vars', 'add_query_vars');\n\nfunction add_rewrite_rules($aRules) {\n\n$aNewRules2 = array('trips/([^/]+)/([^/]+)/?$' => 'index.php?pagename=trips&type=$matches[1]&cats=$matches[2]');\n$aNewRules3 = array('places/([^/]+)/([^/]+)/?$' => 'index.php?pagename=places&type=$matches[1]&cats=$matches[2]');\n\n$aRules = $aNewRules2 + $aNewRules3 + $aRules;\nreturn $aRules;\n}\n \n// hook add_rewrite_rules function into rewrite_rules_array\nadd_filter('rewrite_rules_array', 'add_rewrite_rules');\n\n\n?>",
 			"file": "wp-content/themes/oada/functions.php",
+			"file_size": 29194,
+			"file_write_time": 130501416660000000,
 			"settings":
 			{
-				"buffer_size": 29194,
+				"buffer_size": 29910,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 127 files for \"redux/options/brew_options/sections\"\n\n0 matches across 0 files\n\n\nSearching 154 files for \"redux/options/brew_options/sections\"\n\n/Users/admin/Documents/Sites/oada/wp-content/themes/oada/functions.php:\n  281  \n  282  \n  283: add_filter('redux/options/brew_options/sections', 'child_sections');\n  284  \n  285  // let's create the function for the custom type\n\n1 match in 1 file\n\n\nSearching 127 files for \"sections\"\n\n0 matches across 0 files\n\n\nSearching 154 files for \"sections\"\n\n/Users/admin/Documents/Sites/oada/wp-content/themes/oada/functions.php:\n   22  add_image_size('slide-image',1600,650,true);\n   23  \n   24: function child_sections($sections){\n   25:     //$sections = array();\n   26:     $sections[] = array(\n   27          'icon'          => 'ok',\n   28          'icon_class'    => 'fa fa-gears',\n   ..\n   63      );\n   64  \n   65:      $sections[] = array(\n   66          'icon'          => 'ok',\n   67          'icon_class'    => 'fa fa-heart',\n   ..\n  103      );\n  104  \n  105:     return $sections;\n  106  }\n  107  \n  ...\n  281  \n  282  \n  283: add_filter('redux/options/brew_options/sections', 'child_sections');\n  284  \n  285  // let's create the function for the custom type\n\n8 matches in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 1238,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
 			}
 		},
 		{
@@ -564,6 +577,14 @@
 			"settings":
 			{
 				"buffer_size": 3060,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/oada/sidebar-experience.php",
+			"settings":
+			{
+				"buffer_size": 3708,
 				"line_ending": "Unix"
 			}
 		},
@@ -749,6 +770,10 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/admin/Documents/Sites/oada/wp-content/themes/oada",
+			"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library",
+			"/Users/admin/Documents/Sites/oada/wp-content/themes/oada",
+			"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library",
 			"/Users/admin/Documents/Sites/oada/wp-content/themes/plussed",
 			"/Users/admin/Documents/Sites/oada/wp-content/themes/oada",
 			"/Users/admin/Documents/Sites/retutpro/wp-content/themes/canvas",
@@ -842,6 +867,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"widget",
+			"gallery",
+			"child_sections",
+			"sections",
+			"redux/options/brew_options/sections",
 			"map",
 			"terms",
 			"uploads",
@@ -964,12 +994,7 @@
 			"dataUrl",
 			"data-dz-thumbnail",
 			"addedfile",
-			"about",
-			".about",
-			"@media",
-			"section",
-			"gfo",
-			"social"
+			"about"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1057,7 +1082,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1085,7 +1110,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1114,13 +1139,13 @@
 						"translation.y": 4537.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"file": "/Users/admin/Downloads/Proofset06/_0003_03-OADA_SingleTrip.jpg",
 					"semi_transient": false,
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "image"
 				},
 				{
@@ -1129,15 +1154,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 29194,
+						"buffer_size": 29910,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18048,
-								18048
+								23111,
+								22395
 							]
 						],
 						"settings":
@@ -1147,14 +1172,92 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5997.0,
+						"translation.y": 7736.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1238,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										260,
+										295
+									],
+									[
+										655,
+										663
+									],
+									[
+										665,
+										673
+									],
+									[
+										690,
+										698
+									],
+									[
+										722,
+										730
+									],
+									[
+										872,
+										880
+									],
+									[
+										1028,
+										1036
+									],
+									[
+										1123,
+										1131
+									],
+									[
+										1141,
+										1149
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								465,
+								465
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 4,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 425.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "wp-content/themes/oada/single-trip.php",
 					"semi_transient": false,
 					"settings":
@@ -1175,14 +1278,14 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2659.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "wp-content/themes/oada/single-places.php",
 					"semi_transient": false,
 					"settings":
@@ -1207,7 +1310,7 @@
 						"translation.y": 3145.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1217,7 +1320,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "wp-content/themes/oada/single.php",
 					"semi_transient": false,
 					"settings":
@@ -1229,8 +1332,8 @@
 						"selection":
 						[
 							[
-								299,
-								299
+								2028,
+								2016
 							]
 						],
 						"settings":
@@ -1238,15 +1341,43 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 75.0,
+						"translation.y": 915.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
+					"file": "wp-content/themes/oada/sidebar-experience.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1329,
+								2610
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 856.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "wp-content/themes/oada/home-slider.php",
 					"semi_transient": false,
 					"settings":
@@ -1258,8 +1389,8 @@
 						"selection":
 						[
 							[
-								538,
-								527
+								0,
+								1811
 							]
 						],
 						"settings":
@@ -1271,7 +1402,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
