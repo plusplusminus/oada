@@ -644,6 +644,8 @@ function ppm_star_rating($num) {
 function get_ratings($id) {
     $ratings = get_post_meta($id,'_ppm_rating_group',true); 
     $overall = get_post_meta($id,'_ppm_experience_rating',true); 
+
+    if (!empty($overall)) : 
     $html = '<div class="row">';
         $html .= '<div class="col-md-4 text-center">';
         switch ($overall){
@@ -674,6 +676,7 @@ function get_ratings($id) {
         $html .= '</div>';
     $html .= '</div>';
     echo $html;
+    endif;
 
 }
 
