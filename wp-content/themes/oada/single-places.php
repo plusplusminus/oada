@@ -96,7 +96,7 @@ global $post;
 					    <?php while ( $connected->have_posts() ) : $connected->the_post(); $count++; ?>
 					    	<?php $exclude[] = $post->ID; ?>
 					    	<div class="highlight-image col-md-8">
-							        <?php the_post_thumbnail('large',$default); ?>
+							        <a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_post_thumbnail('large',$default); ?></a>
 					        </div>
 					        <div class="highlight-content col-md-4">
 					        	<span class="highlight-heading">Place Highlight:</span>
