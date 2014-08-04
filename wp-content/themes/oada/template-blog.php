@@ -74,14 +74,15 @@ query_posts( $query_args );
                     ?>
                       </div>
                   </a>
+                  <?php if ($count <= 2) : ?>
+                    <footer class="article-footer clearfix">
+                      <?php the_excerpt();?>
+                      <?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
+                    </footer> <?php // end article footer ?>
+                  <?php endif; ?>
 
               </article> <?php // end article ?>
-              <?php if ($count <= 2) : ?>
-                <footer class="article-footer clearfix">
-                  <?php the_excerpt();?>
-                  <?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
-                </footer> <?php // end article footer ?>
-              <?php endif; ?>
+
             </div>
             <?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>
 
