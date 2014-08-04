@@ -6,7 +6,7 @@
 			  <p>&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo( 'name' ); ?>. Created by the friendly people at <a href="http://www.plusplusminus.co.za/?utm_source=OADA&amp;utm_medium=Footer&amp;utm_campaign=Credit" title="PlusPlusMinus Design &amp; Development" target="_blank">PlusPlusMinus</a></p>
 			</div>
 			<div class="col-md-4 text-right back-to">
-				<h4>Top <i class="fa fa-arrow-up"></i></h4>
+				<h4><a href="#" class="scrollToTop">Top <i class="fa fa-arrow-up"></i></a></h4>
 			</div>
 		  </div> <!-- end .row -->
 		</div>

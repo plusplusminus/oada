@@ -17,12 +17,6 @@ jQuery(document).ready(function(){
 
 
       
-	jQuery('.home-image,.single-image').imageScroll({
-        imageAttribute: (touch === true) ? 'image-mobile' : 'image',
-        touch: touch,
-        coverRatio:0.7,
-        parallax:true
-    });
 
     jQuery( ".social-widget a" ).hover(
       function() {
@@ -33,10 +27,7 @@ jQuery(document).ready(function(){
       }
     );
 
-	jQuery('body').scrollspy({ target: '.navbar-collapse' })
-
-    
-
+	
     jQuery(window).scroll(function() {    
 	    var scroll = jQuery(window).scrollTop();
 	     //>=, not <=
@@ -49,6 +40,11 @@ jQuery(document).ready(function(){
 	        jQuery("body").removeClass("stuck");
 	    }
 	});
+
+    jQuery('.scrollToTop').click(function(){
+        jQuery('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
 
 
 });
