@@ -15,6 +15,8 @@ Template Name: Home Page Template
 
 	<?php get_template_part('home','experience' ); ?>
 
+	<?php get_template_part('home','articles' ); ?>
+
 	<?php get_template_part('home','upcoming' ); ?>
 
 <?php get_footer(); ?>

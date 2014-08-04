@@ -91,7 +91,7 @@ global $post;
 							        <?php the_post_thumbnail('full',$default); ?>
 					        </div>
 					        <div class="highlight-content col-md-4">
-					        	<span class="highlight-heading">Trip Highlight:</span>
+					        	<span class="highlight-heading">Place Highlight:</span>
 					        	<h3 class="highlight-title"><?php the_title();?></h3>
 
 					        	<span class="rating">
@@ -103,7 +103,7 @@ global $post;
 					        	<div class="tags">
 					        		<?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
 					        	</div>
-					        	<a class="view-more" href="<?php the_permalink();?>">View More <span class="fa fa-angle-right"></span></a>
+					      
 					        </div>
 					        <?php if ($count % 2 == 0) echo '<div class="clearfix"></div>';?>
 					    <?php endwhile; ?>
@@ -179,7 +179,7 @@ global $post;
 		if ( $related ->have_posts() ) : $count = 0;
 		?>
 			<div class="places other-places">
-				<h3 class="title">Other Places <span class="text-primary">During</span> this Trip</h3>
+				<h3 class="title"><span class="text-primary">Other Places</span> During this Trip</h3>
 				<div class="row">
 					<?php while ( $related ->have_posts() ) : $related ->the_post(); $count++;?>
 						<div class="place col-md-3">

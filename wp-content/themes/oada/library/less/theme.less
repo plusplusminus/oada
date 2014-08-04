@@ -273,22 +273,27 @@ width: 100%;
 		&:hover{
 			.experience-info {
 				background: @brand-warning;
-				margin-bottom: 0px;
+				.inner-info {
+					max-height: 200px;
+				}
 			}
 		}
 		.experience-info {
+			.inner-info {
+				max-height: 0px;
+				overflow: hidden;
+			}
 			opacity: 1;
 			position: absolute;
 			left:0;
 			bottom: 0;
 			right:0;
 			width: 100%;
-			.transition(0.8s);
+			.transition(.8s);
 			background: rgba(0,0,0,0.5);
 			color: #fff;
 			padding-left: 15px;
 			padding-right: 15px;
-			margin-bottom: -60px;
 			padding-top: 15px;
 			padding-bottom: 15px;
 		}
@@ -351,6 +356,7 @@ width: 100%;
 
 #places {
 	&.bg-dark {
+		padding-bottom: 80px;
 		padding-bottom: 30px;
 	}
 	.place-title {
@@ -416,6 +422,58 @@ width: 100%;
 						color:@gray-light;
 					}
 				}
+			}
+		}
+	}
+}
+
+#future {
+	&.bg-dark {
+		padding-bottom: 30px;
+	}
+	.article-title {
+		.text-center();
+		.fa {
+			color: @brand-info;
+		}
+		.title {
+			color: #fff;
+			margin-bottom: 30px;
+			text-transform: uppercase;
+		}
+	}
+	.articles
+	{
+		.title{
+			color: #fff;
+			margin-bottom: 35px;
+			text-align: center;
+		}
+		.article a {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			margin-bottom: 15px;
+			&:hover{
+				.place-info {
+					background: @brand-primary;
+					.opacity(.9);
+				}
+			}
+			.article-info {
+				opacity: 1;
+				position: absolute;
+				left:0;
+				bottom: 0;
+				right:0;
+				width: 100%;
+				.transition(0.8s);
+				background: rgba(0,0,0,0.5);
+				color: #fff;
+				padding-left: 15px;
+				padding-right: 15px;
+				padding-top: 15px;
+				padding-bottom: 15px;
 			}
 		}
 	}

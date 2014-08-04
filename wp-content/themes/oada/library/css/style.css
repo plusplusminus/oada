@@ -8431,7 +8431,9 @@ This is just for the sample BREW site.  Feel free to delete
 }
 .experiences .experience a:hover .experience-info {
   background: #f69431;
-  margin-bottom: 0px;
+}
+.experiences .experience a:hover .experience-info .inner-info {
+  max-height: 200px;
 }
 .experiences .experience a .experience-info {
   opacity: 1;
@@ -8446,9 +8448,12 @@ This is just for the sample BREW site.  Feel free to delete
   color: #fff;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: -60px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.experiences .experience a .experience-info .inner-info {
+  max-height: 0px;
+  overflow: hidden;
 }
 .search {
   height: 0px;
@@ -8494,6 +8499,7 @@ This is just for the sample BREW site.  Feel free to delete
   padding-top: 120px;
 }
 #places.bg-dark {
+  padding-bottom: 80px;
   padding-bottom: 30px;
 }
 #places .place-title {
@@ -8555,6 +8561,52 @@ This is just for the sample BREW site.  Feel free to delete
 #places .places .other-places ul li a.view-more {
   text-transform: uppercase;
   color: #fff;
+}
+#future.bg-dark {
+  padding-bottom: 30px;
+}
+#future .article-title {
+  text-align: center;
+}
+#future .article-title .fa {
+  color: #83b7e6;
+}
+#future .article-title .title {
+  color: #fff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+#future .articles .title {
+  color: #fff;
+  margin-bottom: 35px;
+  text-align: center;
+}
+#future .articles .article a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+#future .articles .article a:hover .place-info {
+  background: #f4881b;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+#future .articles .article a .article-info {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 #connect.bg-dark {
   padding-top: 30px;

@@ -17,20 +17,27 @@
 							<header class="article-header">
 								<div class="titlewrap clearfix">
 									<h1 class="single-title entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-									<?php $terms = wp_get_post_terms($post->ID, 'category', array("fields" => "all"));
-									 	if ( !empty( $terms ) && !is_wp_error( $terms ) ){
-										echo '<ul class="list-inline terms">';
-										foreach ( $terms as $term ) { ?>
-											<li>
-										   			<span class="fa-stack fa-lg">
-														<i class="fa <?php echo $term->description;?> fa-stack-1x fa-inverse"></i>
-													</span>
-													<span class="term"><?php echo $term->name; ?></span>
-								  			</li>
-										<?php }
-											echo '</ul>';
-										}
-									?>
+									<div class="row">
+										<div class="col-md-4">
+											<?php the_author_link(); ?>
+										</div>
+										<div class="col-md-8 text-right">
+											<?php $terms = wp_get_post_terms($post->ID, 'category', array("fields" => "all"));
+											 	if ( !empty( $terms ) && !is_wp_error( $terms ) ){
+												echo '<ul class="list-inline terms">';
+												foreach ( $terms as $term ) { ?>
+													<li>
+												   			<span class="fa-stack fa-lg">
+																<i class="fa <?php echo $term->description;?> fa-stack-1x fa-inverse"></i>
+															</span>
+															<span class="term"><?php echo $term->name; ?></span>
+										  			</li>
+												<?php }
+													echo '</ul>';
+												}
+											?>
+										</div>
+									</div>
 								</div>
 
 							</header> <?php // end article header ?>

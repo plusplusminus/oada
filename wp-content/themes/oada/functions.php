@@ -105,7 +105,10 @@ function child_sections($sections){
     return $sections;
 }
 
-register_nav_menus( array( 'secondary-nav' => __( 'Secondary Nav', 'woothemes' ) ) );
+register_nav_menus( array( 'secondary-nav' => __( 'Secondary Nav', 'woothemes' ),'category-nav' => __( 'Category Nav', 'woothemes' ) ) );
+
+
+
 // Secondary Nav
 function secondary_nav() {
     // display the wp3 menu if available
@@ -259,13 +262,6 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
                     'type' => 'text',
                 ),
                 array(
-                    'name'    => __( 'Place Highlight', 'cmb' ),
-                    'desc'    => __( 'select the place highlight', 'cmb' ),
-                    'id'      => $prefix . 'place_highlight',
-                    'type'    => 'post_select',
-                    'post_type' => 'post'
-                    ),
-                array(
                     'name' => 'Place Location',
                     'desc' => 'Drag the marker to set the exact location',
                     'id' => $prefix . 'place_location',
@@ -372,6 +368,7 @@ function my_connection_types() {
     ) );
 
     p2p_register_connection_type( array(
+        'title' => 'Similar Places from Other Trips',
         'name' => 'places_to_places',
         'from' => 'places',
         'to' => 'places',
@@ -396,6 +393,7 @@ function my_connection_types() {
         'name' => 'posts_to_places',
         'from' => 'post',
         'to' => 'places',
+        'sortable' => 'any',  // this must be set to 'any' or ``true``
         'cardinality' => 'many-to-one', //optional
         'fields' => array(
             'featured' => array(
@@ -682,6 +680,36 @@ return $aRules;
  
 // hook add_rewrite_rules function into rewrite_rules_array
 add_filter('rewrite_rules_array', 'add_rewrite_rules');
+
+if ( ! function_exists( 'category_menu' ) ) {
+    function category_menu( $menu_name ) {
+        global $post;
+        if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+            $count = 0;
+            $count_tabs = 0;
+            $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+            $menu_items = wp_get_nav_menu_items($menu->term_id);
+
+            echo '<ul class="nav-justified text-center">';
+
+            foreach ( (array) $menu_items as $key => $menu_item ) { 
+                $term = get_term( $menu_item->object_id, $menu_item->object );
+                ?>
+                <li>
+                    <a href="<?php echo get_term_link( $term ); ?>" title="<?php sprintf(__('View all post filed under %s', 'my_localization_domain'), $term->name);?>">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa <?php echo $term->description;?> fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4><?php echo $term->name; ?></h4>
+                    </a>
+                </li>
+                <?php       
+            }
+            echo '</ul>';
+        }
+    }
+}
 
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 // The Query
-$args = array('post_type'=>'post','tag'=>'featured','posts_per_page'=>1);
+$args = array('post_type'=>'post','tag'=>'featured','posts_per_page'=>10);
 $default = array('class'=>'img-responsive'); 
 $the_query = new WP_Query( $args );
 
