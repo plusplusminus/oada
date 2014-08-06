@@ -4028,8 +4028,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #333333;
 }
 .navbar-inverse {
-  background-color: #222222;
-  border-color: #080808;
+  background-color: #101010;
+  border-color: #101010;
 }
 .navbar-inverse .navbar-brand {
   color: #aaaaaa;
@@ -4054,7 +4054,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #080808;
+  background-color: #000000;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4074,20 +4074,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: #101010;
+  border-color: #000000;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #080808;
+  background-color: #000000;
   color: #ffffff;
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #080808;
+    border-color: #101010;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: #080808;
+    background-color: #101010;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #aaaaaa;
@@ -4101,7 +4101,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #080808;
+    background-color: #000000;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -8321,13 +8321,14 @@ This is just for the sample BREW site.  Feel free to delete
   .carousel-caption {
     left: 0;
     right: 0;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     bottom: 0px;
     background: rgba(0, 0, 0, 0.5);
     text-align: left;
   }
   .carousel-caption .slide-title {
-    padding: 10px 20% 0px;
+    padding: 0px 20% 0px;
     font-size: 49px;
     text-align: left;
     text-transform: uppercase;
