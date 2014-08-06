@@ -7633,12 +7633,12 @@ Stylesheet: Footer
 
 ******************************************************************/
 #footer {
-  border-top: 5px solid #f4881b;
   background: #111111;
   padding: 30px 0;
   clear: both;
   color: #aaa;
   font-family: 'Satisfy', Georgia, "Times New Roman", Times, serif;
+  color: #666666;
 }
 #footer h4 {
   color: #fff;
@@ -7646,6 +7646,9 @@ Stylesheet: Footer
 }
 #footer a {
   color: #aaa;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #aaaaaa;
+  font-weight: 100;
 }
 #footer li {
   padding: 7px 0;
@@ -7656,6 +7659,35 @@ Stylesheet: Footer
   margin: 0;
   padding: 0 0 15px 0;
   border-bottom: none;
+}
+#footer .scrollToTop {
+  color: #fff;
+  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#footer .scrollToTop:hover {
+  text-decoration: none;
+  color: #666666;
+}
+.footer-newsletter a {
+  background-color: #f4881b;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer-newsletter a:hover {
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #f69431;
+  color: #333333;
+  letter-spacing: 4px;
 }
 #footer-wrapper {
   margin-bottom: 30px;
@@ -7817,6 +7849,7 @@ These are the styles for posts, pages, archive, & blog index
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.5;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .entry-content > ol,
 .entry-content > ul {
@@ -7903,10 +7936,14 @@ and more scalable.
 .header nav ul.nav li a:hover .fa {
   color: #83b7e6;
 }
-.nav {
+.navbar-nav {
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */
+}
+.navbar-nav li a {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 /* end .nav */
 /******************************************************************
@@ -8186,6 +8223,9 @@ This is just for the sample BREW site.  Feel free to delete
   padding: 15px 25px;
   border: 2px solid #fff;
 }
+.kerning {
+  letter-spacing: 3px;
+}
 .img-holder {
   position: relative;
 }
@@ -8277,7 +8317,7 @@ This is just for the sample BREW site.  Feel free to delete
   -webkit-column-count: 2;
   column-count: 2;
   color: #777;
-  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 .entry blockquote {
@@ -8287,6 +8327,7 @@ This is just for the sample BREW site.  Feel free to delete
 }
 .navbar-brand {
   padding: 0;
+  margin-top: 10px;
 }
 .navbar-brand img {
   display: block;
@@ -8390,20 +8431,24 @@ This is just for the sample BREW site.  Feel free to delete
 .content .title {
   text-align: center;
 }
+.home-experience.bg-orange {
+  padding-top: 80px;
+  padding-bottom: 85px;
+}
 .home-experience h2.title {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.home-experience ul li a {
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
 .home-experience ul li a .fa-stack-2x {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #f69431;
 }
 .home-experience ul li a .fa-stack-1x {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #fff;
 }
 .home-experience ul li a:hover {
@@ -8435,9 +8480,7 @@ This is just for the sample BREW site.  Feel free to delete
 }
 .experiences .experience a:hover .experience-info {
   background: #f69431;
-}
-.experiences .experience a:hover .experience-info .inner-info {
-  max-height: 200px;
+  max-height: 600px;
 }
 .experiences .experience a .experience-info {
   opacity: 1;
@@ -8454,10 +8497,16 @@ This is just for the sample BREW site.  Feel free to delete
   padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
+  max-height: 65px;
 }
 .experiences .experience a .experience-info .inner-info {
-  max-height: 0px;
   overflow: hidden;
+  padding: 10px 0;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.experiences .experience a .experience-info .inner-info .date {
+  font-family: 'Satisfy', Georgia, "Times New Roman", Times, serif;
+  font-weight: 100;
 }
 .search {
   height: 0px;
@@ -8500,7 +8549,7 @@ This is just for the sample BREW site.  Feel free to delete
   padding-top: 120px;
 }
 #places.bg-dark {
-  padding-bottom: 80px;
+  padding-top: 70px;
   padding-bottom: 30px;
 }
 #places .place-title {
@@ -8511,7 +8560,7 @@ This is just for the sample BREW site.  Feel free to delete
 }
 #places .place-title .title {
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   text-transform: uppercase;
 }
 #places .places .title {
@@ -8529,6 +8578,7 @@ This is just for the sample BREW site.  Feel free to delete
   background: #f4881b;
   opacity: 0.9;
   filter: alpha(opacity=90);
+  max-height: 600px;
 }
 #places .places .place a .place-info {
   opacity: 1;
@@ -8545,6 +8595,16 @@ This is just for the sample BREW site.  Feel free to delete
   padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
+  max-height: 65px;
+}
+#places .places .place a .place-info .inner-info {
+  overflow: hidden;
+  padding: 10px 0;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#places .places .place a .place-info .inner-info .date {
+  font-family: 'Satisfy', Georgia, "Times New Roman", Times, serif;
+  font-weight: 100;
 }
 #places .places .other-places {
   margin: 30px 0;
@@ -8556,15 +8616,22 @@ This is just for the sample BREW site.  Feel free to delete
 #places .places .other-places ul li:first-child {
   padding-right: 0;
 }
+#places .places .other-places ul li:last-child {
+  padding-left: 10px;
+}
 #places .places .other-places ul li a {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #aaaaaa;
 }
 #places .places .other-places ul li a.view-more {
   text-transform: uppercase;
   color: #fff;
+  margin-left: 10px;
+  letter-spacing: 3px;
 }
 #future.bg-dark {
-  padding-bottom: 30px;
+  padding-bottom: 60px;
+  padding-top: 70px;
 }
 #future .article-title {
   text-align: center;
@@ -8613,11 +8680,15 @@ This is just for the sample BREW site.  Feel free to delete
   padding-top: 30px;
 }
 #connect .connect {
-  min-height: 276px;
+  min-height: 250px;
 }
 #connect .connect .excerpt-read-more {
   text-transform: uppercase;
-  padding: 15px 0;
+  padding: 10px 0;
+  display: block;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #connect .connect .excerpt-read-more:hover {
   text-decoration: none;
@@ -8625,6 +8696,14 @@ This is just for the sample BREW site.  Feel free to delete
 }
 #connect .connect .title {
   text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#connect .connect .title span::before {
+  color: #83b7e6;
+}
+#connect .connect p {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #aaaaaa;
 }
 #connect .connect .image {
   margin-top: 20px;
@@ -8633,7 +8712,7 @@ This is just for the sample BREW site.  Feel free to delete
   margin: auto;
 }
 #connect .social-widget {
-  min-height: 276px;
+  min-height: 250px;
 }
 #connect .social-widget .title {
   text-transform: uppercase;
@@ -8644,21 +8723,32 @@ This is just for the sample BREW site.  Feel free to delete
   color: #fff;
 }
 #connect .social-widget a {
-  color: #83b7e6;
+  color: #444444;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 #connect .social-widget a .fa-3x {
   font-size: 2.5em;
 }
+#connect .social-widget a:hover {
+  color: #83b7e6;
+}
 #connect .social-widget .social-hover {
   font-style: italic;
   font-family: 'Satisfy', Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 100;
 }
 .breadcrumb {
   background: none;
   text-align: center;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.breadcrumb li {
+  color: #f4881b;
 }
 .breadcrumb li a {
-  color: #aaaaaa;
+  color: #666666;
 }
 .single-post .post .article-header .single-title a {
   color: #fff;
@@ -8667,6 +8757,9 @@ This is just for the sample BREW site.  Feel free to delete
   font-family: 'Satisfy', Georgia, "Times New Roman", Times, serif;
   font-size: 1.2em;
   color: #aaaaaa;
+}
+.upcoming-trip {
+  border-right: 1px solid #fff;
 }
 .upcoming-trip .title {
   text-transform: uppercase;
@@ -8682,7 +8775,17 @@ This is just for the sample BREW site.  Feel free to delete
   color: #f4881b;
   font-style: italic;
 }
+.upcoming-trip .trip-date {
+  margin-bottom: 20px;
+}
 .upcoming-trip .image {
+  margin-top: 20px;
+}
+.upcoming-trip p {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #aaaaaa;
+}
+.upcoming-trip .social {
   margin-top: 20px;
 }
 .upcoming-trip .social li {
@@ -8758,54 +8861,64 @@ This is just for the sample BREW site.  Feel free to delete
 .experience-widget .related-experiences .img-container:hover .title-container {
   opacity: 1;
 }
-.home-contact-form .gform_wrapper .gform_title {
+.form-tips .home-contact-form .gform_wrapper .gform_title {
   color: #383838;
   font-size: 24px;
   margin-bottom: 30px;
   margin-top: 20px;
   font-weight: 300;
 }
-.home-contact-form .gform_wrapper .gform_title .fa {
+.form-tips .home-contact-form .gform_wrapper .gform_title .fa {
   color: #83b7e6;
 }
-.home-contact-form .gform_wrapper .left_label .gfield_label {
+.form-tips .home-contact-form .gform_wrapper .left_label .gfield_label {
   float: left;
-  margin: 0 5% 0 0;
+  margin: 10px 5% 0 0;
   width: 20%;
   font-weight: normal;
   font-family: 'Satisfy', Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
-.home-contact-form .gform_wrapper .left_label input.medium,
-.home-contact-form .gform_wrapper .left_label textarea.textarea {
+.form-tips .home-contact-form .gform_wrapper .left_label input.medium,
+.form-tips .home-contact-form .gform_wrapper .left_label textarea.textarea {
   width: 75%;
   background: #ebebeb;
   border-color: #ebebeb;
 }
-.home-contact-form .gform_wrapper .left_label.gform_fields .gfield input[type=text],
-.home-contact-form .gform_wrapper .left_label.gform_fields .gfield textarea {
+.form-tips .home-contact-form .gform_wrapper .left_label.gform_fields .gfield input[type=text],
+.form-tips .home-contact-form .gform_wrapper .left_label.gform_fields .gfield textarea {
   background: #ebebeb;
   border-color: #ebebeb;
+  border-width: 2px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 0px;
 }
-.home-contact-form .gform_wrapper .left_label.gform_fields .gfield input[type=text]:focus,
-.home-contact-form .gform_wrapper .left_label.gform_fields .gfield textarea:focus {
+.form-tips .home-contact-form .gform_wrapper .left_label.gform_fields .gfield input[type=text]:focus,
+.form-tips .home-contact-form .gform_wrapper .left_label.gform_fields .gfield textarea:focus {
   border-radius: 2px;
   background: #fff;
   color: #83b7e6;
   border-color: #83b7e6;
   border-width: 2px;
 }
-.home-contact-form .gform_wrapper .left_label.gform_footer {
+.form-tips .home-contact-form .gform_wrapper .left_label.gform_footer {
   margin: 0;
   padding: 0;
   text-align: right;
 }
-.home-contact-form .gform_wrapper .gform_button {
+.form-tips .home-contact-form .gform_wrapper .gform_button {
   background: transparent;
   border: none;
   color: #383838;
   text-transform: uppercase;
   padding: 0;
+  letter-spacing: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.form-tips .home-contact-form .gform_wrapper .gform_button:hover {
+  color: #f4881b;
 }
 .single-post article {
   background: #fff;
@@ -8930,7 +9043,7 @@ This is just for the sample BREW site.  Feel free to delete
 .single-places .header-hero .post-info .circle-text .place-entry {
   color: #aaaaaa;
   line-height: 1.7;
-  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .single-trip #content {
   background: #fff;
@@ -8943,20 +9056,24 @@ This is just for the sample BREW site.  Feel free to delete
   text-transform: uppercase;
   text-align: center;
 }
+.single-trip #experiences.bg-orange {
+  padding-top: 80px;
+  padding-bottom: 85px;
+}
 .single-trip #experiences h2.title {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.single-trip #experiences ul li a {
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
 .single-trip #experiences ul li a .fa-stack-2x {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #f69431;
 }
 .single-trip #experiences ul li a .fa-stack-1x {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #fff;
 }
 .single-trip #experiences ul li a:hover {
@@ -9003,7 +9120,7 @@ This is just for the sample BREW site.  Feel free to delete
   color: #83b7e6;
 }
 .single-trip .header-hero .post-info .circle-text .trip-entry {
-  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #aaaaaa;
   line-height: 1.7;
 }

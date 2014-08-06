@@ -33,6 +33,9 @@
 	}
 }
 
+.kerning{
+	letter-spacing: 3px;
+}
 .img-holder{
 	position: relative;
 }
@@ -109,6 +112,7 @@
 
 .navbar-brand {
 	padding: 0;
+	margin-top: 10px;
 	img {
 		.img-responsive();
 		.transition(1s);
@@ -228,6 +232,10 @@ width: 100%;
 
 
 .home-experience {
+	&.bg-orange{
+		padding-top: 80px;
+		padding-bottom: 85px;
+	}
 	h2.title {
 		color: #fff;
 		.text-center();
@@ -238,12 +246,13 @@ width: 100%;
 		li {
 			a {
 				.fa-stack-2x {
+					.transition(0.3s);
 					color: @brand-warning;
 				}
 				.fa-stack-1x {
+					.transition(0.3s);
 					color: #fff;
 				}
-				.transition(.8s);
 				&:hover {
 					.fa-stack-2x {
 						color: #fff;
@@ -276,15 +285,20 @@ width: 100%;
 			&:hover{
 				.experience-info {
 					background: @brand-warning;
+					max-height: 600px;
 					.inner-info {
-						max-height: 200px;
 					}
 				}
 			}
 			.experience-info {
 				.inner-info {
-					max-height: 0px;
 					overflow: hidden;
+					padding: 10px 0;
+					font-family: @font-entry;
+					.date{
+							font-family: @font-family-serif;
+							font-weight: 100;
+					}
 				}
 				opacity: 1;
 				position: absolute;
@@ -299,6 +313,7 @@ width: 100%;
 				padding-right: 15px;
 				padding-top: 15px;
 				padding-bottom: 15px;
+				max-height: 65px;
 			}
 		}
 	}
@@ -360,7 +375,7 @@ width: 100%;
 
 #places {
 	&.bg-dark {
-		padding-bottom: 80px;
+		padding-top: 70px;
 		padding-bottom: 30px;
 	}
 	.place-title {
@@ -370,7 +385,7 @@ width: 100%;
 		}
 		.title {
 			color: #fff;
-			margin-bottom: 30px;
+			margin-bottom: 60px;
 			text-transform: uppercase;
 		}
 	}
@@ -391,6 +406,10 @@ width: 100%;
 				.place-info {
 					background: @brand-primary;
 					.opacity(.9);
+					max-height: 600px;
+					.inner-info {
+						
+					}
 				}
 			}
 			.place-info {
@@ -407,6 +426,16 @@ width: 100%;
 				padding-right: 15px;
 				padding-top: 15px;
 				padding-bottom: 15px;
+				max-height: 65px;
+				.inner-info {
+					overflow: hidden;
+					padding: 10px 0;
+					font-family: @font-entry;
+					.date{
+						font-family: @font-family-serif;
+						font-weight: 100;
+					}
+				}
 			}
 		}
 		.other-places {
@@ -416,12 +445,18 @@ width: 100%;
 					&:first-child {
 						padding-right: 0;
 					}
+					&:last-child {
+						padding-left: 10px;
+					}
 					color:@gray-light;
 					padding: 0 2px;
 					a {
+						font-family: @font-entry;
 						&.view-more {
 							text-transform: uppercase;
 							color: #fff;
+							margin-left: 10px;
+							.kerning();
 						}
 						color:@gray-light;
 					}
@@ -433,7 +468,8 @@ width: 100%;
 
 #future {
 	&.bg-dark {
-		padding-bottom: 30px;
+		padding-bottom: 60px;
+		padding-top: 70px;
 	}
 	.article-title {
 		.text-center();
@@ -488,9 +524,14 @@ width: 100%;
 		padding-top: 30px;
 	}
 	.connect {
+		min-height: 250px;
 		.excerpt-read-more {
 			text-transform: uppercase;
-			padding: 15px 0;
+			padding: 10px 0;
+			display: block;
+			font-weight: 300;
+			.kerning();
+			font-family: @font-family-sans-serif;
 			&:hover {
 				text-decoration: none;
 				color: lighten(@brand-primary, 10%)
@@ -498,6 +539,14 @@ width: 100%;
 		}
 		.title {
 			text-transform: uppercase;
+			margin-bottom: 20px;
+			& span::before{
+				color: @brand-info;
+			}
+		}
+		p{
+			font-family: @font-entry;
+			color: @gray-light;
 		}
 		.image {
 			margin-top: 20px;
@@ -505,10 +554,9 @@ width: 100%;
 				margin: auto;
 			}
 		}
-		min-height: 276px;
 	}
 	.social-widget {
-		min-height: 276px;
+		min-height: 250px;
 		.title {
 			text-transform: uppercase;
 			color: #fff;
@@ -518,14 +566,20 @@ width: 100%;
 			color: #fff;
 		}
 		a {
-			color: @brand-info;
+			color: @gray-dark;
+			.transition(0.3s);
 			.fa-3x {
 				font-size: 2.5em;
+			}
+			&:hover{
+				color: @brand-info;
 			}
 		}
 		.social-hover{
 			font-style: italic;
 			font-family: @font-family-serif;
+			font-size: @font-size-large;
+			font-weight: 100;
 		}
 	}
 }
@@ -533,9 +587,11 @@ width: 100%;
 .breadcrumb {
 	background: none;
 	text-align: center;
+	font-family: @font-entry;
 	li {
+		color: @brand-primary;
 		a {
-			color: @gray-light;
+			color: @gray;
 		}
 	}
 }
@@ -558,6 +614,7 @@ width: 100%;
 }
 
 .upcoming-trip {
+	border-right: 1px solid #fff;
 	.title {
 		.fa {
 			color: @brand-info;
@@ -571,10 +628,19 @@ width: 100%;
 		color: @brand-primary;
 		font-style: italic;
 	}
+	.trip-date{
+		margin-bottom: 20px;
+	}
 	.image {
 		margin-top: 20px;
 	}
+	p{
+		font-family: @font-entry;
+		color: @gray-light;
+
+	}
 	.social {
+		margin-top: 20px;
 		li {
 			padding: 0;
 			&.share {
@@ -656,56 +722,66 @@ width: 100%;
 	}
 }
 
-.home-contact-form {
-	.gform_wrapper {
-		.gform_title {
-			color: #383838;
-			font-size: @font-size-h3;
-			margin-bottom: 30px;
-			margin-top: 20px;
-			font-weight: 300;
-			.fa {
-				color: @brand-info;
-			}
-		}
-		.left_label {
-			.gfield_label {
-				float: left;
-				margin: 0 5% 0 0;
-				width: 20%;
-				font-weight: normal;
-				font-family: @font-family-serif;
-				font-style: italic;
-			}
-			input.medium,textarea.textarea {
-				width: 75%;
-				background: #ebebeb;
-				border-color: #ebebeb;
-			}
-			&.gform_fields .gfield input[type=text], &.gform_fields .gfield textarea {
-				background: #ebebeb;
-				border-color: #ebebeb;
-				&:focus {
-					border-radius: 2px;
-					background: #fff;
+.form-tips{
+	.home-contact-form {
+		.gform_wrapper {
+			.gform_title {
+				color: #383838;
+				font-size: @font-size-h3;
+				margin-bottom: 30px;
+				margin-top: 20px;
+				font-weight: 300;
+				.fa {
 					color: @brand-info;
-					border-color: @brand-info;
-					border-width: 2px;
-
 				}
 			}
-			&.gform_footer {
-				margin: 0;
-				padding: 0;
-				text-align: right;
+			.left_label {
+				.gfield_label {
+					float: left;
+					margin: 10px 5% 0 0;
+					width: 20%;
+					font-weight: normal;
+					font-family: @font-family-serif;
+					font-style: italic;
+				}
+				input.medium,textarea.textarea {
+					width: 75%;
+					background: #ebebeb;
+					border-color: #ebebeb;
+				}
+				&.gform_fields .gfield input[type=text], &.gform_fields .gfield textarea {
+					background: #ebebeb;
+					border-color: #ebebeb;
+					border-width: 2px;
+					font-family: @font-entry;
+					font-size: @font-size-base;
+					margin-bottom: 0px;
+					&:focus {
+						border-radius: 2px;
+						background: #fff;
+						color: @brand-info;
+						border-color: @brand-info;
+						border-width: 2px;
+					}
+				}
+				&.gform_footer {
+					margin: 0;
+					padding: 0;
+					text-align: right;
+				}
 			}
-		}
-		.gform_button {
-			background: transparent;
-			border:none;
-			color: #383838;
-			text-transform: uppercase;
-			padding: 0;
+			.gform_button {
+				background: transparent;
+				border:none;
+				color: #383838;
+				text-transform: uppercase;
+				padding: 0;
+				.kerning();
+				.transition(0.3s);
+				&:hover{
+					color: @brand-primary;
+				}
+			}
 		}
 	}
 }

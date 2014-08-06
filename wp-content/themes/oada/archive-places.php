@@ -61,7 +61,6 @@
 							        <div class="experience-info">
 							        	<h4 class="trunc"><?php the_title();?></h4>
 							        	<div class="inner-info">
-							        		<?php _e(wpautop(get_post_meta($post->ID,'_ppm_place_date',true)));?>
 							        		<?php
 											// Find connected pages
 											$connected = new WP_Query( array(
@@ -75,6 +74,7 @@
 											    <?php while ( $connected->have_posts() ) : $connected->the_post(); $count++; ?>
 											    	
 													<h5 class="trip-title"><?php the_title();?></h5>
+
 													    
 											    <?php endwhile; ?>
 											    <?php 
@@ -82,6 +82,8 @@
 											    wp_reset_postdata();
 											endif;
 											?>
+							        		<span class="date"><?php _e(wpautop(get_post_meta($post->ID,'_ppm_place_date',true)));?></span>
+
 							        	</div>
 							        </div>
 							    </a>

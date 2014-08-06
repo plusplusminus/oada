@@ -7,17 +7,22 @@ Stylesheet: Footer
 ******************************************************************/
 
 #footer {
-  border-top: 5px solid @brand-primary;
   background: #111111;
   padding: 30px 0;
   clear: both;
   color: #aaa;
   font-family: @font-family-serif;
+  color: @gray;
   h4 {
     color: #fff;
     text-transform: uppercase;
   }
-  a {color: #aaa;}
+  a {
+    color: #aaa;
+    font-family: @font-entry;
+    color: @gray-light;
+    font-weight: 100;
+  }
   li {
     padding: 7px 0;
     border-bottom: 1px dotted rgba(255,255,255,.2);
@@ -27,6 +32,36 @@ Stylesheet: Footer
     margin: 0;
     padding: 0 0 15px 0;
     border-bottom: none;
+  }
+  .scrollToTop{
+    color: #fff;
+    font-family: @font-family-sans-serif;
+    .transition(.3s);
+    &:hover{
+      text-decoration: none;
+      color: @gray;
+    }
+  }
+}
+
+.footer-newsletter{
+  a{
+    background-color: @brand-primary;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 100;
+    .kerning();
+    .transition(0.3s);
+    &:hover{
+      font-weight: 400;
+      text-decoration: none;
+      background-color: @brand-warning;
+      color: @gray-darker;
+      letter-spacing: 4px;
+    }
   }
 }
 

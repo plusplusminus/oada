@@ -20,6 +20,10 @@
 						        <?php the_post_thumbnail('large',$default); ?>
 						        <div class="place-info">
 						        	<h4><?php the_title();?></h4>
+						        	<div class="inner-info">
+						        		<?php the_excerpt();?>
+						        		<span class="date"><?php _e(wpautop(get_post_meta($post->ID,'_ppm_place_date',true)));?></span>
+						        	</div>
 						        </div>
 						    </a>
 						</div>
@@ -28,7 +32,7 @@
 						<?php $html .= '<li><a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_title().',	</a></li>'; ?>
 			    	<?php endif; ?>
 			    <?php endwhile; ?>
-			    <?php $html .= '<li> | <a class="view-more" href="'.get_post_type_archive_link('places').'" title="All Places">VIEW THEM ALL <span class="fa fa-angle-right"></span></a></li>'; ?>
+			    <?php $html .= '<li> | <a class="view-more" href="'.get_post_type_archive_link('places').'" title="All Places">VIEW THEM ALL</a> <span class="fa fa-angle-right"></span></li>'; ?>
 			    <?php echo '<div class="other-places"><div class="col-md-12 text-center"><ul class="list-inline"><li>...</li>'.$html.'</ul></div></div>'; ?>
 			</div>
 
