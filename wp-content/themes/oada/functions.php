@@ -145,7 +145,7 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
             'id'         => 'image_metabox',
             'title'      => __( 'Image Options', 'cmb' ),
             'description' => __(''),
-            'pages'      => array( 'trips','post','places'), // Post type
+            'pages'      => array( 'trip','post','places'), // Post type
             'context'    => 'side',
             'priority'   => 'low',
             'show_names' => true, // Show field names on the left
@@ -644,37 +644,39 @@ function ppm_star_rating($num) {
 function get_ratings($id) {
     $ratings = get_post_meta($id,'_ppm_rating_group',true); 
     $overall = get_post_meta($id,'_ppm_experience_rating',true); 
-
+    $size = sizeof($ratings) + 1;
     if (!empty($overall)) : 
-    $html = '<div class="row">';
-        $html .= '<div class="col-md-4 text-center">';
-        switch ($overall){
-            case 5:
-                $html .= '<p class="lead">Amazing</p>';
-                break;
-            case 4:
-                $html .= '<p class="lead">Excellent</p>';
-                break;
-            case 3:
-                $html .= '<p class="lead">Good</p>';
-                break;
-            case 2:
-                $html .= '<p class="lead">Average</p>';
-                break;
-            case 1:
-                $html .= '<p class="lead">Below Average</p>';
-                break;
-        }
-        $html .= '<h2>'.$overall.'/5</h2>';
-        $html .= '</div>';
-        $html .= '<div class="col-md-8">';
-            $html .= '<ul>';
-                foreach ($ratings as $key => $value) {
-                    $html .= '<li>'.$value['title'].'<span class="pull-right">'.ppm_star_rating($value['score']).'</span></li>';
-                }
-            $html .=  '</ul>';
-        $html .= '</div>';
-    $html .= '</div>';
+        $html .= '<table class="table ratings">';
+            $html .= '<tbody>';
+                $html .= '<tr>';
+                    $html .= '<td class="summary" rowspan="'.$size.'">';
+                        $html .= '<div class="text-center">';
+                            switch ($overall){
+                                case 5:
+                                    $html .= '<p class="lead">Amazing!</p>';
+                                    break;
+                                case 4:
+                                    $html .= '<p class="lead">Excellent!</p>';
+                                    break;
+                                case 3:
+                                    $html .= '<p class="lead">Good</p>';
+                                    break;
+                                case 2:
+                                    $html .= '<p class="lead">Average</p>';
+                                    break;
+                                case 1:
+                                    $html .= '<p class="lead">Below Average</p>';
+                                    break;
+                            }
+                            $html .= '<span class="score">'.ppm_star_rating($overall['score']).'</span>';
+                            $html .= '<h2>'.$overall.'/5</h2>';
+                        $html .= '</div>';
+                    $html .= '</td>'; 
+                    foreach ($ratings as $key => $value) {
+                        $html .= '<tr><td><span class="rating-item">'.$value['title'].'<span class="score pull-right">'.ppm_star_rating($value['score']).'</span></span></td></tr>';
+                    }
+            $html .= '</tbody>';
+        $html .= '</table>';
     echo $html;
     endif;
 
@@ -733,5 +735,99 @@ if ( ! function_exists( 'category_menu' ) ) {
     }
 }
 
+// Bootstrap Style Pagination
+// http://www.ericmmartin.com/pagination-function-for-wordpress/
 
+function ppm_paginate($args = null) {
+    $defaults = array(
+        'page' => null, 'pages' => null, 
+        'range' => 3, 'gap' => 3, 'anchor' => 1,
+        'before' => '<div class="text-center"><ul class="pagination">', 'after' => '</ul></div>',
+        'nextpage' => __('&raquo;'), 'previouspage' => __('&laquo'),
+        'echo' => 1
+    );
+
+  $r = wp_parse_args($args, $defaults);
+    extract($r, EXTR_SKIP);
+
+    if (!$page && !$pages) {
+        global $wp_query;
+
+        $page = get_query_var('paged');
+        $page = !empty($page) ? intval($page) : 1;
+
+        $posts_per_page = intval(get_query_var('posts_per_page'));
+        $pages = intval(ceil($wp_query->found_posts / $posts_per_page));
+    }
+    
+    $output = "";
+    if ($pages > 1) {   
+        $output .= "$before";
+        $ellipsis = "<li>...</li>";
+
+        if ($page > 1 && !empty($previouspage)) {
+            $output .= "<li><a href='" . get_pagenum_link($page - 1) . "'>$previouspage</a></li>";
+        }
+        
+        $min_links = $range * 2 + 1;
+        $block_min = min($page - $range, $pages - $min_links);
+        $block_high = max($page + $range, $min_links);
+        $left_gap = (($block_min - $anchor - $gap) > 0) ? true : false;
+        $right_gap = (($block_high + $anchor + $gap) < $pages) ? true : false;
+
+        if ($left_gap && !$right_gap) {
+            $output .= sprintf('%s%s%s', 
+                ppm_paginate_loop(1, $anchor), 
+                $ellipsis, 
+                ppm_paginate_loop($block_min, $pages, $page)
+            );
+        }
+        else if ($left_gap && $right_gap) {
+            $output .= sprintf('%s%s%s%s%s', 
+                ppm_paginate_loop(1, $anchor), 
+                $ellipsis, 
+                ppm_paginate_loop($block_min, $block_high, $page), 
+                $ellipsis, 
+                ppm_paginate_loop(($pages - $anchor + 1), $pages)
+            );
+        }
+        else if ($right_gap && !$left_gap) {
+            $output .= sprintf('%s%s%s', 
+                ppm_paginate_loop(1, $block_high, $page),
+                $ellipsis,
+                ppm_paginate_loop(($pages - $anchor + 1), $pages)
+            );
+        }
+        else {
+            $output .= ppm_paginate_loop(1, $pages, $page);
+        }
+
+        if ($page < $pages && !empty($nextpage)) {
+            $output .= "<li><a href='" . get_pagenum_link($page + 1) . "'>$nextpage</a></li>";
+        }
+
+        $output .= $after;
+    }
+
+    if ($echo) {
+        echo $output;
+    }
+
+    return $output;
+}
+
+/**
+ * Helper function for pagination which builds the page links.
+ *
+ */
+
+function ppm_paginate_loop($start, $max, $page = 0) {
+    $output = "";
+    for ($i = $start; $i <= $max; $i++) {
+        $output .= ($page === intval($i)) 
+            ? "<li><span class='active'>$i</span></li>" 
+            : "<li><a href='" . get_pagenum_link($i) . "' class=''>$i</a></li>";
+    }
+    return $output;
+}
 ?>

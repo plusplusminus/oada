@@ -11,10 +11,10 @@ Stylesheet: Form Styles
 	margin: 1.5em 10px;
 	padding-bottom: 2.2em;
 
-  ul {
-    padding-left: 0;
-    padding-bottom: 20px;
-  }
+	ul {
+		padding-left: 0;
+		padding-bottom: 20px;
+	}
 
 	form {
 		margin: 0.75em 0;
@@ -23,8 +23,7 @@ Stylesheet: Form Styles
 			list-style-type: none;
 			clear: both;
 			margin-bottom: 0.7335em;
-      border: none;
-
+			border: none;
 			label,
 			small {
 				display: none;
@@ -35,13 +34,21 @@ Stylesheet: Form Styles
 		input[type=email],
 		input[type=url],
 		textarea {
-			padding: 3px 6px;
+			padding: 8px 10px;
 			background: #efefef;
-			border: 2px solid #cecece;
+			border: 2px solid transparent;
 			line-height: 1.5em;
+			font-family: @font-entry;
 
 			&:focus {
 				background: #fff;
+				border: 2px solid @brand-info;
+				font-family: @font-entry;
+				color: @brand-info;
+				-webkit-box-shadow: none;
+				   -moz-box-shadow: none;
+					-ms-box-shadow: none;
+						box-shadow: none;
 			}
 
 			/* form validation */
@@ -51,7 +58,7 @@ Stylesheet: Form Styles
 				background-color: #f6e7eb;
 				-webkit-box-shadow: none;
 				   -moz-box-shadow: none;
-				    -ms-box-shadow: none;
+					-ms-box-shadow: none;
 						box-shadow: none;
 			}
 		}
@@ -67,13 +74,33 @@ Stylesheet: Form Styles
 			resize: none;
 			width: 97.3%;
 			height: 150px;
+			&:focus {
+				border: 2px solid @brand-info;
+				font-family: @font-entry;
+				color: @brand-info;
+				-webkit-box-shadow: 0;
+				   -moz-box-shadow: 0;
+					-ms-box-shadow: 0;
+						box-shadow: 0;
+				outline: none;
+			}
 		}
-
 	}
-}
 
 	/* comment submit button */
-	#submit {}
+	#submit {
+		text-transform: uppercase;
+		.kerning();
+		color: @gray-darker;
+		background: none;
+		border: none;
+		float: right;
+		display: block;
+		.transition(0.3s);
+		&:hover{
+			color: @brand-primary;
+		}
+	}
 
 	/* comment form title */
 	#comment-form-title {
@@ -97,4 +124,4 @@ Stylesheet: Form Styles
 	.nocomments {
 		margin: 0 20px 1.1em;
 	}
-
+}

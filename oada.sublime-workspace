@@ -4,40 +4,72 @@
 		"selected_items":
 		[
 			[
-				"font-s",
-				"font-size"
+				"font",
+				"font-weight"
+			],
+			[
+				"text",
+				"text-decoration"
 			],
 			[
 				"te",
-				"text-align"
-			],
-			[
-				"font-fam",
-				"font-family-base"
+				"text-transform"
 			],
 			[
 				"pa",
 				"padding"
 			],
 			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"font-fai",
+				"font-family-sans-serif"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"font-s",
+				"font-size-base"
+			],
+			[
+				"brand-",
+				"brand-primary"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"font-si",
+				"font-size-base"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"font-fam",
+				"font-family-base"
+			],
+			[
 				"bor",
 				"border-radius"
 			],
 			[
-				"font",
-				"font-family"
-			],
-			[
-				"pad",
-				"padding-bottom"
-			],
-			[
 				"bac",
 				"background-color"
-			],
-			[
-				"font-",
-				"font-weight"
 			],
 			[
 				"back",
@@ -64,14 +96,6 @@
 				"border-bottom"
 			],
 			[
-				"fon",
-				"font-weight"
-			],
-			[
-				"mar",
-				"margin-bottom"
-			],
-			[
 				"ser",
 				"service_header"
 			],
@@ -86,10 +110,6 @@
 			[
 				"is_page",
 				"is_page_template"
-			],
-			[
-				"ma",
-				"margin"
 			],
 			[
 				"min",
@@ -148,24 +168,12 @@
 				"the_post_thumbnail"
 			],
 			[
-				"brand-",
-				"brand-danger"
-			],
-			[
-				"text",
-				"text-transform"
-			],
-			[
 				"margin-",
 				"margin-top"
 			],
 			[
 				"in",
 				"inline-block"
-			],
-			[
-				"border",
-				"border-color"
 			],
 			[
 				"blog",
@@ -210,10 +218,6 @@
 			[
 				"i",
 				"italic"
-			],
-			[
-				"font-si",
-				"font-size-small"
 			],
 			[
 				"woocommerce",
@@ -510,39 +514,11 @@
 			[
 				"toggle",
 				"toggleClass"
-			],
-			[
-				"taxo",
-				"taxonomy_obj"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "wp-config-sample.php",
-			"settings":
-			{
-				"buffer_size": 3087,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/library/less/custom-variables.less",
-			"settings":
-			{
-				"buffer_size": 25408,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/library/less/theme.less",
-			"settings":
-			{
-				"buffer_size": 14569,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -583,6 +559,18 @@
 	},
 	"file_history":
 	[
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive-trip.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive-places.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-upcoming.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/footer.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/footer.php",
+		"/Users/iaanvn/Sites/oada/wp-config-sample.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/custom-variables.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/nav.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-places.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-slider.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/theme.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/content.less",
 		"/Users/iaanvn/Sites/jennifer/library/less/custom-variables.less",
 		"/Users/iaanvn/Sites/jennifer/library/less/theme.less",
 		"/Users/iaanvn/Sites/oada/wp-config.php",
@@ -698,19 +686,7 @@
 		"/Users/iaanvn/Sites/devlabel/home.html",
 		"/Users/iaanvn/Sites/devlabel/collective.html",
 		"/Users/iaanvn/Sites/devlabel/library/less/theme.less",
-		"/Users/iaanvn/Sites/devlabel/library/less/bootstrap/buttons.less",
-		"/Users/iaanvn/Sites/devlabel/library/less/custom-variables.less",
-		"/Users/iaanvn/Sites/devlabel/library/less/bootstrap/close.less",
-		"/Users/iaanvn/Sites/rapidspill_main/templates/layouts/layout.liquid",
-		"/Users/iaanvn/Sites/rapidspill_main/templates/products.liquid",
-		"/Users/iaanvn/Sites/rapidspill_main/templates/index.liquid",
-		"/Users/iaanvn/Sites/rapidspill_main/templates/includes/navigation.liquid",
-		"/Users/iaanvn/Sites/rapidspill_main/templates/includes/products/absorbents/booms.liquid",
-		"/Users/iaanvn/Sites/rapidspill_main/templates/about.liquid",
-		"/Users/iaanvn/Sites/rapidspill_main/templates/services.liquid",
-		"/Users/iaanvn/Sites/rapidspill_main/templates/includes/footer.liquid",
-		"/Users/iaanvn/Sites/rapidspill_main/templates/includes/products/absorbents.liquid",
-		"/Users/iaanvn/Sites/rapidspill_main/templates/includes/products/gallery.liquid"
+		"/Users/iaanvn/Sites/devlabel/library/less/bootstrap/buttons.less"
 	],
 	"find":
 	{
@@ -721,6 +697,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/iaanvn/Sites/oada/wp-content/themes/oada",
 			"/Users/iaanvn/Sites/vnl/wp-content/themes/superstore",
 			"/Users/iaanvn/Sites/vnl/wp-content/plugins/woocommerce",
 			"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill",
@@ -819,6 +796,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"experien",
+			"thumbnail",
+			"home-contact-form",
+			"footer",
+			"scrollToTop",
+			"inner-info",
+			"home-ex",
+			"#experiences",
+			"experiences",
+			"experience",
+			"inner",
+			"read",
+			"max-hei",
+			"experience",
+			"inner-info",
+			"transition",
+			"experiences",
+			"place-info",
+			"carousel-caption",
+			"line-",
+			"padding-top",
+			"navbar-nav",
 			"widgettitle",
 			"body",
 			"backgroun",
@@ -924,29 +923,7 @@
 			"button",
 			"300",
 			"600",
-			"333333",
-			"font-siz",
-			"BrainGear",
-			"entry",
-			"padding-top",
-			"size",
-			".title",
-			"nav",
-			"weight",
-			"woo_post_more",
-			"woo_post-More",
-			"woo_post_more",
-			"post-more",
-			"img",
-			"entry",
-			"post-more",
-			"SHARE THIS",
-			"post-utility",
-			"slideToggle",
-			"woo_post_before();",
-			"#D9A675",
-			"hover",
-			"futu"
+			"333333"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1031,94 +1008,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "wp-config-sample.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3087,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 19.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wp-content/themes/oada/library/less/custom-variables.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25408,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11799,
-								11799
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 4842.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/oada/library/less/theme.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14569,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2621,
-								2621
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1750.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],

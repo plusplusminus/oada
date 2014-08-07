@@ -62,7 +62,7 @@
 								        <div class="experience-info">
 								        	<h4 class="trunc"><?php the_title();?></h4>
 								        	<div class="inner-info">
-								        		<?php echo wpautop(get_post_meta($post->ID,'_ppm_trip_summary',true));?>
+							        			<span class="date"><?php _e(wpautop(get_post_meta($post->ID,'_ppm_trip_date',true)));?></span>
 								        	</div>
 								        </div>
 								    </a>
@@ -73,8 +73,8 @@
 
 						<?php endwhile; ?>
 					</div>
-							<?php if (function_exists("emm_paginate")) { ?>
-                  <?php emm_paginate(); ?>
+							<?php if (function_exists("ppm_paginate")) { ?>
+                  <?php ppm_paginate(); ?>
 							<?php } else { ?>
 								<nav class="wp-prev-next">
 									<ul class="clearfix">
