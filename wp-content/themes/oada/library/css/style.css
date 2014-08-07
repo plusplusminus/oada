@@ -7504,6 +7504,7 @@ Stylesheet: Comments
 }
 .nocomments > p {
   padding: 0 20px 10px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .nocomments > h3 {
   padding: 20px 20px 10px;
