@@ -20,6 +20,7 @@ if ( $the_query->have_posts() ) { $count = 0; ?>
 					<?php else: ?>
 						<img class="img-responsive" src="http://placehold.it/1600x650&text=.">
 					<?php endif; ?>
+
 					<div class="carousel-caption">
 						<div class="slide-title">
 							<a href="<?php the_permalink();?>"><?php the_title();?></a>

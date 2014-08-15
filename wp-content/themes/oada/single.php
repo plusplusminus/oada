@@ -19,7 +19,7 @@
 									<h1 class="single-title entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<div class="row">
 										<div class="col-md-4">
-											<?php the_author_link(); ?>
+											<span class="post-author">Writen by: <?php the_author_link(); ?></span>
 										</div>
 										<div class="col-md-8 text-right">
 											<?php $terms = wp_get_post_terms($post->ID, 'category', array("fields" => "all"));
@@ -27,10 +27,8 @@
 												echo '<ul class="list-inline terms">';
 												foreach ( $terms as $term ) { ?>
 													<li>
-												   			<span class="fa-stack fa-lg">
-																<i class="fa <?php echo $term->description;?> fa-stack-1x fa-inverse"></i>
-															</span>
-															<span class="term"><?php echo $term->name; ?></span>
+												   		<i class="fa <?php echo $term->description;?> fa-inverse"></i>
+														<span class="term"><?php echo $term->name; ?></span>
 										  			</li>
 												<?php }
 													echo '</ul>';
@@ -55,7 +53,7 @@
 							</section> <?php // end article section ?>
 
 							<footer class="article-footer single-footer clearfix">
-								<?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?></span>
+								<?php the_tags( '<span class="tags"><span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span>', ' / ', '' ); ?></span>
               					<?php get_ratings($post->ID); ?>
               					<?php woo_story_sharing(); ?>
             				</footer> <?php // end article footer ?>	

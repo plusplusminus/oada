@@ -4,724 +4,532 @@
 		"selected_items":
 		[
 			[
-				"ma",
-				"margin-bottom"
-			],
-			[
-				"has_post",
-				"has_post_thumbnail"
-			],
-			[
-				"te",
-				"text-transform"
-			],
-			[
-				"pa",
-				"padding-left"
-			],
-			[
-				"font-s",
-				"font-size"
-			],
-			[
-				"margin",
-				"margin-bottom"
-			],
-			[
-				"font-si",
-				"font-size-base"
-			],
-			[
-				"experienc",
-				"experience"
-			],
-			[
-				"font",
-				"font-size"
-			],
-			[
-				"font-",
-				"font-family"
-			],
-			[
-				"tex",
-				"text-align"
-			],
-			[
-				"article",
-				"article-header"
-			],
-			[
-				"expe",
-				"experiences"
-			],
-			[
-				"fon",
-				"font-family"
+				"b",
+				"background-color"
 			],
 			[
 				"pad",
 				"padding"
 			],
 			[
-				"co",
-				"color"
+				"pa",
+				"padding-right"
 			],
 			[
-				"mar",
-				"margin-top"
+				"bor",
+				"border"
 			],
 			[
-				"bord",
-				"border-width"
+				"font-",
+				"font-family"
 			],
 			[
-				"fa-stack",
-				"fa-stack-2x"
+				"fo",
+				"font-size"
 			],
 			[
-				"brand-",
-				"brand-primary"
+				"font-s",
+				"font-size-large"
 			],
 			[
 				"font-fa",
-				"font-family-serif"
+				"font-family-sans-serif"
 			],
 			[
-				"marg",
+				"font",
+				"font-family"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"mar",
 				"margin-bottom"
 			],
 			[
-				"get_pos",
-				"get_post_meta"
+				"te",
+				"text-transform"
 			],
 			[
-				"over",
-				"overflow"
-			],
-			[
-				"get_page_by",
-				"get_page_by_title"
-			],
-			[
-				"id",
-				"idObj"
-			],
-			[
-				"get_the_ti",
-				"get_the_title"
-			],
-			[
-				"for",
-				"foreach	foreach …"
-			],
-			[
-				"def",
-				"default"
-			],
-			[
-				"the_post",
-				"the_post_thumbnail"
-			],
-			[
-				"inl",
-				"inline-block"
-			],
-			[
-				"tra",
-				"transition"
-			],
-			[
-				"resul",
-				"result_agent"
-			],
-			[
-				"propctrl",
-				"propctrl_last_check"
-			],
-			[
-				"result",
-				"result_update"
-			],
-			[
-				"data",
-				"data_string"
-			],
-			[
-				"json",
-				"json_encode"
-			],
-			[
-				"ove",
-				"overflow"
-			],
-			[
-				"re",
-				"relative"
-			],
-			[
-				"fi",
-				"files"
-			],
-			[
-				"im",
-				"imageReader"
-			],
-			[
-				"can",
-				"canvas"
-			],
-			[
-				"file",
-				"fileReader"
-			],
-			[
-				"my",
-				"myDropzone"
-			],
-			[
-				"font-siz",
-				"font-size-small"
-			],
-			[
-				"get_templ",
-				"get_template_part"
-			],
-			[
-				"esc",
-				"esc_attr"
-			],
-			[
-				"lo",
-				"location"
-			],
-			[
-				"page",
-				"paged"
-			],
-			[
-				"loca",
-				"location_terms"
-			],
-			[
-				"tran",
-				"transferCalculate"
-			],
-			[
-				"input",
-				"inputRate"
-			],
-			[
-				"inpu",
-				"inputDepost"
-			],
-			[
-				"prop",
-				"properies"
-			],
-			[
-				"cont",
-				"contact"
-			],
-			[
-				"fff",
-				"ffffff"
-			],
-			[
-				"tr",
-				"transition"
-			],
-			[
-				"max-",
-				"max-height"
+				"font-si",
+				"font-size"
 			],
 			[
 				"text",
 				"text-transform"
 			],
 			[
-				"pos",
-				"post_thumbnail_id"
+				"ma",
+				"margin-bottom"
 			],
 			[
-				"table",
-				"tableCell"
+				"border",
+				"border-left"
 			],
 			[
-				"ima",
-				"image_attributes"
+				"font-fai",
+				"font-family-sans-serif"
 			],
 			[
-				"border-co",
-				"border-color"
+				"brand-",
+				"brand-primary"
 			],
 			[
-				"le",
-				"letter-spacing"
+				"font-fam",
+				"font-family-base"
 			],
 			[
-				"max",
-				"max-width"
+				"bac",
+				"background-color"
 			],
 			[
-				"web",
-				"website"
+				"back",
+				"background-color"
 			],
 			[
-				"entry",
-				"entry_id"
-			],
-			[
-				"ap",
-				"api_key"
-			],
-			[
-				"va",
-				"value"
-			],
-			[
-				"query",
-				"query_issues"
-			],
-			[
-				"user",
-				"user_ids"
-			],
-			[
-				"margin-",
-				"margin-right"
-			],
-			[
-				"m",
-				"margin-right"
-			],
-			[
-				"prev",
-				"prevUrl"
-			],
-			[
-				"pre",
-				"prevUrlIndex"
-			],
-			[
-				"cur",
-				"current_url"
-			],
-			[
-				"ajaxC",
-				"ajaxCompletedRoutine"
-			],
-			[
-				"is_sing",
-				"is_singular"
-			],
-			[
-				"get_post",
-				"get_post_format"
-			],
-			[
-				"side",
-				"sidebar-blog"
-			],
-			[
-				"stick",
-				"stickMenu"
-			],
-			[
-				"func",
-				"function_exists"
-			],
-			[
-				"con",
-				"console"
-			],
-			[
-				"sta",
-				"stateObj"
-			],
-			[
-				"lis",
-				"list-style"
-			],
-			[
-				"current",
-				"current_page_item"
-			],
-			[
-				"is_sin",
-				"is_singular"
-			],
-			[
-				"arr",
-				"array"
-			],
-			[
-				"padding",
+				"p",
 				"padding-left"
 			],
 			[
-				"wra",
-				"wrap_start"
+				"baclk",
+				"background-color"
 			],
 			[
-				"single",
-				"singleModal"
+				"font-famil",
+				"font-family-serif"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"ser",
+				"service_header"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"is_page",
+				"is_page_template"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"first",
+				"first-of-type"
+			],
+			[
+				"font-size",
+				"font-size-base"
+			],
+			[
+				"tex",
+				"text-decoration"
 			],
 			[
 				"wp_rese",
 				"wp_reset_query"
 			],
 			[
-				"query_",
-				"query_string"
+				"bo",
+				"bottom"
 			],
 			[
-				"load",
-				"load_jumbtron"
+				"menu",
+				"menu_item"
 			],
 			[
-				"is_ar",
-				"is_archive"
+				"for",
+				"foreach	foreach …"
 			],
 			[
-				"get_query",
-				"get_query_var"
+				"is_a",
+				"is_array"
 			],
 			[
-				"first",
-				"first-child"
+				"get_templ",
+				"get_template_part"
 			],
 			[
-				"get_page_b",
-				"get_page_by_title"
+				"wp",
+				"wpautop"
 			],
 			[
-				"fade",
-				"fadeOut"
-			],
-			[
-				"fa",
-				"fadeOut"
-			],
-			[
-				"in",
-				"init"
-			],
-			[
-				"the_pos",
-				"the_post_thumbnail"
-			],
-			[
-				"campaign",
-				"campaign_item"
-			],
-			[
-				"li",
-				"line-height"
-			],
-			[
-				"_me",
-				"_intimenu"
-			],
-			[
-				"inif",
-				"infinite-button"
-			],
-			[
-				"arg",
-				"margin-right"
+				"pro",
+				"priority"
 			],
 			[
 				"print",
 				"print_r"
 			],
 			[
-				"province_",
-				"province_tax_names"
+				"the_post",
+				"the_post_thumbnail"
 			],
 			[
-				"min",
-				"min-height"
+				"margin-",
+				"margin-top"
 			],
 			[
-				"fad",
-				"fadeIn"
+				"in",
+				"inline-block"
 			],
 			[
-				"mose",
-				"mouseleave"
+				"blog",
+				"bloginfo"
 			],
 			[
-				"child",
-				"child_of"
+				"inl",
+				"inline"
 			],
 			[
-				"btn",
-				"btn-success"
+				"margin",
+				"margin-top"
+			],
+			[
+				"w",
+				"nowrap"
+			],
+			[
+				"fonts-",
+				"font-size"
+			],
+			[
+				"brand",
+				"brand-primary"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"ad",
+				"padding"
 			],
 			[
 				"di",
 				"display"
 			],
 			[
-				"template",
-				"template_name"
+				"i",
+				"italic"
 			],
 			[
-				"post",
-				"post-meta"
+				"woocommerce",
+				"woocommerce-validated"
 			],
 			[
-				"fa-var-pl",
-				"fa-var-play"
+				"borde",
+				"border"
 			],
 			[
-				"fa-var-ca",
-				"fa-var-camera"
+				"tet",
+				"text-align"
 			],
 			[
-				"fa-var-quo",
-				"fa-var-quote-left"
+				"li",
+				"line-height"
 			],
 			[
-				"menu",
-				"menu_headings"
+				"navbar-in",
+				"navbar-inverse-border"
 			],
 			[
-				"default",
-				"default_attr"
+				"Font-s",
+				"font-style"
 			],
 			[
-				"no",
-				"noshares"
+				"gray-dark",
+				"gray-darker"
 			],
 			[
-				"item",
-				"item_output"
+				"singl",
+				"single-social"
 			],
 			[
-				"get_tem",
-				"get_template_part"
+				"split-",
+				"split-border-top"
 			],
 			[
-				"me",
-				"members"
+				"trans",
+				"transition"
 			],
 			[
-				"obje",
-				"object_type"
+				"le",
+				"left"
 			],
 			[
-				"get_post_t",
-				"get_post_type"
+				"site",
+				"site_description"
+			],
+			[
+				"site_",
+				"site_url"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"video",
+				"video_link"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"widt",
+				"width"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"hi",
+				"highlight-color"
+			],
+			[
+				"pri",
+				"primary-color"
+			],
+			[
+				"link",
+				"link-hover-color"
+			],
+			[
+				"font-f",
+				"font-family-thin"
+			],
+			[
+				"padd-lar",
+				"padding-large-horizontal"
+			],
+			[
+				"padding-la",
+				"padding-large-vertical"
+			],
+			[
+				"font-fal",
+				"font-family-bold"
+			],
+			[
+				"pd",
+				"padding"
+			],
+			[
+				"gfor",
+				"gform_footer"
+			],
+			[
+				"gform_b",
+				"gform_body"
+			],
+			[
+				"gfo",
+				"gform_wrapper"
+			],
+			[
+				"wid",
+				"widget_policies"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"img",
+				"img-responsive"
+			],
+			[
+				"sty",
+				"stylesheet_directory"
+			],
+			[
+				"the_t",
+				"the_title"
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"list-g",
+				"list-group-item"
+			],
+			[
+				"gray-light",
+				"gray-lighter"
+			],
+			[
+				"border-left",
+				"border-left-color"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"font-size-",
+				"font-size-large"
+			],
+			[
+				"t",
+				"title	Attr"
+			],
+			[
+				"att",
+				"attachments"
+			],
+			[
+				"the_pos",
+				"the_post_thumbnail"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"to",
+				"today"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"un",
+				"unserialize"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"loc",
+				"locations_html"
+			],
+			[
+				"con",
+				"contact_name"
+			],
+			[
+				"conact_n",
+				"contact_name"
+			],
+			[
+				"get_t",
+				"get_the_title"
+			],
+			[
+				"html",
+				"html_output"
+			],
+			[
+				"pp",
+				"ppm_featured_slider"
+			],
+			[
+				"count",
+				"count_size"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"jQ",
+				"jQuery"
+			],
+			[
+				"bed",
+				"bedrooms"
+			],
+			[
+				"is_in",
+				"is_int"
+			],
+			[
+				"is",
+				"is_array"
+			],
+			[
+				"ima",
+				"images"
+			],
+			[
+				"sid",
+				"sidebar-nav-fixed"
+			],
+			[
+				"at",
+				"attachment"
+			],
+			[
+				"attachmen",
+				"attachments"
+			],
+			[
+				"attac",
+				"attachment"
+			],
+			[
+				"page",
+				"pageoption"
+			],
+			[
+				"inlin",
+				"inline-block"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "wp-content/themes/oada/library/less/custom-variables.less",
-			"settings":
-			{
-				"buffer_size": 25429,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/library/less/theme.less",
-			"settings":
-			{
-				"buffer_size": 14549,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/archive-places.php",
-			"settings":
-			{
-				"buffer_size": 4343,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n/*\nTemplate Name: Blog\n*/\n?>\n\n<?php get_header(); ?>\n<?php $cat = get_query_var('cats'); ?>\n<?php $type = get_query_var('type'); ?>\n\n<?php $idObj = get_category_by_slug($cat );?>\n<?php $trip = get_page_by_path($type, OBJECT, 'trip'); ?>\n\n<?php\n// Fix for the WordPress 3.0 \"paged\" bug.\n$paged = 1;\nif ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); }\nif ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }\n$paged = intval( $paged );\n\n$query_args = array(\n          'post_type' => 'post', \n          'paged' => $paged\n        );\n\n$query_args = apply_filters( 'woo_blog_template_query_args', $query_args ); // Do not remove. Used to exclude categories from displaying here.\n\nremove_filter( 'pre_get_posts', 'woo_exclude_categories_homepage', 10 );\n\nquery_posts( $query_args );\n?>\n<?php $default = array('class'=>'img-responsive'); ?>\n    <div class=\"container\">\n\n      <div id=\"content\" class=\"clearfix row\">\n\n        <div id=\"main\" class=\"col-md-12 clearfix experiences archive\" role=\"main\">\n\n          <?php global $brew_options; ?>\n          <h1>Blog</h1>\n\n          <?php if (have_posts()) :  $count=0; ?>\n            <div class=\"row\">\n              <?php  while (have_posts()) : the_post(); $count++; ?>\n\n              <div class=\"<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>\">\n\n                <article id=\"post-<?php the_ID(); ?>\" <?php post_class( 'clearfix experience' ); ?> role=\"article\">\n\n                  <a href=\"<?php the_permalink();?>\">\n                        <?php the_post_thumbnail('large',$default); ?>\n                        <div class=\"experience-info\">\n                          <div class=\"row\">\n                            <div class=\"col-md-9\">\n                              <h4 class=\"trunc\"><?php the_title();?></h4>\n                            </div>\n                            <div class=\"col-md-3\">\n                              <?php $rating = get_post_meta($post->ID,'_ppm_experience_rating',true); ?>\n                              <?php echo ppm_star_rating($rating); ?>\n                            </div>\n                          </div>\n                        </div>\n                    </a>\n                    <?php if ($count <= 2) : ?>\n                      <footer class=\"article-footer clearfix\">\n                        <?php the_excerpt();?>\n                        <?php the_tags( '<span class=\"tags-title\">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>\n                      </footer> <?php // end article footer ?>\n                    <?php endif; ?>\n\n                </article> <?php // end article ?>\n\n              </div>\n              <?php if ($count == 2) echo '<div class=\"clearfix\"></div>'; ?>\n\n            <?php endwhile; ?>\n          </div>\n\n              <?php if (function_exists(\"emm_paginate\")) { ?>\n                  <?php emm_paginate(); ?>\n              <?php } else { ?>\n                <nav class=\"wp-prev-next\">\n                  <ul class=\"clearfix\">\n                    <li class=\"prev-link\"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>\n                    <li class=\"next-link\"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>\n                  </ul>\n                </nav>\n              <?php } ?>\n\n          <?php else : ?>\n\n              <article id=\"post-not-found\" class=\"hentry clearfix\">\n                <header class=\"article-header\">\n                  <h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>\n                </header>\n                <section class=\"entry-content\">\n                  <p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>\n                </section>\n                <footer class=\"article-footer\">\n                    <p><?php _e( 'This is the error message in the archive.php template.', 'bonestheme' ); ?></p>\n                </footer>\n              </article>\n\n          <?php endif; ?>\n\n        </div> <?php // end #main ?>\n\n\n      </div> <?php // end #content ?>\n\n    </div> <?php // end ./container ?>\n\n<?php get_footer(); ?>\n\n\n\n",
-			"file": "wp-content/themes/oada/template-blog.php",
-			"file_size": 4121,
-			"file_write_time": 130516174320000000,
-			"settings":
-			{
-				"buffer_size": 4121,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/template-places.php",
-			"settings":
-			{
-				"buffer_size": 4383,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/archive.php",
-			"settings":
-			{
-				"buffer_size": 5525,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/template-trips.php",
-			"settings":
-			{
-				"buffer_size": 3214,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/archive-trip.php",
-			"settings":
-			{
-				"buffer_size": 3645,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/functions.php",
-			"settings":
-			{
-				"buffer_size": 31130,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/includes/js/ppm.js",
-			"settings":
-			{
-				"buffer_size": 1242,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/footer.php",
-			"settings":
-			{
-				"buffer_size": 871,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/home-experience.php",
-			"settings":
-			{
-				"buffer_size": 194,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/single-places.php",
-			"settings":
-			{
-				"buffer_size": 7848,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/single-trip.php",
-			"settings":
-			{
-				"buffer_size": 6552,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/plugins/cmb_field_map-master/cmb-field-map.php",
-			"settings":
-			{
-				"buffer_size": 1819,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/sidebar-experience.php",
-			"settings":
-			{
-				"buffer_size": 4213,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/single.php",
-			"settings":
-			{
-				"buffer_size": 3281,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 127 files for \"redux/options/brew_options/sections\"\n\n0 matches across 0 files\n\n\nSearching 154 files for \"redux/options/brew_options/sections\"\n\n/Users/admin/Documents/Sites/oada/wp-content/themes/oada/functions.php:\n  281  \n  282  \n  283: add_filter('redux/options/brew_options/sections', 'child_sections');\n  284  \n  285  // let's create the function for the custom type\n\n1 match in 1 file\n\n\nSearching 127 files for \"sections\"\n\n0 matches across 0 files\n\n\nSearching 154 files for \"sections\"\n\n/Users/admin/Documents/Sites/oada/wp-content/themes/oada/functions.php:\n   22  add_image_size('slide-image',1600,650,true);\n   23  \n   24: function child_sections($sections){\n   25:     //$sections = array();\n   26:     $sections[] = array(\n   27          'icon'          => 'ok',\n   28          'icon_class'    => 'fa fa-gears',\n   ..\n   63      );\n   64  \n   65:      $sections[] = array(\n   66          'icon'          => 'ok',\n   67          'icon_class'    => 'fa fa-heart',\n   ..\n  103      );\n  104  \n  105:     return $sections;\n  106  }\n  107  \n  ...\n  281  \n  282  \n  283: add_filter('redux/options/brew_options/sections', 'child_sections');\n  284  \n  285  // let's create the function for the custom type\n\n8 matches in 1 file\n\n\nSearching 157 files for \"find out\"\n\n0 matches across 0 files\n\n\nSearching 826 files for \"find out\"\n\n/Users/admin/Documents/Sites/oada/wp-content/themes/plussed/library/bones.php:\n  344  	global $post;\n  345  	// edit here if you like\n  346: return '...</p><p><a class=\"excerpt-read-more\" href=\"'. get_permalink($post->ID) . '\" title=\"'. __( 'Read', 'bonestheme' ) . get_the_title($post->ID).'\">'. __( 'Find Out More', 'bonestheme' ) .' <span class=\"fa fa-angle-right\"></span></a>';\n  347  }\n  348  \n\n1 match in 1 file\n\n\nSearching 157 files for \".archive\"\n\n/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/css/style.css:\n 7769    text-decoration: none;\n 7770  }\n 7771: .archive-title {\n 7772    margin-top: 0;\n 7773  }\n ....\n 7917  \n 7918  Wordpress automatically adds classes to certain pages.  You can target\n 7919: pages with something such as  body.tag or body.archive\n 7920  ******************************************************************/\n 7921  /* for sites that are read right to left (i.e. hebrew) */\n ....\n 8478    margin-top: 100px;\n 8479  }\n 8480: .archive #content {\n 8481    margin-top: 100px;\n 8482  }\n 8483: .archive .hentry {\n 8484    margin-bottom: 0;\n 8485  }\n 8486: .archive .article-footer {\n 8487    background: #fff;\n 8488  }\n\n/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/brew/body.less:\n    6  \n    7  Wordpress automatically adds classes to certain pages.  You can target\n    8: pages with something such as  body.tag or body.archive\n    9  ******************************************************************/\n   10  \n   ..\n   13  .home {}                          /* home page */\n   14  .blog {}                          /* blog template page */\n   15: .archive {}                       /* archive page */\n   16  .date {}                          /* date archive page */\n   17  	.date-paged-1 {}                /* replace the number to the corresponding page number */\n\n/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/brew/content.less:\n   87  .single-title {}\n   88  .page-title {}\n   89: .archive-title { \n   90    margin-top: 0;\n   91  }\n\n/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/theme.less:\n  327  }\n  328  \n  329: .archive\n  330  {	\n  331  	#content {\n\n9 matches across 4 files\n",
-			"settings":
-			{
-				"buffer_size": 3541,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/library/css/style.css",
-			"settings":
-			{
-				"buffer_size": 187183,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/plussed/library/bones.php",
-			"settings":
-			{
-				"buffer_size": 12487,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/home-articles.php",
-			"settings":
-			{
-				"buffer_size": 1267,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/home-slider.php",
-			"settings":
-			{
-				"buffer_size": 1131,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/home-upcoming.php",
-			"settings":
-			{
-				"buffer_size": 1304,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 367.0,
 		"selected_items":
 		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
 			[
 				"",
 				"Set Syntax: PHP"
@@ -731,7 +539,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 392.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -751,218 +559,224 @@
 	},
 	"file_history":
 	[
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-slider.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/single.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/page-home.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/single-places.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/single-trip.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/sidebar-experience.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/functions.php",
-		"/Users/admin/Documents/Sites/oada/wp-config.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-places.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-connect.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/header.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/brew/nav.less",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/bootstrap/buttons.less",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/plussed/library/brew.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-upcoming.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/footer.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/brew/footer.less",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/plussed/library/bones.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-experience.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/includes/js/ppm.js",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/brew/content.less",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/theme.less",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/archive.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/template-trips.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/template-blog.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/template-places.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/plussed/page.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/bootstrap/theme.less",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/custom-variables.less",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/plussed/header.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/plussed/template-home.php",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/plussed/library/bones.php",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/single.php",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/includes/js/gamma.js",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/library/less/theme.less",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/plussed/page-full-width.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/page.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/library/less/theme.less",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/plussed/library/metabox/init.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/template-profile.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/single-woo_estate.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/functions.php",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/library/less/brew/wp-core.less",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/template-check.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/agents/css/theme-style.css",
-		"/Users/admin/Documents/Sites/dev/propertycloud/agents/js/script.js",
-		"/Users/admin/Documents/Sites/dev/propertycloud/propertycloud/includes/theme-functions.php",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/plussed/functions.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/agents/submit.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/plugins/json-api/controllers/core.php",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/archive.php",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/functions.php",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/includes/js/third-party.js",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/includes/js/ppm.js",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/archive-woo_estate.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/plussed/library/metabox/js/cmb.js",
-		"/Users/admin/Documents/Sites/dev/propertycloud/agents/index.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/tempalte-agent-archive.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/style.css",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/sidebar-branch.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/taxonomy-location.php",
-		"/Users/admin/Downloads/Agency Integration Specification v4/PHP Samples/FetchChangedListings.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/header.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/home-about.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/home-contact.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/template-imprint.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/page-home.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/header.php",
-		"/Users/admin/Downloads/dropzone-3.9.0/downloads/dropzone.js",
-		"/Users/admin/Documents/Sites/dnd/dropzone.js",
-		"/Users/admin/Documents/Sites/dnd/css/dropzone.css",
-		"/Users/admin/Documents/Sites/dnd/file.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/includes/js/ppm.js",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/functions.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/home-services.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/home-news.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/footer.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/library/less/theme.less",
-		"/Users/admin/Documents/Sites/dnd/index.html",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/includes/search-box.php",
-		"/Users/admin/Downloads/dropzone-3.9.0/downloads/css/dropzone.css",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/home-imprint.php",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/content-contact.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/template-imprint.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/plussed/library/less/brew/footer.less",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/library/less/brew/footer.less",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/includes/js/ppm.js",
-		"/Users/admin/Library/Caches/Cleanup At Startup/Transmit/F11B8CA5-1653-4807-A22F-1B51A2D35F26/search.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/search.php",
-		"/Users/admin/Downloads/estate 2/includes/theme-functions.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloud/template-agents.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/includes/js/third-party.js",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/plussed/page.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/includes/theme-cpt.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/content-search.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/sidebar.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloud/single-woo_estate.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/woocommerce/myaccount/my-menu.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/woocommerce/myaccount/my-address.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/library/less/custom-variables.less",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/library/less/brew/footer.less",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/content-property.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/includes/featured-latest.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/woocommerce/myaccount/my-account.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/plugins/woocommerce/templates/myaccount/my-address.php",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/includes/js/third-party.js",
-		"/Users/admin/Documents/Sites/netcms/wp-content/themes/netcms/library/less/custom-variables.less",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/footer.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/single.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/template-users.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/template-database.php",
-		"/Users/admin/Documents/Sites/netcms/wp-config.php",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/home-header.php",
-		"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/content-blogsection.php",
-		"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/single-campaigns.php",
-		"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/footer-box.php",
-		"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/template-campaign.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloud/includes/metabox/js/cmb.js",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloud/footer.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloud/includes/theme-cpt.php",
-		"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloud/includes/metabox/init.php",
-		"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/template-home.php",
-		"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/css/less/theme.less",
-		"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/footer.php",
-		"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/header.php",
-		"/Users/admin/Documents/Sites/rails/treebook/config/initializers/redis.rb",
-		"/Users/admin/Documents/Sites/rails/treebook/config/routes.rb",
-		"/Users/admin/Documents/Sites/rails/treebook/Gemfile"
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/layouts/layout.liquid",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/sidebar-experience.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/custom-variables.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/header.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/form.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/functions.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/single.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/theme.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/content.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/comments.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/tables.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/template-trips.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/single-places.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/template-places.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/template-blog.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive-places.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive-trip.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/brew.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-upcoming.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/footer.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/footer.php",
+		"/Users/iaanvn/Sites/oada/wp-config-sample.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/nav.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-places.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-slider.php",
+		"/Users/iaanvn/Sites/jennifer/library/less/custom-variables.less",
+		"/Users/iaanvn/Sites/jennifer/library/less/theme.less",
+		"/Users/iaanvn/Sites/oada/wp-config.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/209FC63A-231E-429C-97F2-2C6BF8C51504/functions.php",
+		"/Users/iaanvn/Sites/cmv5/templates/includes/navigation.liquid",
+		"/Users/iaanvn/Sites/cmv5/templates/index.liquid",
+		"/Users/iaanvn/Sites/cmv5/templates/layouts/layout.liquid",
+		"/Users/iaanvn/Sites/cmv5/templates/includes/footer.liquid",
+		"/Users/iaanvn/Sites/cmv5/templates/about.liquid",
+		"/Users/iaanvn/Sites/cmv5/templates/clients.liquid",
+		"/Users/iaanvn/Sites/cmv5/templates/work.liquid",
+		"/Users/iaanvn/Sites/cmv5/templates/single.liquid",
+		"/Users/iaanvn/Sites/cmv5/templates/photographers.liquid",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/4253E1DE-A4BA-49BA-830E-64841609005D/footer.php",
+		"/Users/iaanvn/Sites/cmv5/templates/model.liquid",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/DC9AEC14-F306-498E-973D-93C947F549EF/functions.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/A30EE838-845D-4A83-8BC6-4C109B9A3B35/script.js",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/8ADE82B0-3704-44FD-97AF-90BC1F780928/scripts.js",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/includes/course-item.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/includes/package-single.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/enquire.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/customise.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/packages.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/includes/navigation.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/contact.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/index.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/about.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/includes/footer.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/public/js/general.js",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/news.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/includes/news-item.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/course-single.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/news-single.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/all.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/excursions.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/includes/excursion-single.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/models/model.json",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/public/fonts/glyphicons-halflings-regular.svg",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/package-single.liquid",
+		"/Users/iaanvn/Sites/momentumgolf/momentumgolf.sublime-project",
+		"/Users/iaanvn/Sites/aimeejones/prototype/mixture.json",
+		"/Users/iaanvn/Sites/aimeejones/prototype/converted-html/index.html",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/index.liquid",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/work.liquid",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/includes/navigation.liquid",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/postsingle.liquid",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/about.liquid",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/includes/post.liquid",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/includes/sidebar.liquid",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/investment.liquid",
+		"/Users/iaanvn/Sites/aimeejones/aimeejones.sublime-project",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/contact.liquid",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/includes/footer.liquid",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/model.liquid",
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/layouts/layout.liquid",
+		"/Users/iaanvn/Sites/vnl/wp-content/themes/vnl/custom.less",
+		"/Users/iaanvn/Sites/vnl/wp-content/themes/vnl/template-sitemap.php",
+		"/Users/iaanvn/Sites/vnl/wp-config.php",
+		"/Users/iaanvn/Sites/vnl/wp-content/themes/superstore/css/layout.less",
+		"/Users/iaanvn/Sites/henrychen/prototype/public/css/less/theme.less",
+		"/Users/iaanvn/Sites/henrychen/prototype/templates/model.liquid",
+		"/Users/iaanvn/Sites/submission/public/css/less/theme.less",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/9A121F8A-1B53-4C16-AA91-9A6DE094C7CE/header.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/plussed/library/navwalker.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/footer.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/taxonomy-product-category.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/plussed/404.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/plussed/library/brew.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/page-home.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/includes/js/third-party.js",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/home-custom.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-config.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/functions.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/library/less/theme.less",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/template-services.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/home-tollfree.php",
+		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/template-training.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/includes/js/ppm.js",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/template-contact.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/taxonomy-product-category.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed/library/brew.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/header.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/library/less/theme.less",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/home-tollfree.php",
+		"/Users/admin/Documents/Sites/rapidspill/.gitignore",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed/functions.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/home-accreditations.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/single-service.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed/README.md",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/page-home.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/functions.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/template-about.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed/taxonomy-product-category.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/library/less/brew/footer.less",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed/library/bones.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/library/less/custom-variables.less",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/library/less/font-awesome/less/variables.less",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/template-services.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/template-products.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/plugins/show-some-love-kikicoza/show-some-love-plugin.php",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/plugins/show-some-love-kikicoza/css/sp-vendors-style.css",
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/includes/js/third-party.js"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
-			"/Users/admin/Documents/Sites/oada/wp-content/themes/oada",
-			"/Users/admin/Documents/Sites/oada/wp-content/themes",
-			"/Users/admin/Documents/Sites/oada/wp-content/themes/oada",
-			"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library",
-			"/Users/admin/Documents/Sites/oada/wp-content/themes/oada",
-			"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library",
-			"/Users/admin/Documents/Sites/oada/wp-content/themes/plussed",
-			"/Users/admin/Documents/Sites/oada/wp-content/themes/oada",
-			"/Users/admin/Documents/Sites/retutpro/wp-content/themes/canvas",
-			"/Users/admin/Documents/Sites/retutpro/wp-content/themes/bootstrap",
-			"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/plussed",
-			"/Users/admin/Documents/Sites/lindytruter/wp-content/themes",
-			"/Users/admin/Documents/Sites/lindytruter",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/plussed/library/metabox",
-			"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/plussed",
-			"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter",
-			"/Users/admin/Documents/Sites/lindytruter",
-			"/Users/admin/Documents/Sites/lindytruter/wp-content/themes/lindytruter/library/less",
-			"/Users/admin/Documents/Sites/dev/propertycloud",
-			"/Users/admin/Documents/Sites/dev/propertycloud/propertycloud",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/plugins/swiftype-search",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloud",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/plugins/swiftype-search",
-			"/Users/admin/Downloads/estate 2/includes",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloudfinal/includes",
-			"/Users/admin/Downloads/estate 2/includes",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/plussed/library/metabox",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/plugins/woocommerce",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloud/includes/metabox",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloud",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloud/includes",
-			"/Users/admin/Documents/Sites/dev/propertycloud/wp-content/themes/propertycloud",
-			"/Users/admin/Documents/Sites/da/development/wp-content/plugins/gravityforms",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/css/less",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da",
-			"/Users/admin/Documents/Sites/da/development/wp-content/plugins/gravityforms",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/canvas",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/css/less",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/css/less",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/canvas/includes",
-			"/Users/admin/Documents/Sites/da/development/wp-admin",
-			"/Users/admin/Documents/Sites/da/development/wp-content/plugins/gravityformsmailchimp",
-			"/Users/admin/Documents/Sites/da/development",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/css/less",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/canvas",
-			"/Users/admin/Documents/Sites/da/development/wp-content/plugins/gravityforms",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/css/less",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/css/less",
-			"/Users/admin/Documents/Sites/da/development/wp-admin",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/css/less",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/css/less",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/canvas",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da/includes/metabox",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes/da",
-			"/Users/admin/Documents/Sites/da/development/wp-content/themes",
-			"/Users/admin/Documents/Sites/dev/tpb/wp-content/themes/tpbv3/includes/js",
-			"/Users/admin/Documents/Sites/dev/dufrasnes/wp-content/themes/simplemag",
-			"/Users/admin/Documents/Sites/dev/svisser/wp-content/themes/function",
-			"/Users/admin/Documents/Sites/dev/svisser/wp-content",
-			"/Users/admin/Documents/Sites/dev/svisser",
-			"/Users/admin/Documents/Sites/dev/operfect/wp-content/plugins/woocommerce",
-			"/Users/admin/Documents/Sites/dev/tpb/wp-content/plugins/woocommerce",
-			"/Users/admin/Documents/Sites/dev/tpb/wp-content/themes/tpbv3",
-			"/Users/admin/Documents/Sites/dev/tpb/wp-content/plugins/woocommerce",
-			"/Users/admin/Documents/Sites/dev/tpb/wp-content/themes/tpbv3",
-			"/Users/admin/Documents/Sites/dev/tpb/wp-content/plugins/woocommerce",
-			"/Users/admin/Documents/Sites/dev/tpb/wp-content/themes/tpbv3/woocommerce",
+			"/Users/iaanvn/Sites/oada/wp-content/themes/oada",
+			"/Users/iaanvn/Sites/oada/wp-content/themes",
+			"/Users/iaanvn/Sites/oada/wp-content/themes/oada",
+			"functions*.php",
+			"",
+			"/Users/iaanvn/Sites/oada/wp-content/themes",
+			"/Users/iaanvn/Sites/oada/wp-content/themes/oada",
+			"/Users/iaanvn/Sites/vnl/wp-content/themes/superstore",
+			"/Users/iaanvn/Sites/vnl/wp-content/plugins/woocommerce",
+			"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill",
+			"/Users/iaanvn/Sites/rapidspill/wp-content/themes",
+			"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill",
+			"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed",
+			"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill",
+			"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed",
+			"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/library/less",
+			"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed",
+			"/Users/iaanvn/Sites/devlabel",
+			"",
+			"/Users/iaanvn/Sites/netcms/wp-content/themes/netcms/library/less/bootstrap",
+			"",
+			"/Users/iaanvn/Sites/louisevoster/wp-content/themes/canvas",
+			"/Users/iaanvn/Sites/louisevoster/wp-content/themes/lousievoster",
+			"/Users/iaanvn/Sites/louisevoster/wp-content/themes/canvas",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap/woocommerce",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/retutpro",
+			"/Users/iaanvn/Sites/retutpro/",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/plugins/woocommerce",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"",
+			"/Users/iaanvn/Sites/retutpro/wp-content",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap/woocommerce",
+			"/Users/iaanvn/Sites/retutpro/wp-content/plugins",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap/woocommerce",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/canvas",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas",
+			"",
+			"/Users/iaanvn/Sites/marinas/wp-content",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas/library/less/brew",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/plussed",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas/library/less/brew",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/plussed",
+			"",
+			"/Users/iaanvn/Sites/visiononfire/wp-content/plugins/woodojo",
+			"",
+			"<open files>",
+			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/",
+			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/bootstrap",
+			"",
+			"/Users/admin/Documents/Sites/ppmv3/wp-content/themes/canvas",
 			"/Users/admin/Documents/Sites/dev/tpb/wp-content/plugins/woocommerce-gateway-payfast",
 			"/Users/admin/Documents/Sites/dev/tpb/wp-content/plugins/woocommerce",
 			"/Users/admin/Documents/Sites/dev/nadiab/wp-content/themes/nadiab",
@@ -988,134 +802,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			".archive",
-			"archive",
-			".experience",
-			"bones_excerpt_more",
-			"find out",
-			"place highl",
-			"Connected Places",
-			"home",
-			"#place",
-			"widget",
-			"gallery",
-			"child_sections",
-			"sections",
-			"redux/options/brew_options/sections",
-			"map",
-			"terms",
-			"uploads",
+			"comments",
+			"border",
+			"even",
+			"shadow",
+			"respond-form",
+			"form",
+			"h3",
+			"title",
+			"respond",
+			"comments",
+			"article",
+			"rating",
+			"table",
+			"social",
+			"source sans",
+			"li",
+			"wp-caption-text",
+			"caption",
+			"related-experiences",
+			"over",
+			"overide",
+			"emm_paginate",
+			"logo",
+			"experien",
+			"thumbnail",
+			"home-contact-form",
+			"footer",
+			"scrollToTop",
+			"inner-info",
+			"home-ex",
+			"#experiences",
+			"experiences",
+			"experience",
+			"inner",
+			"read",
+			"max-hei",
+			"experience",
+			"inner-info",
+			"transition",
+			"experiences",
+			"place-info",
+			"carousel-caption",
+			"line-",
+			"padding-top",
+			"navbar-nav",
+			"widgettitle",
+			"body",
+			"backgroun",
+			"title",
+			"wedding",
+			"publi",
+			"subject",
+			"more",
+			"packages",
+			"search",
+			"Surnam",
+			"wrap",
+			"img-wrap",
+			"======",
+			"price",
+			"slider",
+			"700",
+			"resul",
 			"entry",
-			"places",
-			"single-places",
+			"modal",
+			"icon-fixed-widt",
+			"secondary nav",
+			"secondary",
+			"nav",
+			"more_link",
+			"view_more",
+			"more_link",
+			"more_",
+			"title",
+			"comment-author",
+			"avat",
+			"-webkit-transform: translateZ(1px);",
+			"webk",
+			"train",
+			"service",
+			"panel",
+			"service_hea",
+			"flex",
+			"main",
+			"nav",
+			"excerpt-read-more",
+			"nav",
+			"wp_bootstrap_navwalker",
+			"bootst",
+			"regist",
+			"sideba",
+			"register",
+			"navicon",
+			"nav",
+			"height",
+			"registe",
+			"gallery",
+			"product",
+			"register_sidebar",
+			"nav {",
+			"nav",
 			"border-radius",
 			"border-",
-			"excerpt-read-more",
-			"excerpt",
-			"map",
-			"fa-chevron-right",
-			"#content",
-			"@border-radius-base",
-			"border-r",
-			"navbar",
-			"places",
-			"globa",
-			"sharin",
-			".=",
-			"sharing",
-			"get_prev",
-			"col-md-6",
-			"adjacent",
-			"next_post",
-			"gamma-bu",
-			"gamma-btn-ssplay",
-			"sharing",
-			"navbar-header",
-			"brand",
-			"navb",
-			"style",
-			"navbar-nav",
-			"breaks",
-			"min",
-			"break",
-			"...",
-			"emm_paginate",
-			"737",
-			"classie",
-			"single",
-			"description",
-			"_loadSVItemFromGrid",
-			"_loadSVItemFromGrid ",
-			"description",
-			"h3",
-			"single",
-			"post_select",
-			"post_sel",
-			"field_",
-			"user_",
-			"field_group",
-			"print_r",
-			"json_api_encode_acf",
-			"user",
-			"style.css",
-			"add_image_size",
-			"logeod_logo",
-			"alignnone",
-			"alignbone",
-			"entry",
-			"wp_generate_attachment_metadata",
-			"create_prop",
-			"user",
-			"role",
-			"agents",
-			"includes",
-			".js",
-			"cmb",
-			"cmb.",
-			"cmb",
-			"$(\"#e1\").select2();",
-			"select2",
-			"tag_select",
-			"pinter",
-			"%;\n",
-			"posts_result",
-			"work-s",
-			"branc",
-			"faceb",
-			"regular-text",
-			"pinterest",
-			"pinter",
-			"user",
-			"flex",
-			"h2 {",
-			"h2",
-			"24px",
-			"h1",
-			".select2-container-multi .select2-choices .select2-search-choice",
-			"price",
-			"Bathrooms",
-			"bedrooms",
-			"fileReader",
-			"createTh",
-			"create",
-			"enqueueThumbnail",
-			"drop(",
-			"drop",
-			"drop(",
-			"drop",
-			"accept",
-			"url",
-			"createThumbnail",
-			"call(",
-			"call",
-			"thumbnail",
-			"emit",
-			"fileReader",
-			"createThum",
-			"_ref",
-			"thumbnailElement",
-			"thumbnail",
-			"createThumbnail"
+			"btn",
+			"button",
+			"primary",
+			"more_link",
+			"dragover",
+			"collective",
+			"header",
+			"team",
+			"btn-dev",
+			"long",
+			"btn",
+			"info",
+			"btn",
+			"primary",
+			"buttons",
+			"hover",
+			"transition",
+			"close",
+			"hover",
+			"button",
+			"close",
+			"open",
+			"join the",
+			"modal",
+			"flexslider-icon"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1123,29 +937,34 @@
 		"regex": false,
 		"replace_history":
 		[
-			"Garages",
-			"Bathrooms",
-			"h3",
-			"cause",
-			"Archive",
-			"Issue",
-			"_4",
-			"_$",
-			"btn btn-more view-more more-link btn-block",
-			"../images/",
-			"people",
-			"Related Issue",
-			"Campaign",
-			"Issue",
-			"Issues",
-			"pr",
-			"province",
-			"role",
-			"People",
-			"people",
-			"People",
-			"State",
-			"jQuery",
+			"ppm_paginate",
+			"result",
+			"training",
+			"service",
+			"						<img src=\"holder.js/100%x150/auto/text:image/#ccc:#fff\">\n",
+			"						<img src=\"holder.js/100%x150/auto/text:image/#ccc:#000\">\n",
+			"400",
+			"800",
+			"636467",
+			"Braingear",
+			".transition(0.2s);",
+			"transition(0.2s)",
+			" ",
+			"",
+			"<ul class=\"nav nav-pills nav-pills-small\"><li class=\"active\"><a href=\"#\">Article Category</a></li></ul>",
+			"text-center",
+			"p",
+			"http://clients.plusplusminus.co.za/",
+			"collaborator",
+			"cccccc",
+			"http://testing.da.org.za",
+			"http://localhost/da/development",
+			"",
+			"</h3>",
+			"<h3>",
+			"",
+			"span",
+			"client",
 			"marketplace",
 			".woocommerce .woo-cart",
 			"",
@@ -1193,815 +1012,11 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"folders":
-	[
-		{
-			"follow_symlinks": true,
-			"path": "/Users/admin/Documents/Sites/oada"
-		}
-	],
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "wp-content/themes/oada/library/less/custom-variables.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25429,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								23216,
-								23216
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS-sublime-master/LESS.tmLanguage"
-						},
-						"translation.x": 11.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wp-content/themes/oada/library/less/theme.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14549,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5193,
-								5193
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS-sublime-master/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5205.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/oada/archive-places.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4343,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2257,
-								2257
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 758.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "wp-content/themes/oada/template-blog.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4121,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2562,
-								2197
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 610.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wp-content/themes/oada/template-places.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 4383,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1178.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "wp-content/themes/oada/archive.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5525,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4193,
-								4193
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 977.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "wp-content/themes/oada/template-trips.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3214,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1553,
-								1553
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 410.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "wp-content/themes/oada/archive-trip.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3645,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2595,
-								2595
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 837.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"file": "/Users/admin/Downloads/Proofset06/_0003_03-OADA_SingleTrip.jpg",
-					"semi_transient": false,
-					"stack_index": 23,
-					"type": "image"
-				},
-				{
-					"buffer": 8,
-					"file": "wp-content/themes/oada/functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 31130,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								27735,
-								27678
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 10888.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "wp-content/themes/oada/includes/js/ppm.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1242,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1101,
-								738
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 88.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "wp-content/themes/oada/footer.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 871,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								551,
-								551
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"default_dir": "/Users/admin/Documents/Sites/oada/wp-content/themes/oada",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "wp-content/themes/oada/home-experience.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 194,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								175,
-								175
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "wp-content/themes/oada/single-places.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7848,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3004,
-								3004
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1311.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "wp-content/themes/oada/single-trip.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6552,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5490,
-								5490
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2333.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "wp-content/plugins/cmb_field_map-master/cmb-field-map.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1819,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								917,
-								917
-							],
-							[
-								1077,
-								1077
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 57.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "wp-content/themes/oada/sidebar-experience.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3875,
-								3875
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1206.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "wp-content/themes/oada/single.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3281,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2249,
-								2238
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 3.0,
-						"translation.y": 517.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3541,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										260,
-										295
-									],
-									[
-										655,
-										663
-									],
-									[
-										665,
-										673
-									],
-									[
-										690,
-										698
-									],
-									[
-										722,
-										730
-									],
-									[
-										872,
-										880
-									],
-									[
-										1028,
-										1036
-									],
-									[
-										1123,
-										1131
-									],
-									[
-										1141,
-										1149
-									],
-									[
-										1641,
-										1649
-									],
-									[
-										1923,
-										1931
-									],
-									[
-										2118,
-										2126
-									],
-									[
-										2317,
-										2325
-									],
-									[
-										2381,
-										2389
-									],
-									[
-										2443,
-										2451
-									],
-									[
-										2732,
-										2740
-									],
-									[
-										2960,
-										2968
-									],
-									[
-										3319,
-										3327
-									],
-									[
-										3477,
-										3485
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								3393,
-								3393
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 7,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1473.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "wp-content/themes/oada/library/css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 187183,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								171330,
-								171311
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 143805.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "wp-content/themes/plussed/library/bones.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12487,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11703,
-								11703
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 5443.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "wp-content/themes/oada/home-articles.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1267,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1195,
-								1195
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "wp-content/themes/oada/home-slider.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1131,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								633,
-								633
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "wp-content/themes/oada/home-upcoming.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1304,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								445,
-								445
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -2040,10 +1055,10 @@
 	{
 		"height": 0.0
 	},
-	"project": "",
+	"project": "oada.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2051,6 +1066,58 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"fony",
+				"prototype/public/fonts/glyphicons-halflings-regular.svg"
+			],
+			[
+				"",
+				"momentumgolf.sublime-project"
+			],
+			[
+				"theme.",
+				"wp-includes/theme.php"
+			],
+			[
+				"single",
+				"wp-content/themes/marinas/single.php"
+			],
+			[
+				"footer",
+				"wp-content/themes/bootstrap/footer.php"
+			],
+			[
+				"theme-fun",
+				"wp-content/themes/canvas/includes/theme-functions.php"
+			],
+			[
+				"theme-pp",
+				"wp-content/themes/bootstrap/includes/theme-ppm.php"
+			],
+			[
+				"th",
+				"css/less/theme.less"
+			],
+			[
+				"theme",
+				"includes/theme-ppm.php"
+			],
+			[
+				"theem",
+				"css/less/theme.less"
+			],
+			[
+				"he",
+				"header.php"
+			],
+			[
+				"head",
+				"header.php"
+			],
+			[
+				"theme-ppm",
+				"includes/theme-ppm.php"
+			]
 		],
 		"width": 0.0
 	},
@@ -2077,7 +1144,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 367.0,
+	"side_bar_width": 227.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

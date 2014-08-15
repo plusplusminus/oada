@@ -49,8 +49,11 @@
 						
 					<?php } ?>
 
-					<?php if (have_posts()) :  $count=0;
-						while (have_posts()) : the_post(); $count++; ?>
+					<?php if (have_posts()) :  $count=0;?>
+
+						<div class="row">
+						
+						<?php while (have_posts()) : the_post(); $count++; ?>
 
 						<div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
 
@@ -61,7 +64,6 @@
 							        <div class="experience-info">
 							        	<h4 class="trunc"><?php the_title();?></h4>
 							        	<div class="inner-info">
-							        		<?php _e(wpautop(get_post_meta($post->ID,'_ppm_place_date',true)));?>
 							        		<?php
 											// Find connected pages
 											$connected = new WP_Query( array(
@@ -71,17 +73,20 @@
 											) );
 
 											// Display connected pages
-											if ( $connected->have_posts() ) : $count =0;?>
-											    <?php while ( $connected->have_posts() ) : $connected->the_post(); $count++; ?>
+											if ( $connected->have_posts() ) : ?>
+											    <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
 											    	
 													<h5 class="trip-title"><?php the_title();?></h5>
+
 													    
 											    <?php endwhile; ?>
 											    <?php 
-											    // Prevent weirdness
-											    wp_reset_postdata();
-											endif;
-											?>
+											    	// Prevent weirdness
+											    	wp_reset_postdata();
+												endif;
+												?>
+							        		<span class="date"><?php _e(wpautop(get_post_meta($post->ID,'_ppm_place_date',true)));?></span>
+
 							        	</div>
 							        </div>
 							    </a>
@@ -90,20 +95,22 @@
 						</div>
 						<?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>
 
-					<?php endwhile; ?>
+							<?php endwhile; ?>
 
-							<?php if (function_exists("emm_paginate")) { ?>
-                  <?php emm_paginate(); ?>
-							<?php } else { ?>
-								<nav class="wp-prev-next">
-									<ul class="clearfix">
-										<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
-										<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
-									</ul>
-								</nav>
-							<?php } ?>
+								</div>
 
-					<?php else : ?>
+									<?php if (function_exists("ppm_paginate")) { ?>
+										<?php ppm_paginate(); ?>
+									<?php } else { ?>
+										<nav class="wp-prev-next">
+											<ul class="clearfix">
+												<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
+												<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
+											</ul>
+										</nav>
+									<?php } ?>
+
+							<?php else : ?>
 
 							<article id="post-not-found" class="hentry clearfix">
 								<header class="article-header">

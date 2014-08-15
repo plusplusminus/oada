@@ -66,8 +66,8 @@ $experiences = new WP_Query( array(
 				  <?php endwhile; ?>
 				</div>
 
-			  <?php if (function_exists("emm_paginate")) { ?>
-				  <?php emm_paginate(); ?>
+			  <?php if (function_exists("ppm_paginate")) { ?>
+				  <?php ppm_paginate(); ?>
 			  <?php } else { ?>
 				<nav class="wp-prev-next">
 				  <ul class="clearfix">

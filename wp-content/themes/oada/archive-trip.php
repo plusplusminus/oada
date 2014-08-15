@@ -2,9 +2,9 @@
 <?php $default = array('class'=>'img-responsive'); ?>
     <div class="container">
 
-			<div id="content" class="clearfix row">
+			<div id="content" class="clearfix">
 
-				<div id="main" class="col-md-12 clearfix experiences" role="main">
+				<div id="main" class="clearfix experiences" role="main">
 					<?php global $brew_options; ?>
 					<?php if ( $brew_options['breadcrumb'] == 0) { ?>
 
@@ -49,31 +49,32 @@
 						
 					<?php } ?>
 
-					<?php if (have_posts()) :  $count=0;
-						while (have_posts()) : the_post(); $count++; ?>
+					<?php if (have_posts()) :  $count=0; ?>
+						<div class="row">
+							<?php while (have_posts()) : the_post(); $count++; ?>
 
-						<div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
+							<div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
+								<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
 
-								<a href="<?php the_permalink();?>">
-							        <?php the_post_thumbnail('large',$default); ?>
-							        <div class="experience-info">
-							        	<h4 class="trunc"><?php the_title();?></h4>
-							        	<div class="inner-info">
-							        		<?php echo wpautop(get_post_meta($post->ID,'_ppm_trip_summary',true));?>
-							        	</div>
-							        </div>
-							    </a>
+									<a href="<?php the_permalink();?>">
+								        <?php the_post_thumbnail('large',$default); ?>
+								        <div class="experience-info">
+								        	<h4 class="trunc"><?php the_title();?></h4>
+								        	<div class="inner-info">
+							        			<span class="date"><?php _e(wpautop(get_post_meta($post->ID,'_ppm_trip_date',true)));?></span>
+								        	</div>
+								        </div>
+								    </a>
 
-							</article> <?php // end article ?>
-						</div>
-						<?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>
+								</article> <?php // end article ?>
+							</div>
+							<?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>
 
-					<?php endwhile; ?>
-
-							<?php if (function_exists("emm_paginate")) { ?>
-                  <?php emm_paginate(); ?>
+						<?php endwhile; ?>
+					</div>
+							<?php if (function_exists("ppm_paginate")) { ?>
+                  <?php ppm_paginate(); ?>
 							<?php } else { ?>
 								<nav class="wp-prev-next">
 									<ul class="clearfix">

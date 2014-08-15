@@ -15,7 +15,7 @@
 				<div class="col-md-6 upcoming-trip">
 					<div class="row">
 						<div class="col-md-5 image">
-							<?php echo get_the_post_thumbnail($post->ID,'medium',array('class'=>'img-responsive img-circle') ); ?>
+							<?php echo get_the_post_thumbnail($post->ID,'thumbnail',array('class'=>'img-responsive img-circle') ); ?>
 						</div>
 						<div class="col-md-7">
 							<h3 class="title"><span class="fa fa-plane"></span>	Upcoming Trip</h3>
@@ -33,7 +33,7 @@
 			wp_reset_postdata();
 			?>
 
-			<div class="col-md-offset-1 col-md-5">
+			<div class="col-md-offset-1 col-md-5 form-tips">
 				<div class="home-contact-form">
 					<?php gravity_form(1, true, false, false, '', true, 12); ?>
 				</div>

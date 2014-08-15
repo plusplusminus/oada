@@ -31,7 +31,7 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,700' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGRI_lIjdk4SfPEB_BvySlHCwAaPPYT2Y&sensor=FALSE"></script>
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>

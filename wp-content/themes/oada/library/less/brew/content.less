@@ -41,8 +41,10 @@ These are the styles for posts, pages, archive, & blog index
   margin: 0 0 20px 0;
   border-radius: 0px;
   background: #fff;
-  .box-shadow(0 1px 1px rgba(0,0,0,0.05) );
-  border: 1px solid #ddd;
+}
+
+#comments, .respond-form {
+
 }
 
 
@@ -150,15 +152,25 @@ These are the styles for posts, pages, archive, & blog index
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
+    font-family: @font-entry;
   }
   > ol, > ul {
     margin: 0 0 20px 10px;
     font-size: 16px;
     line-height: 1.5;
+    font-family: @font-entry;
   }
   img {
     max-width: 100%;
     height: auto;
+  }
+  a{
+    text-decoration: underline;
+    color: @brand-warning;
+    &:hover{
+      text-decoration: none;
+      color: @brand-primary;
+    }
   }
 
   ul, ol, table, dl {}
@@ -175,8 +187,16 @@ These are the styles for posts, pages, archive, & blog index
     li {}
   }
 
-  blockquote {
+  blockquote{
+    color: @brand-info;
+    border-left: 2px solid @brand-info;
     &:before {}
+    p{
+      font-size: @font-size-large;
+      font-family: @font-family-serif;
+      font-size: 1.2em;
+      font-weight: 100;
+    }
   }
 
   dl {}
@@ -211,8 +231,25 @@ These are the styles for posts, pages, archive, & blog index
 
 // captions
 .wp-caption {
+  position: relative;
   img {}
-  p.wp-caption-text {}
+  p.wp-caption-text {
+    color: #fff;
+    font-size: @font-size-base;
+    text-align: left;
+    font-family: @font-family-sans-serif;
+    padding: 10px 20px;
+    background-color: @gray-darker;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    .opacity(.8);
+  }
 }
 
 // image galleries
@@ -246,7 +283,6 @@ These are the styles for posts, pages, archive, & blog index
 // loop footer + single footer
 .article-footer  {
   padding: 10px 20px 10px;
-  border-top: 1px solid #eee;
   color: #888;
   font-size: 12px;
   .commentnum {
@@ -263,6 +299,73 @@ These are the styles for posts, pages, archive, & blog index
   }
   .tags {
   	width: 70%;
+    margin-bottom: 20px;
+    display: block;
+    .tags-title{
+      text-transform: uppercase;
+      color: @gray-darker;
+      font-weight: 400;
+      font-size: 11px;
+    }
+    a{
+      color: @brand-info;
+      font-weight: 300;
+      font-family: @font-entry;
+      font-size: @font-size-base;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+  }
+  ul.social{
+    .share{
+      text-transform: uppercase;
+      color: @gray-darker;
+      font-weight: 400;
+      font-size: 11px;
+    }
+    li{
+      padding-right: 0px;
+      padding-left: 0px;
+        a.social{
+          color: @gray-light;
+          .transition(0.3s);
+          &:hover{
+            color: @brand-primary;
+          }
+        }
+    }
+  }
+  table.ratings{
+    margin-bottom: 20px;
+    tr{
+      td.summary{
+        background-color: @brand-info !important;
+        color: #fff;
+        padding: 20px 10px;
+        vertical-align: middle !important;
+        table-layout: fixed;
+        width: 200px;
+        .lead{
+          font-family: @font-family-serif;
+          font-size: 2.2em;
+        }
+        h2{
+          font-family: @font-family-sans-serif;
+          font-size: @font-size-large;
+        }
+        .score{
+          font-size: @font-size-large;
+          .kerning();
+        }
+      }
+      .rating-item{
+        font-family: @font-entry;
+        font-size: @font-size-base;
+        .score{
+          color: @brand-info;
+        }
+      }
+    }
   }
   .post-link {
   	margin-top: -1px;

@@ -100,7 +100,7 @@ global $post;
 					        </div>
 					        <div class="highlight-content col-md-4">
 					        	<span class="highlight-heading">Place Highlight:</span>
-					        	<h3 class="highlight-title"><?php the_title();?></h3>
+					        	<h3 class="highlight-title"><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title();?></a></h3>
 
 					        	<span class="rating">
 					        		<?php $rating = get_post_meta($post->ID,'_ppm_experience_rating',true); ?>
