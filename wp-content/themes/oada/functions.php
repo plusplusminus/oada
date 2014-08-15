@@ -733,5 +733,15 @@ if ( ! function_exists( 'category_menu' ) ) {
     }
 }
 
+function demo_exclude_category( $wp_query ) 
+{ 
+    if ( is_post_type_archive('trip') ) {       // Add the category to an array of excluded categories. In this case, though, it's really just one.
+        // Note that this is a cleaner way to write: $wp_query->set('category__not_in', $excluded);
+        $exclude = array('21');
+        set_query_var( 'tag__not_in', $exclude );
+    } // end if
+}
+add_action( 'pre_get_posts', 'demo_exclude_category' );
+
 
 ?>
