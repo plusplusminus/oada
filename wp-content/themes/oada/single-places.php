@@ -143,25 +143,11 @@ global $post;
 				    		<a href="<?php the_permalink();?>">
 						        <?php the_post_thumbnail('large',$default); ?>
 						        <div class="experience-info">
-						        	<div class="row">
-						        		<div class="col-md-12">
-						        			<h4><?php the_title();?></h4>
-						        		</div>
+
+						        	<h4 class="trunc"><?php the_title();?></h4>
+						        	<div class="inner-info">
+						        		<span class="date"><p><?php _e(get_post_meta($post->ID,'_ppm_experience_date',true));?></p></span>
 						        	</div>
-						        	<?php $terms = wp_get_post_terms($post->ID, 'category', array("fields" => "all"));
-									 	if ( !empty( $terms ) && !is_wp_error( $terms ) ){
-										echo '<ul class="list-inline terms">';
-										foreach ( $terms as $term ) { ?>
-											<li>
-										   			<span class="fa-stack fa-lg">
-														<i class="fa <?php echo $term->description;?> fa-stack-1x fa-inverse"></i>
-													</span>
-													<span><?php echo $term->name; ?></span>
-								  			</li>
-										<?php }
-											echo '</ul>';
-										}
-									?>
 						        </div>
 						    </a>
 				        </div>

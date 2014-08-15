@@ -20,43 +20,24 @@ $experiences = new WP_Query( array(
 ) ); ?>
 
 <?php $default = array('class'=>'img-responsive'); ?>
-	<div class="container">
+	<div class="container archive">
 
 	  <div id="content" class="clearfix row">
 
 		<div id="main" class="col-md-12 clearfix experiences" role="main">
 
 		  <?php global $brew_options; ?>
-		  <h1><?php echo get_the_title($trip->ID);?> - <?php echo $idObj->cat_name; ?></h1>
+		  <h1 class="archive-title"><?php echo get_the_title($trip->ID);?> - <?php echo $idObj->cat_name; ?></h1>
 
 		  <?php if ($experiences->have_posts()) :  $count=0; ?>
-			  	<div class="row">
+			  	<div class="row ">
 					<?php while ($experiences->have_posts()) : $experiences->the_post(); $count++; ?>
 
 					<div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
 
 					  <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
 
-						<a href="<?php the_permalink();?>">
-							  <?php the_post_thumbnail('large',$default); ?>
-							  <div class="experience-info">
-								<div class="row">
-								  <div class="col-md-9">
-									<h4 class="trunc"><?php the_title();?></h4>
-								  </div>
-								  <div class="col-md-3">
-									<?php $rating = get_post_meta($post->ID,'_ppm_experience_rating',true); ?>
-									<?php echo ppm_star_rating($rating); ?>
-								  </div>
-								</div>
-							</div>
-						</a>
-					   	<?php if ($count <= 2) : ?>
-	                      <footer class="article-footer clearfix">
-	                        <?php the_excerpt();?>
-	                        <?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
-	                      </footer> <?php // end article footer ?>
-	                    <?php endif; ?>
+						<?php get_template_part('templates/content','experience' );?>
 
 					  </article> <?php // end article ?>
 					 

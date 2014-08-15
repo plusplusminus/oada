@@ -1,5 +1,8 @@
 // Section Heading
 /*header*/
+body {
+	padding-top: 120px;
+}
 .vertical{
 	background: transparent;
 	position: absolute;
@@ -31,6 +34,27 @@
 		padding: 15px 25px;
 		border: 2px solid #fff;
 	}
+}
+
+.trunc {
+	text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.img-circular{
+ width: 200px;
+ height: 200px;
+ background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');
+ background-size: cover;
+ display: block;
+ border-top-left-radius: 100px;
+ -webkit-border-top-left-radius: 100px;
+ -moz-border-top-left-radius: 100px;
+ border-bottom-right-radius: 100px;
+ -webkit-border-bottom-right-radius: 100px;
+ -moz-border-bottom-right-radius: 100px;
 }
 
 .kerning{
@@ -181,21 +205,32 @@ width: 100%;
     bottom: 20px;
   }
 }
-
-.header-hero
-{
-	position: relative;
-	overflow: hidden;
-	.post-info
-	{
-		position: absolute;
-		bottom: -50%;
-		left: 20%;
-		right: 20%;
-		color: #fff;	
+.modal {
+	#newsletterModal& {
+		.modal-content{
+			background: transparent;
+			box-shadow: none;
+			border: none;
+		}
+		.modal-dialog {
+			max-width: 480px;
+		}
 	}
 	.circle-text {
-	    width:100%;
+    width:100%;
+	    .gform_wrapper form {
+	    	text-align: center;
+	    	.gform_button {
+				background: transparent;
+				border: none;
+				color: #fff;
+				text-transform: uppercase;
+				padding: 0;
+				letter-spacing: 3px;
+				-webkit-transition: 0.3s;
+				transition: 0.3s;
+			}
+	    }
 	}
 	.circle-text:after {
 	    content: "";
@@ -203,14 +238,12 @@ width: 100%;
 	    width: 100%;
 	    height:0;
 	    padding-bottom: 100%;
-	    background: rgba(0,0,0,0.65); 
+	    background: @brand-primary; 
 	    -moz-border-radius: 50%; 
 	    -webkit-border-radius: 50%; 
 	    border-radius: 50%;
 	}
 	.circle-text > div {
-		padding-left: 40px;
-		padding-right: 40px;
 	    float:left;
 	    width:100%;
 	    padding-top:15%;
@@ -218,6 +251,48 @@ width: 100%;
 	    margin-top:-0.5em;
 	    text-align:center;
 	    color:white;
+	}
+}
+.header-hero
+{
+	position: relative;
+	overflow: hidden;
+	@media (min-width:@screen-md) {
+		.post-info
+		{
+			position: absolute;
+			bottom: 0;
+			left: 20%;
+			right: 20%;
+			color: #fff;	
+		}
+		.circle-text {
+		    width:100%;
+		    max-height: 480px;
+		    overflow: hidden;
+		}
+		.circle-text:after {
+		    content: "";
+		    display: block;
+		    width: 100%;
+		    height:0;
+		    padding-bottom: 100%;
+		    background: rgba(0,0,0,0.65); 
+		    -moz-border-radius: 50%; 
+		    -webkit-border-radius: 50%; 
+		    border-radius: 50%;
+		}
+		.circle-text > div {
+			padding-left: 40px;
+			padding-right: 40px;
+		    float:left;
+		    width:100%;
+		    padding-top:15%;
+		    line-height:1em;
+		    margin-top:-0.5em;
+		    text-align:center;
+		    color:white;
+		}
 	}
 }
 
@@ -341,7 +416,7 @@ width: 100%;
 	}
 }
 
-.archive
+.archive,.search
 {	
 	#content {
 		margin-top: 100px;
@@ -351,6 +426,12 @@ width: 100%;
 	}
 	.article-footer {
 		background: #fff;
+	}
+	.archive-title {
+		font-size: @font-size-h1;
+		color: @gray-dark;
+		text-align: center;
+		text-transform: uppercase;
 	}
 }
 
@@ -714,7 +795,7 @@ width: 100%;
 	.related-experiences  {
 		.related-experience-content{
 			background-color: #fff;
-			padding-top: 20px;
+			padding: 20px 15px;
 			.img-container {
 				position: relative;
 				margin-bottom: 20px;

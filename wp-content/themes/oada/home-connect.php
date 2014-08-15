@@ -52,7 +52,7 @@
 			  					</span>
 			  				</a>
 			  			</li>
-			  			<li><a data-tooltip="..by email newletter" href="#">
+			  			<li><a data-toggle="modal" data-target="#newsletterModal" href="#" data-tooltip="..by email newletter" href="#">
 								<span class="fa-stack fa-3x">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>

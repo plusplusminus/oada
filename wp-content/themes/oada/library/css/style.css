@@ -8348,6 +8348,9 @@ This is just for the sample BREW site.  Feel free to delete
   transition: all 0.35s ease;
 }
 /*header*/
+body {
+  padding-top: 120px;
+}
 .vertical {
   background: transparent;
   position: absolute;
@@ -8381,6 +8384,25 @@ This is just for the sample BREW site.  Feel free to delete
   display: inline-block;
   padding: 15px 25px;
   border: 2px solid #fff;
+}
+.trunc {
+  text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
+.img-circular {
+  width: 200px;
+  height: 200px;
+  background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');
+  background-size: cover;
+  display: block;
+  border-top-left-radius: 100px;
+  -webkit-border-top-left-radius: 100px;
+  -moz-border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  -webkit-border-bottom-right-radius: 100px;
+  -moz-border-bottom-right-radius: 100px;
 }
 .kerning {
   letter-spacing: 3px;
@@ -8552,34 +8574,42 @@ This is just for the sample BREW site.  Feel free to delete
     bottom: 20px;
   }
 }
-.header-hero {
-  position: relative;
-  overflow: hidden;
+#newsletterModal.modal .modal-content {
+  background: transparent;
+  box-shadow: none;
+  border: none;
 }
-.header-hero .post-info {
-  position: absolute;
-  bottom: -50%;
-  left: 20%;
-  right: 20%;
-  color: #fff;
+#newsletterModal.modal .modal-dialog {
+  max-width: 480px;
 }
-.header-hero .circle-text {
+.modal .circle-text {
   width: 100%;
 }
-.header-hero .circle-text:after {
+.modal .circle-text .gform_wrapper form {
+  text-align: center;
+}
+.modal .circle-text .gform_wrapper form .gform_button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0;
+  letter-spacing: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.modal .circle-text:after {
   content: "";
   display: block;
   width: 100%;
   height: 0;
   padding-bottom: 100%;
-  background: rgba(0, 0, 0, 0.65);
+  background: #f4881b;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-.header-hero .circle-text > div {
-  padding-left: 40px;
-  padding-right: 40px;
+.modal .circle-text > div {
   float: left;
   width: 100%;
   padding-top: 15%;
@@ -8587,6 +8617,46 @@ This is just for the sample BREW site.  Feel free to delete
   margin-top: -0.5em;
   text-align: center;
   color: white;
+}
+.header-hero {
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .header-hero .post-info {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+    color: #fff;
+  }
+  .header-hero .circle-text {
+    width: 100%;
+    max-height: 480px;
+    overflow: hidden;
+  }
+  .header-hero .circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .header-hero .circle-text > div {
+    padding-left: 40px;
+    padding-right: 40px;
+    float: left;
+    width: 100%;
+    padding-top: 15%;
+    line-height: 1em;
+    margin-top: -0.5em;
+    text-align: center;
+    color: white;
+  }
 }
 .content .title {
   text-align: center;
@@ -8687,11 +8757,20 @@ This is just for the sample BREW site.  Feel free to delete
 .single #content {
   margin-top: 100px;
 }
-.archive #content {
+.archive #content,
+.search #content {
   margin-top: 100px;
 }
-.archive .article-footer {
+.archive .article-footer,
+.search .article-footer {
   background: #fff;
+}
+.archive .archive-title,
+.search .archive-title {
+  font-size: 36px;
+  color: #444444;
+  text-align: center;
+  text-transform: uppercase;
 }
 .bg-dark {
   background: #111;
@@ -9020,7 +9099,7 @@ This is just for the sample BREW site.  Feel free to delete
 }
 .experience-widget .related-experiences .related-experience-content {
   background-color: #fff;
-  padding-top: 20px;
+  padding: 20px 15px;
 }
 .experience-widget .related-experiences .related-experience-content .img-container {
   position: relative;

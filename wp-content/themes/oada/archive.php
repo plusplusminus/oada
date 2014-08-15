@@ -6,18 +6,18 @@
 
 				<div id="main" class="col-md-12 clearfix experiences archive" role="main">
 					<?php global $brew_options; ?>
-					<?php if ( $brew_options['breadcrumb'] == 0) { ?>
+					<?php if ( $brew_options['breadcrumb'] == 1) { ?>
 
 						<?php if (is_category()) { ?>
 							<h1 class="archive-title h2">
-								<span><?php _e( 'Posts Categorized:', 'bonestheme' ); ?></span> <?php single_cat_title(); ?>
+								<span><?php _e( 'All Experiences:', 'bonestheme' ); ?></span> <?php single_cat_title(); ?>
 							</h1>
-
+							<?php get_template_part( 'breadcrumb' ); ?>
 						<?php } elseif (is_tag()) { ?>
 							<h1 class="archive-title h2">
 								<span><?php _e( 'Posts Tagged:', 'bonestheme' ); ?></span> <?php single_tag_title(); ?>
 							</h1>
-
+							<?php get_template_part( 'breadcrumb' ); ?>
 						<?php } elseif (is_author()) {
 							global $post;
 							$author_id = $post->post_author;
@@ -27,20 +27,22 @@
 								<span><?php _e( 'Posts By:', 'bonestheme' ); ?></span> <?php the_author_meta('display_name', $author_id); ?>
 
 							</h1>
+							<?php get_template_part( 'breadcrumb' ); ?>
 						<?php } elseif (is_day()) { ?>
 							<h1 class="archive-title h2">
 								<span><?php _e( 'Daily Archives:', 'bonestheme' ); ?></span> <?php the_time('l, F j, Y'); ?>
 							</h1>
-
+							<?php get_template_part( 'breadcrumb' ); ?>
 						<?php } elseif (is_month()) { ?>
 								<h1 class="archive-title h2">
 									<span><?php _e( 'Monthly Archives:', 'bonestheme' ); ?></span> <?php the_time('F Y'); ?>
 								</h1>
-
+								<?php get_template_part( 'breadcrumb' ); ?>
 						<?php } elseif (is_year()) { ?>
 								<h1 class="archive-title h2">
 									<span><?php _e( 'Yearly Archives:', 'bonestheme' ); ?></span> <?php the_time('Y'); ?>
 								</h1>
+								<?php get_template_part( 'breadcrumb' ); ?>
 						<?php } ?>
 
 					<?php } else { ?>
@@ -56,59 +58,7 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
 
-								<a href="<?php the_permalink();?>">
-							        <?php the_post_thumbnail('large',$default); ?>
-							        <div class="experience-info">
-							        	<div class="row">
-							        		<div class="col-md-9">
-							        			<h4 class="trunc"><?php the_title();?></h4>
-							        		</div>
-							        		<div class="col-md-3">
-							        			<?php $rating = get_post_meta($post->ID,'_ppm_experience_rating',true); ?>
-							        			<?php echo ppm_star_rating($rating); ?>
-							        		</div>
-							        	</div>
-							        	<?php $terms = wp_get_post_terms($post->ID, 'category', array("fields" => "all"));
-										 	if ( !empty( $terms ) && !is_wp_error( $terms ) ){
-											echo '<ul class="list-inline terms">';
-											foreach ( $terms as $term ) { ?>
-												<li>
-											   			<span class="fa-stack fa-lg">
-															<i class="fa <?php echo $term->description;?> fa-stack-1x fa-inverse"></i>
-														</span>
-														<span><?php echo $term->name; ?></span>
-									  			</li>
-											<?php }
-												echo '</ul>';
-											}
-										?>
-							        </div>
-							    </a>
-							<footer class="article-footer clearfix">
-								<?php
-								if (!is_post_type_archive('trip')) :
-									$trip = new WP_Query( array(
-							          'connected_type' => 'posts_to_trips',
-							          'connected_items' => $post->ID,
-							          'nopaging' => true,
-							        ) );
-
-							        // Display connected pages
-							        if ($trip->have_posts() ) : ?>
-							        <?php while ( $trip->have_posts() ) : $trip->the_post(); ?>
-							            <?php $item_trip = $post->ID; ?>
-							            <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-							            <p><?php _e(get_post_meta($post->ID,'_ppm_trip_date',true));?></p>
-							        <?php endwhile; ?>
-							        <?php 
-							        // Prevent weirdness
-							        wp_reset_postdata();
-							        endif;
-						        endif;
-						        ?>
-						        <?php $count <= 2 ? the_excerpt() : '';?>
-								<?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
-							</footer> <?php // end article footer ?>
+								<?php get_template_part('templates/content','experience'); ?>
 
 							</article> <?php // end article ?>
 							

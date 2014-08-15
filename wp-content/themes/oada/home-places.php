@@ -7,7 +7,7 @@
 		</div>
 	    <?php
 	    // Find connected pages
-	    $query = new WP_Query( array( 'post_type'=>'places','posts_per_page'=>10 ) );
+	    $query = new WP_Query( array( 'post_type'=>'places','posts_per_page'=>10,'orderby'=>'rand' ) );
 	    $default = array('class'=>'img-responsive'); 
 
 	    // Display connected pages
@@ -21,7 +21,6 @@
 						        <div class="place-info">
 						        	<h4><?php the_title();?></h4>
 						        	<div class="inner-info">
-						        		<?php the_excerpt();?>
 						        		<span class="date"><?php _e(wpautop(get_post_meta($post->ID,'_ppm_place_date',true)));?></span>
 						        	</div>
 						        </div>

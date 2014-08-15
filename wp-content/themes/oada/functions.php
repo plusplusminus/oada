@@ -556,7 +556,7 @@ function ppm_custom_breadcrumb() {
     echo '<ol class="breadcrumb">';
     echo '<li><a href="'.get_option('home').'">Home</a></li>';
     if (is_single()) {
-        echo '<li><a href="'.get_post_type_archive_link( 'trip' ).'">Trips</a></li>';
+        
         $trip = new WP_Query( array(
           'connected_type' => 'posts_to_trips',
           'connected_items' => $post->ID,
@@ -564,14 +564,19 @@ function ppm_custom_breadcrumb() {
         ) );
 
         // Display connected pages
-        if ($trip->have_posts() ) : ?>
-        <?php while ( $trip->have_posts() ) : $trip->the_post(); ?>
-            <?php $item_trip = $post->ID; ?>
-            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-        <?php endwhile; ?>
-        <?php 
+        if ($trip->have_posts() ) :
+            echo '<li><a href="'.get_post_type_archive_link( 'trip' ).'">Trips</a></li>';
+            while ( $trip->have_posts() ) : $trip->the_post(); ?>
+                <?php $item_trip = $post->ID; ?>
+                <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata();
+        else : 
+            $page = get_page_by_title('Blog');
+            echo '<li><a href="'.get_permalink($page->ID).'">'.get_the_title($page->ID).'</a></li>';
+
         // Prevent weirdness
-        wp_reset_postdata();
+        
         endif;
 
         $place = new WP_Query( array(
@@ -597,7 +602,7 @@ function ppm_custom_breadcrumb() {
         echo '</li>';
       }
     } elseif (is_category()) {
-      echo '<li>';
+      echo '<li>Category</li><li>   ';
       single_cat_title();
       echo '</li>';
     } elseif (is_page()) {
@@ -605,7 +610,7 @@ function ppm_custom_breadcrumb() {
       the_title();
       echo '</li>';
     } elseif (is_tag()) {
-      echo '<li>Tag: ';
+      echo '<li>Tag</li><li>';
       single_tag_title();
       echo '</li>';
     } elseif (is_day()) {
@@ -627,8 +632,12 @@ function ppm_custom_breadcrumb() {
       echo '<li>Blog Archives';
       echo'</li>';
     } elseif (is_search()) {
-      echo'<li>Search Results';
-      echo'</li>';
+      echo'<li>Search Results for: '.esc_attr(get_search_query());
+      echo'</li>';  
+    } elseif (is_post_type_archive('trip' )) {
+      echo '<li>Trips</li>';
+    } elseif (is_post_type_archive('places')) {
+      echo '<li>Places</li>';
     }
     echo '</ol>';
   }
@@ -735,7 +744,7 @@ if ( ! function_exists( 'category_menu' ) ) {
     }
 }
 
-<<<<<<< HEAD
+
 function demo_exclude_category( $wp_query ) 
 { 
     if ( is_post_type_archive('trip') ) {       // Add the category to an array of excluded categories. In this case, though, it's really just one.
@@ -746,7 +755,6 @@ function demo_exclude_category( $wp_query )
 }
 add_action( 'pre_get_posts', 'demo_exclude_category' );
 
-=======
 // Bootstrap Style Pagination
 // http://www.ericmmartin.com/pagination-function-for-wordpress/
 
@@ -776,7 +784,6 @@ function ppm_paginate($args = null) {
     if ($pages > 1) {   
         $output .= "$before";
         $ellipsis = "<li>...</li>";
->>>>>>> eb15719be3218c47a2ffeecc60e68cdbd19031b0
 
         if ($page > 1 && !empty($previouspage)) {
             $output .= "<li><a href='" . get_pagenum_link($page - 1) . "'>$previouspage</a></li>";

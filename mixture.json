@@ -1,16 +1,12 @@
 {
-  "convertHtml": {
-    "relativePaths": false
-  },
+  "convertHtmlOutput": null,
   "customRubyPath": null,
   "debug": false,
   "domain": null,
   "followLeader": false,
   "lintScripts": false,
   "modelSource": null,
-  "preprocessorLocations": [
-    "wp-content/themes/oada/library/less"
-  ],
+  "preprocessorLocations": "wp-content/themes/oada/library/less",
   "preprocessorScriptOutput": null,
   "preprocessorStyleOutput": "wp-content/themes/oada/library/css",
   "projectDescription": "My project description",
@@ -18,7 +14,7 @@
   "publishedId": null,
   "serverHostname": null,
   "serverPort": null,
-  "simpleModePartnerServer": "localhost",
+  "simpleModePartnerServer": null,
   "templateDefaultLayout": "layout",
   "templateDefaultPage": "index",
   "templateDirectory": "templates",

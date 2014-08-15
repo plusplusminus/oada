@@ -52,20 +52,22 @@
 		        <div class="related-experiences">
 		        	<h3 class="title">Other Experiences Nearby</h3>
 		        	<div class="related-experience-content">
-						<?php while ( $experiences->have_posts() ) : $experiences->the_post();$count++; ?>
-							<?php $item_trip = $post->ID; ?>
-							<div class="col-xs-12 col-lg-6">
-								<a href="<?php the_permalink();?>">
-									<div class="img-container">
-										<?php the_post_thumbnail('medium',$default); ?>
-										<div class="title-container">
-											<h4><?php the_title(); ?></h4>
+		        		<div class="row">
+							<?php while ( $experiences->have_posts() ) : $experiences->the_post();$count++; ?>
+								<?php $item_trip = $post->ID; ?>
+								<div class="col-xs-12 col-lg-6">
+									<a href="<?php the_permalink();?>">
+										<div class="img-container">
+											<?php the_post_thumbnail('medium',$default); ?>
+											<div class="title-container">
+												<h4><?php the_title(); ?></h4>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-							<?php if ($count % 2 == 0) echo '<div class="clearfix"></div>'; ?>
-						<?php endwhile; ?>
+									</a>
+								</div>
+								<?php if ($count % 2 == 0) echo '<div class="clearfix"></div>'; ?>
+							<?php endwhile; ?>
+						</div>
 			        </div>
 		        </div>
 		        <?php 

@@ -1,6 +1,6 @@
 <?php global $brew_options; ?>	
 	<div class="footer-newsletter">
-		<a href="#">Sign up for the newsletter <i class="fa fa-angle-right"></i></a>
+		<a data-toggle="modal" data-target="#newsletterModal" href="#">Sign up for the newsletter <i class="fa fa-angle-right"></i></a>
 	</div>
 	<footer id="footer" class="clearfix">
 		<div class="container">
@@ -14,7 +14,23 @@
 		  </div> <!-- end .row -->
 		</div>
 	</footer> <!-- end footer -->
+	<!-- Button trigger modal -->
+	<!-- Modal -->
+	<!-- Button trigger modal -->
+	<div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
 
+	      	<div class="circle-text">
+	      		<div class="circle-inner">
+	      			<span class="fa fa-envelope fa-2x"></span><br>
+	    			<h3 class="modal-title">Sign Up For Our Newsletter</h3>
+	      			<?php gravity_form(2, false, false, false, '', true, 12); ?>
+	      		</div>
+	      	</div>
+	    </div>
+	  </div>
+	</div>
 	<!-- all js scripts are loaded in library/bones.php -->
 	<?php wp_footer(); ?>
 	<!-- Hello? Doctor? Name? Continue? Yesterday? Tomorrow?  -->
