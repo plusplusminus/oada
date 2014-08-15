@@ -4,28 +4,64 @@
 		"selected_items":
 		[
 			[
-				"font",
-				"font-weight"
+				"b",
+				"background-color"
 			],
 			[
-				"text",
-				"text-decoration"
-			],
-			[
-				"te",
-				"text-transform"
+				"pad",
+				"padding"
 			],
 			[
 				"pa",
-				"padding"
+				"padding-right"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"font-s",
+				"font-size-large"
+			],
+			[
+				"font-fa",
+				"font-family-sans-serif"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"fon",
+				"font-family"
 			],
 			[
 				"mar",
 				"margin-bottom"
 			],
 			[
-				"fon",
-				"font-family"
+				"te",
+				"text-transform"
+			],
+			[
+				"font-si",
+				"font-size"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"ma",
+				"margin-bottom"
 			],
 			[
 				"border",
@@ -36,36 +72,12 @@
 				"font-family-sans-serif"
 			],
 			[
-				"font-",
-				"font-family"
-			],
-			[
-				"font-s",
-				"font-size-base"
-			],
-			[
 				"brand-",
 				"brand-primary"
 			],
 			[
-				"pad",
-				"padding-top"
-			],
-			[
-				"font-si",
-				"font-size-base"
-			],
-			[
-				"ma",
-				"margin-top"
-			],
-			[
 				"font-fam",
 				"font-family-base"
-			],
-			[
-				"bor",
-				"border-radius"
 			],
 			[
 				"bac",
@@ -188,10 +200,6 @@
 				"margin-top"
 			],
 			[
-				"font-fa",
-				"font-family-base"
-			],
-			[
 				"w",
 				"nowrap"
 			],
@@ -294,10 +302,6 @@
 			[
 				"h",
 				"href	Attr"
-			],
-			[
-				"b",
-				"bottom"
 			],
 			[
 				"widt",
@@ -510,10 +514,6 @@
 			[
 				"inlin",
 				"inline-block"
-			],
-			[
-				"toggle",
-				"toggleClass"
 			]
 		]
 	},
@@ -559,18 +559,32 @@
 	},
 	"file_history":
 	[
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive-trip.php",
+		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/layouts/layout.liquid",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/sidebar-experience.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/custom-variables.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/header.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/form.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/functions.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/single.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/theme.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/content.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/comments.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/tables.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/template-trips.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/single-places.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/template-places.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/template-blog.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive-places.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive-trip.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/brew.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-upcoming.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/footer.less",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/footer.php",
 		"/Users/iaanvn/Sites/oada/wp-config-sample.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/custom-variables.less",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/nav.less",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-places.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-slider.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/theme.less",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/content.less",
 		"/Users/iaanvn/Sites/jennifer/library/less/custom-variables.less",
 		"/Users/iaanvn/Sites/jennifer/library/less/theme.less",
 		"/Users/iaanvn/Sites/oada/wp-config.php",
@@ -605,7 +619,6 @@
 		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/course-single.liquid",
 		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/news-single.liquid",
 		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/all.liquid",
-		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/layouts/layout.liquid",
 		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/excursions.liquid",
 		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/includes/excursion-single.liquid",
 		"/Users/iaanvn/Sites/momentumgolf/prototype/models/model.json",
@@ -673,20 +686,7 @@
 		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/template-products.php",
 		"/Users/admin/Documents/Sites/rapidspill/wp-content/plugins/show-some-love-kikicoza/show-some-love-plugin.php",
 		"/Users/admin/Documents/Sites/rapidspill/wp-content/plugins/show-some-love-kikicoza/css/sp-vendors-style.css",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/includes/js/third-party.js",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed/library/navwalker.php",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/home-custom.php",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/library/less/brew/content.less",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/library/less/bootstrap/buttons.less",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/footer.php",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/sidebar-page.php",
-		"/Users/admin/Documents/Sites/layoutbuilder/public/js/general.min.js",
-		"/Users/admin/Documents/Sites/layoutbuilder/templates/index.liquid",
-		"/Users/admin/Documents/Sites/layoutbuilder/public/js/h5utl.js",
-		"/Users/iaanvn/Sites/devlabel/home.html",
-		"/Users/iaanvn/Sites/devlabel/collective.html",
-		"/Users/iaanvn/Sites/devlabel/library/less/theme.less",
-		"/Users/iaanvn/Sites/devlabel/library/less/bootstrap/buttons.less"
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/includes/js/third-party.js"
 	],
 	"find":
 	{
@@ -697,6 +697,12 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/iaanvn/Sites/oada/wp-content/themes/oada",
+			"/Users/iaanvn/Sites/oada/wp-content/themes",
+			"/Users/iaanvn/Sites/oada/wp-content/themes/oada",
+			"functions*.php",
+			"",
+			"/Users/iaanvn/Sites/oada/wp-content/themes",
 			"/Users/iaanvn/Sites/oada/wp-content/themes/oada",
 			"/Users/iaanvn/Sites/vnl/wp-content/themes/superstore",
 			"/Users/iaanvn/Sites/vnl/wp-content/plugins/woocommerce",
@@ -796,6 +802,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"comments",
+			"border",
+			"even",
+			"shadow",
+			"respond-form",
+			"form",
+			"h3",
+			"title",
+			"respond",
+			"comments",
+			"article",
+			"rating",
+			"table",
+			"social",
+			"source sans",
+			"li",
+			"wp-caption-text",
+			"caption",
+			"related-experiences",
+			"over",
+			"overide",
+			"emm_paginate",
+			"logo",
 			"experien",
 			"thumbnail",
 			"home-contact-form",
@@ -900,30 +929,7 @@
 			"open",
 			"join the",
 			"modal",
-			"flexslider-icon",
-			"\"flexslider-icon\"",
-			"in ",
-			"						<img src=\"holder.js/100%x150/auto/text:image/#ccc:#000\">\n",
-			"						<img src=\"holder.js/100%x150/auto/text:image\">\n",
-			"andreea",
-			"adreea",
-			"project title",
-			"project-title",
-			"footer",
-			"caption",
-			"h2",
-			"sub-heading",
-			"before",
-			"padding-base",
-			"paddin",
-			"@btn-success-bo",
-			"background",
-			"radius",
-			"radius-base",
-			"button",
-			"300",
-			"600",
-			"333333"
+			"flexslider-icon"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -931,6 +937,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"ppm_paginate",
 			"result",
 			"training",
 			"service",
