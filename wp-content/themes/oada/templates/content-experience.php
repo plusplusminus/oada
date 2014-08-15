@@ -6,17 +6,9 @@ global $post;
 <a href="<?php the_permalink();?>">
     <?php the_post_thumbnail('large',array('class'=>'img-responsive')); ?>
     <div class="experience-info">
-    	<div class="row">
-    		<div class="col-md-9">
-    			<h4 class="trunc"><?php the_title();?></h4>
-    		</div>
-    		<?php $rating = get_post_meta($post->ID,'_ppm_experience_rating',true); ?>
-    		<?php if (!empty($rating)) : ?>
-        		<div class="col-md-3">
-        				<?php echo ppm_star_rating($rating); ?>			
-        		</div>
-    		<?php endif; ?>
-    	</div>
+
+    	<h4 class="trunc"><?php the_title();?></h4>
+
 		<div class="inner-info">
 			<?php
 			// Find connected pages
