@@ -4045,7 +4045,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #101010;
 }
 .navbar-inverse .navbar-brand {
-  color: #aaaaaa;
+  color: #656565;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4056,7 +4056,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #aaaaaa;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #aaaaaa;
+  color: #656565;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
@@ -4067,7 +4067,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #000000;
+  background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4092,7 +4092,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #000000;
+  background-color: transparent;
   color: #ffffff;
 }
 @media (max-width: 991px) {
@@ -4103,7 +4103,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-color: #101010;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #aaaaaa;
+    color: #656565;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4114,7 +4114,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #000000;
+    background-color: transparent;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4124,7 +4124,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-inverse .navbar-link {
-  color: #aaaaaa;
+  color: #656565;
 }
 .navbar-inverse .navbar-link:hover {
   color: #ffffff;
@@ -7851,6 +7851,18 @@ Stylesheet: Footer
   text-decoration: none;
   color: #666666;
 }
+#footer .scrollToTop:hover svg.shape-backtotop {
+  fill: #666666;
+  height: 22px;
+}
+#footer .scrollToTop svg.shape-backtotop {
+  fill: #fff;
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .footer-newsletter a {
   background-color: #f4881b;
   padding: 20px 0;
@@ -8217,14 +8229,54 @@ and more scalable.
 }
 .header nav ul.nav li a {
   text-transform: uppercase;
-  color: #aaaaaa;
   font-size: 12px;
+  letter-spacing: 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .header nav ul.nav li a .icon {
   font-size: 2em;
-  padding-right: 10px;
+  margin-right: 10px;
+  color: #656565;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .header nav ul.nav li a:hover .icon {
+  fill: #83b7e6;
+}
+.header nav ul.nav li a svg {
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.header nav ul.nav li a svg.shape-blog {
+  width: 24px;
+  height: 24px;
+}
+.header nav ul.nav li a svg.shape-about {
+  width: 32px;
+  height: 22px;
+}
+.header nav ul.nav li a svg.shape-trips {
+  width: 24px;
+  height: 24px;
+}
+.header nav ul.nav li a svg.shape-food {
+  width: 15px;
+  height: 24px;
+}
+.header nav ul.nav li a svg.shape-outdoor {
+  width: 19px;
+  height: 24px;
+}
+.header nav ul.nav li a svg.shape-contact {
+  width: 22px;
+  height: 15px;
+}
+.header nav ul.nav li a svg.shape-search {
+  width: 24px;
+  height: 24px;
+}
+.header nav ul.nav li.current-menu-item a .icon {
   fill: #83b7e6;
 }
 .navbar-nav {
@@ -8540,6 +8592,16 @@ body {
   height: 32px;
   fill: #fff;
 }
+ul.share .share-icon-holder {
+  position: relative;
+  z-index: 999;
+}
+ul.share .share-icon-holder svg {
+  fill: #fff;
+  width: 12px;
+  height: 12px;
+  margin: 12px;
+}
 .category-icon {
   display: inline-block;
   width: 45px;
@@ -8811,6 +8873,9 @@ body {
 }
 .carousel-fade .carousel-control {
   z-index: 2;
+}
+#newsletterModal.modal .modal-title {
+  text-transform: uppercase;
 }
 #newsletterModal.modal .modal-content {
   background: transparent;
@@ -9195,6 +9260,11 @@ body {
 #connect .connect .title span::before {
   color: #83b7e6;
 }
+#connect .connect svg.shape-about {
+  width: 36px;
+  height: 24px;
+  fill: #83b7e6;
+}
 #connect .connect p {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #aaaaaa;
@@ -9275,6 +9345,10 @@ body {
 }
 .upcoming-trip .title span {
   color: #83b7e6;
+}
+.upcoming-trip .title svg.shape-trips {
+  width: 24px;
+  height: 24px;
 }
 .upcoming-trip .trip-date {
   font-family: 'Satisfy', Georgia, "Times New Roman", Times, serif;
@@ -9388,6 +9462,15 @@ body {
 }
 .experience-widget .related-experiences .related-experience-content .img-container:hover .title-container {
   opacity: 1;
+}
+.form-tips .title {
+  text-transform: uppercase;
+  color: #383838;
+  margin-bottom: 30px;
+}
+.form-tips .title svg.shape-sharetips {
+  width: 24px;
+  height: 23px;
 }
 .form-tips .home-contact-form .gform_wrapper .gform_title {
   color: #383838;
@@ -9705,6 +9788,8 @@ body {
   padding: 15px 20px 10px;
   color: #333333;
   text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .nav-entries-holder .nav-content .nav-trip {
   font-family: 'Satisfy', Georgia, "Times New Roman", Times, serif;
@@ -9727,10 +9812,16 @@ body {
   text-align: center;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background: #f4881b;
   border-radius: 100%;
+}
+.nav-entries-holder .image-container .circle-hover svg.arrow {
+  fill: #fff;
+  width: 30px;
+  height: 32px;
+  margin-top: 28px;
 }
 .nav-entries-holder i {
   color: #fff;
@@ -9825,6 +9916,20 @@ fieldset[disabled] .gform_wrapper .gform_button {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #f4881b;
+}
+/*Modal Newsletter Form*/
+#gform_wrapper_2 .gform_body .gform_fields .gfield .gfield_label {
+  font-family: 'Satisfy', Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+#gform_wrapper_2 .gform_body .gform_fields .gfield input[type=text],
+#gform_wrapper_2 .gform_body .gform_fields .gfield .gfield textarea {
+  border-color: #db7a2b;
+  background-color: #db7a2b;
+}
+#gform_wrapper_2 .gform_body .gform_fields .gfield input[type=text]:focus,
+#gform_wrapper_2 .gform_body .gform_fields .gfield .gfield textarea:focus {
+  background-color: #fff;
 }
 /*
 RETINA (2x RESOLUTION DEVICES)

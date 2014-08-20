@@ -52,6 +52,18 @@ body {
   	fill: #fff;
 }
 
+ul.share{
+	.share-icon-holder{
+		position: relative;
+		z-index: 999;
+		svg{
+			fill:#fff;
+			width: 12px;
+			height:12px;
+			margin: 12px;
+		}
+	}
+}
 .category-icon {
 	display: inline-block;
   	width: 45px;
@@ -314,6 +326,9 @@ width: 100%;
 
 .modal {
 	#newsletterModal& {
+		.modal-title{
+			text-transform: uppercase;
+		}
 		.modal-content{
 			background: transparent;
 			box-shadow: none;
@@ -738,6 +753,11 @@ width: 100%;
 				color: @brand-info;
 			}
 		}
+		svg.shape-about{
+			width: 36px;
+			height: 24px;
+			fill: @brand-info;
+		}
 		p{
 			font-family: @font-entry;
 			color: @gray-light;
@@ -827,6 +847,10 @@ width: 100%;
 		text-transform: uppercase;
 		color: #383838;
 		margin-bottom: 30px;
+		svg.shape-trips{
+			width:24px;
+			height:24px;
+		}
 	}
 	.trip-date {
 		font-family: @font-family-serif;
@@ -945,6 +969,15 @@ width: 100%;
 }
 
 .form-tips{
+	.title{
+		text-transform: uppercase;
+		color: #383838;
+		margin-bottom: 30px;
+		svg.shape-sharetips{
+			width:24px;
+			height:23px;
+		}
+	}
 	.home-contact-form {
 		.gform_wrapper {
 			.gform_title {
@@ -1227,6 +1260,7 @@ width: 100%;
 		padding: 15px 20px 10px;
 		color: @gray-darker;
 		text-align: center;
+		.transition(.3s);
 		.nav-trip {
 			font-family: @font-family-serif;
 			font-size: 1.2em;
@@ -1247,9 +1281,15 @@ width: 100%;
 			right: 0;
 			text-align: center;
 			.opacity(0);
-			.transition(.8s);
+			.transition(.3s);
 			background: @brand-primary;
 			border-radius: 100%;
+			svg.arrow{
+				fill: #fff;
+				width: 30px;
+				height: 32px;
+				margin-top: 28px;
+			}
 		}
 	}
 	i {
@@ -1309,4 +1349,21 @@ width: 100%;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color: @brand-primary;
+}
+
+/*Modal Newsletter Form*/
+#gform_wrapper_2{
+	.gform_body .gform_fields .gfield{
+		.gfield_label{
+			font-family: @font-family-serif;
+			font-size: @font-size-large;
+		}
+		input[type=text], .gfield textarea{
+			border-color: #db7a2b;
+			background-color: #db7a2b;
+			&:focus{
+				background-color: #fff;
+			}
+		}
+	}
 }

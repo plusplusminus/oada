@@ -39,8 +39,14 @@
 			?>
 
 			<div class="col-md-offset-1 col-sm-5 form-tips">
+				<h3 class="title">
+					<svg class="title-icon shape-sharetips">
+					  	<use xlink:href="#shape-sharetips"></use>
+					</svg>
+					Share your tips
+				</h3>
 				<div class="home-contact-form">
-					<?php gravity_form(1, true, false, false, '', true, 12); ?>
+					<?php gravity_form(1, false, false, false, '', true, 12); ?>
 				</div>
 			</div>
 		</div>

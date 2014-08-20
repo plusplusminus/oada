@@ -21,7 +21,7 @@
 								<?php echo get_the_post_thumbnail($post->ID,'thumbnail',array('class'=>'img-responsive img-circle') ); ?>
 							</div>
 							<div class="col-md-8">
-								<h3 class="title"><span class="fa fa-group"></span>	<?php the_title(); ?></h3>
+								<h3 class="title"><svg class="icon shape-about"><use xlink:href="#shape-about"></use></svg>	<?php the_title(); ?></h3>
 								<?php the_excerpt(); ?>
 							</div>
 						</div>

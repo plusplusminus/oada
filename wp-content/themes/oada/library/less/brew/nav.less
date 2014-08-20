@@ -36,16 +36,58 @@ and more scalable.
 			li {
 				a {
 					text-transform: uppercase;
-					color: @gray-light;
 					font-size: @font-size-small;
+					letter-spacing: 1px;
+					.transition(0.3s);
 					.icon {
 						font-size: 2em;
-						padding-right: 10px;
+						margin-right: 10px;
+						color: @navbar-inverse-link-color;
+						.transition(0.3s);
 					}
-					&:hover {
+					&:hover{
 						.icon {
 							fill: @brand-info;
 						}
+					}
+					svg{
+						vertical-align: middle;
+						margin-top: -3px;
+						&.shape-blog{
+							width: 24px;
+							height: 24px;
+						}
+						&.shape-about{
+							width: 32px;
+							height: 22px;
+						}
+						&.shape-trips{
+							width: 24px;
+							height: 24px;
+						}
+						&.shape-photos-large{
+						}
+						&.shape-food{
+							width: 15px;
+							height: 24px;
+						}
+						&.shape-outdoor{
+							width: 19px;
+							height: 24px;
+						}
+						&.shape-contact{
+							width: 22px;
+							height: 15px;
+						}
+						&.shape-search{
+							width: 24px;
+							height: 24px;
+						}
+					}
+				}
+				&.current-menu-item{
+					a .icon{
+						fill: @brand-info;
 					}
 				}
 
