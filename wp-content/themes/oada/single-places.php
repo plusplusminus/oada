@@ -139,7 +139,7 @@ global $post;
 		    	<div class="container">
 	    		<div class="row">
 				    <?php while ( $connected_2->have_posts() ) : $connected_2->the_post(); $count++; ?>
-				    	<div class="experience col-md-4">
+				    	<div class="experience col-sm-6 col-md-4">
 				    		<a href="<?php the_permalink();?>">
 						        <?php the_post_thumbnail('large',$default); ?>
 						        <div class="experience-info">
@@ -176,7 +176,7 @@ global $post;
 				<h3 class="title"><span class="text-primary">Other Places</span> During this Trip</h3>
 				<div class="row">
 					<?php while ( $related ->have_posts() ) : $related ->the_post(); $count++;?>
-						<div class="place col-md-3">
+						<div class="place col-sm-6 col-md-3">
 				    		<a href="<?php the_permalink();?>">
 						        <?php the_post_thumbnail('large',$default); ?>
 						        <div class="place-info">
@@ -208,7 +208,7 @@ global $post;
 		    	<h3 class="title"><span class="text-info">Similar Places</span> from Other Trips</h3>
 	    		<div class="row">
 				    <?php while ( $connected_3->have_posts() ) : $connected_3->the_post(); $count++; ?>
-				    	<div class="place col-md-6">
+				    	<div class="place col-sm-6">
 				    		<a href="<?php the_permalink();?>">
 						        <?php the_post_thumbnail('large',$default); ?>
 						        <div class="place-info">

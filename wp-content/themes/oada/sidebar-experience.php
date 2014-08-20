@@ -4,6 +4,8 @@
 
   	<div class="widget trip-widget">
   	<?php
+  	$id=$post->ID;
+  	$location = get_post_meta($id,'_ppm_experience_location',true);
     $trip = new WP_Query( array(
           'connected_type' => 'posts_to_trips',
           'connected_items' => $post->ID,
@@ -15,7 +17,6 @@
         <div class="bg-warning">
 	        <?php while ( $trip->have_posts() ) : $trip->the_post(); ?>
 	            <?php $item_trip = $post->ID; ?>
-	            <?php $location = get_post_meta($item_trip,'_ppm_trip_location',true); ?>
 
 	            <div id="trip-map-canvas" class="map"></div>
 	           
@@ -55,10 +56,10 @@
 		        		<div class="row">
 							<?php while ( $experiences->have_posts() ) : $experiences->the_post();$count++; ?>
 								<?php $item_trip = $post->ID; ?>
-								<div class="col-xs-12 col-lg-6">
+								<div class="col-xs-12 col-sm-6">
 									<a href="<?php the_permalink();?>">
 										<div class="img-container">
-											<?php the_post_thumbnail('medium',$default); ?>
+											<?php the_post_thumbnail('large',$default); ?>
 											<div class="title-container">
 												<h4><?php the_title(); ?></h4>
 											</div>
@@ -108,12 +109,13 @@
 
     var map = new google.maps.Map(document.getElementById("trip-map-canvas"),
         myOptions);
-
-     var marker = new google.maps.Marker({
-	      position: myLatlng,
-	      title: "<?php echo get_the_title($item_trip); ?>",
-	      map: map,
-  		});
+    var image = "<?php echo get_stylesheet_directory_uri();?>/library/images/map-icon.png";
+    var marker = new google.maps.Marker({
+		position: myLatlng,
+		title: "<?php echo get_the_title($item_trip); ?>",
+		map: map,
+		icon: image,
+  	});
   }
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>

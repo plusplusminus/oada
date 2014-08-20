@@ -15,6 +15,10 @@ jQuery(document).ready(function(){
         jQuery( '.search' ).toggleClass( "open" );
     });
 
+    jQuery('#carousel-example-generic').on('slide.bs.carousel', function (e,f) {
+      console.log(e.relatedTarget);
+
+    })
 
       
 

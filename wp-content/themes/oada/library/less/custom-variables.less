@@ -23,6 +23,9 @@
 @brand-warning:         #f69431;
 @brand-danger:          #E41365; // pink
 
+@xs: ~'min-width: @{screen-xs}';
+@sm: ~'min-width: @{screen-sm}';
+@md: ~'min-width: @{screen-md}';
 
 //== Scaffolding
 //
@@ -31,7 +34,7 @@
 //** Background color for `<body>`.
 @body-bg:               #efefef;
 //** Global text color on `<body>`.
-@text-color:            #7e7e7e;
+@text-color:           @gray;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -303,7 +306,7 @@
 @grid-gutter-width:         30px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-@grid-float-breakpoint:     @screen-sm-min;
+@grid-float-breakpoint:     @screen-md-min;
 //** Point at which the navbar begins collapsing.
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
 

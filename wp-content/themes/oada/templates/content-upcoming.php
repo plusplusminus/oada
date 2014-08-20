@@ -3,7 +3,7 @@
 global $post;
 ?>
 
-<a href="#">
+<div class="content-wrap">
     <?php the_post_thumbnail('large',array('class'=>'img-responsive')); ?>
     <div class="experience-info">
     	<div class="row">
@@ -18,7 +18,7 @@ global $post;
     		<?php endif; ?>
     	</div>
 		<div class="inner-info">
-			<span class="date"><p>Coming Soon : <?php the_date();?></p></h5>
+			<span class="date"><p>Coming Soon : <?php the_date();?></p></span></h5>
 		</div>
     </div>
-</a>
+</div>

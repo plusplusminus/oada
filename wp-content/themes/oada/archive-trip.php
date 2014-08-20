@@ -17,7 +17,7 @@
 						<div class="row">
 							<?php while (have_posts()) : the_post(); $count++; ?>
 
-							<div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
+							<div class="<?php echo $count <= 2 ? 'col-sm-6' : 'col-sm-4';?>">
 
 								<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
 

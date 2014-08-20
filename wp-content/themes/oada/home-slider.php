@@ -7,7 +7,7 @@ $the_query = new WP_Query( $args );
 
 // The Loop
 if ( $the_query->have_posts() ) { $count = 0; ?>
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
 		<div class="carousel-inner">
 			<?php while ( $the_query->have_posts() ) { $the_query->the_post(); $count++; ?>
 				<div class="item <?php if ($count == 1) echo 'active';?>">
@@ -31,10 +31,10 @@ if ( $the_query->have_posts() ) { $count = 0; ?>
 			
 		</div>
 		<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-			<span class="fa fa-chevron-left"></span>
+			<span class="fa fa-angle-left"></span>
 		</a>
 		<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-			<span class="fa fa-chevron-right"></span>
+			<span class="fa fa-angle-right"></span>
 		</a>
 	</div>
 <?php } else {

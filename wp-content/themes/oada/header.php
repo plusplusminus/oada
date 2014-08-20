@@ -11,7 +11,7 @@
 		<?php // Google Chrome Frame for IE ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>wp_title('');</title>
+		<title><?php wp_title('');?></title>
 
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
@@ -43,7 +43,7 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-
+	<?php include_once(get_stylesheet_directory()."/library/images/svg-defs.svg"); ?>
     <header class="header">
 
       <nav role="navigation">
@@ -63,7 +63,7 @@
 					$site_name = get_bloginfo('name');
 					$site_description = get_bloginfo('description');
 				if ( is_ssl() ) $logo_url = str_replace( 'http://', 'https://', $logo_url );
-					echo '<a class="navbar-brand logo" href="' . esc_url( $site_url ) . '" title="' . esc_attr( $site_description ) . '"><img class="img-responsive" src="'.$brew_options['site_logo']['url'].'" alt="'.esc_attr($site_name).'"/></a>' . "\n";
+					echo '<a id="logo" class="navbar-brand logo" href="' . esc_url( $site_url ) . '" title="' . esc_attr( $site_description ) . '"><img class="img-responsive" src="'.$brew_options['site_logo']['url'].'" alt="'.esc_attr($site_name).'"/></a>' . "\n";
 				} // End IF Statement */
 			?>
             </div>
@@ -71,7 +71,7 @@
             <div class="navbar-collapse collapse navbar-responsive-collapse">
             	
               		
-              		<?php secondary_nav(); ?>
+              	<?php secondary_nav(); ?>
               	
             </div>
             <div class="search navbar-inverse">

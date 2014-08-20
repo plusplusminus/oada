@@ -15,10 +15,21 @@ and more scalable.
 */
 
 
+
 // HEADER
 .header {
 
-	#logo {}
+	.logo {
+		img {
+			max-width: 50px;
+			margin-left: 15px;
+			@media (@md) {
+				max-width: 100%;
+				margin-left: 0px;
+			}
+		}
+
+	}
 
 	nav {
 		ul.nav {
@@ -27,13 +38,13 @@ and more scalable.
 					text-transform: uppercase;
 					color: @gray-light;
 					font-size: @font-size-small;
-					.fa {
-						font-size: 1.5em;
+					.icon {
+						font-size: 2em;
 						padding-right: 10px;
 					}
 					&:hover {
-						.fa {
-							color: @brand-info;
+						.icon {
+							fill: @brand-info;
 						}
 					}
 				}
@@ -53,9 +64,11 @@ and more scalable.
 
 	li {
 
-		a {
-			padding-top: 50px;
-			padding-bottom: 50px;
+		a { 
+			@media (@md) {
+				padding-top: 50px;
+				padding-bottom: 50px;
+			}
 			&:hover, &:focus {
 
 			}
@@ -99,3 +112,17 @@ and more scalable.
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+.nav-justified {
+	padding: 0;
+	margin: 0;
+	> li {
+		list-style: none;
+	}
+	.fa-stack {
+		font-size: 2em;
+		@media (@md) {
+			font-size: 5em;
+		}
+	}
+}

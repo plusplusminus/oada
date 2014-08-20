@@ -40,22 +40,28 @@
 					<ul class="list-inline text-center">
 						<li><a data-tooltip="..on Facebook" href="#">
 								<span class="fa-stack fa-3x">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+									<i class="fa fa-circle svg-stack-2x"></i>
+									<svg class="social-icon shape-social-facebook svg-stack-1x fa-inverse">
+									  	<use xlink:href="#shape-social-facebook"></use>
+									</svg>
 			  					</span>
 			  				</a>
 			  			</li>
 			  			<li><a data-tooltip="..on Twitter" href="#">
 								<span class="fa-stack fa-3x">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+									<i class="fa fa-circle svg-stack-2x"></i>
+									<svg class="social-icon shape-social-twitter svg-stack-1x fa-inverse">
+									  	<use xlink:href="#shape-social-twitter"></use>
+									</svg>
 			  					</span>
 			  				</a>
 			  			</li>
 			  			<li><a data-toggle="modal" data-target="#newsletterModal" href="#" data-tooltip="..by email newletter" href="#">
 								<span class="fa-stack fa-3x">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+									<i class="fa fa-circle svg-stack-2x"></i>
+									<svg class="social-icon shape-social-newsletter svg-stack-1x fa-inverse">
+									  	<use xlink:href="#shape-newsletter"></use>
+									</svg>
 			  					</span>
 			  				</a>
 			  			</li>

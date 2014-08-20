@@ -67,7 +67,7 @@ global $post;
 						    <?php while ( $connected->have_posts() ) : $connected->the_post(); $count++; ?>
 						    	<?php $location = get_post_meta($post->ID,'_ppm_place_location',true); ?>
 						    	<?php $map_location .= '["'.get_the_title().'", '.$location['latitude'].', '.$location['longitude'].', '.$count.',"'.get_permalink().'"],'; ?>
-						    	<div class="place col-md-6">
+						    	<div class="place col-sm-6">
 					    		<a href="<?php the_permalink();?>">
 							        <?php the_post_thumbnail('large',$default); ?>
 							        <div class="place-info">
@@ -99,7 +99,8 @@ global $post;
 <section id="experiences" class="bg-orange">
 	<div class="container">
 		<h2 class="title">What we've experienced</h2>
-		<?php $terms = wp_get_post_terms($post->ID, 'category', array("fields" => "all"));
+		<?php $terms_connected = wp_get_post_terms($post->ID, 'category', array("fields" => "id"));
+			$terms = get_terms('category',array('include'=>$terms_connected));
 		 	if ( !empty( $terms ) && !is_wp_error( $terms ) ){
 			echo '<ul class="nav-justified text-center">';
 			foreach ( $terms as $term ) { ?>
@@ -122,29 +123,6 @@ global $post;
 </section>
 
 
-<section id="highlights" class="container hide">
-	<h2>Trip Highlights</h2>
-
-	<?php
-	$connected = new WP_Query( array(
-	    'connected_type' => 'posts_to_trips',
-	    'connected_items' => get_queried_object(),
-	    'connected_meta' => array( 'featured' => '1' )
-	) );
-
-	while ( $connected->have_posts() ) : $connected->the_post(); $count++; ?>
-    	<div class="col-md-6">
-    		<a href="<?php the_permalink();?>">
-		        <?php the_post_thumbnail('full'); ?>
-		        <div class="place-info">
-		        	<h3><?php the_title();?></h3>
-		        </div>
-		    </a>
-        </div>
-        <?php if ($count % 2 == 0) echo '<div class="clearfix"></div>';?>
-    <?php endwhile; ?>
-</section>
-
 <script type="text/javascript">
     var locations = [<?php echo substr($map_location,0,-1);?>];
 
@@ -160,11 +138,12 @@ global $post;
 
     var marker, i;
     var markers = new Array();
-
+    var image = "<?php echo get_stylesheet_directory_uri();?>/library/images/map-icon.png";
     for (i = 0; i < locations.length; i++) {  
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
+        map: map,
+        icon: image,
       });
 
       markers.push(marker);
@@ -183,8 +162,8 @@ global $post;
 
         var polyline = new google.maps.Polyline({
             path: route,
-            strokeColor: "#ff0000",
-            strokeOpacity: 0.6,
+            strokeColor: "#83b7e6",
+            strokeOpacity: 0.9,
             strokeWeight: 5
         });
 

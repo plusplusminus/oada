@@ -18,10 +18,10 @@
 								<div class="titlewrap clearfix">
 									<h1 class="single-title entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<div class="row">
-										<div class="col-md-4">
+										<div class="col-xs-4">
 											<span class="post-author">Writen by: <?php the_author_link(); ?></span>
 										</div>
-										<div class="col-md-8 text-right">
+										<div class="col-xs-8 text-right">
 											<?php $terms = wp_get_post_terms($post->ID, 'category', array("fields" => "all"));
 											 	if ( !empty( $terms ) && !is_wp_error( $terms ) ){
 												echo '<ul class="list-inline terms">';

@@ -2,7 +2,9 @@
 <section id="places" class="bg-dark">
 	<div class="container">
 		<div class="place-title">
-			<span class="fa fa-map-marker fa-3x"></span>
+			<svg class="title-icon shape-trips">
+			  <use xlink:href="#shape-trips"></use>
+			</svg>
 			<h3 class="title">Places we visited</h3>
 		</div>
 	    <?php
@@ -15,7 +17,7 @@
     		<div class="places row">
 			    <?php while ( $query->have_posts() ) : $query->the_post(); $count++; ?>
 			    	<?php if ($count <= 3) : ?>
-			    		<div class="place col-md-4">
+			    		<div class="place col-sm-6 col-md-4">
 			    			<a href="<?php the_permalink();?>">
 						        <?php the_post_thumbnail('large',$default); ?>
 						        <div class="place-info">
@@ -28,7 +30,9 @@
 						</div>
 						<?php if ($count == 3) echo '<div class="clearfix"></div>'; ?>
 					<?php else : ?>
-						<?php $html .= '<li><a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_title().',	</a></li>'; ?>
+						<?php if ($count < 10) $html .= '<li><a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_title().',	</a></li>';
+						else $html .= '<li><a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_title().'</a></li>';
+			    	?>
 			    	<?php endif; ?>
 			    <?php endwhile; ?>
 			    <?php $html .= '<li> | <a class="view-more" href="'.get_post_type_archive_link('places').'" title="All Places">VIEW THEM ALL</a> <span class="fa fa-angle-right"></span></li>'; ?>

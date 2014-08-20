@@ -400,12 +400,6 @@ function my_connection_types() {
         'to' => 'trip',
         'sortable' => 'any',  // this must be set to 'any' or ``true``
         'cardinality' => 'many-to-one', //optional
-        'fields' => array(
-            'featured' => array(
-                'title' => 'Trip Highlight',
-                'type' => 'checkbox',
-            ),
-        ),
     ));
 
     p2p_register_connection_type( array(
@@ -469,7 +463,7 @@ function woo_story_sharing($title='Share:')
             <a href="#" class="social" onclick="window.open('http://www.facebook.com/sharer.php?s=100&p[title]=<?php echo urlencode($title); ?>&p[summary]=<?php echo urlencode($summary); ?>&p[url]=<?php echo urlencode($url); ?>&p[images][0]=<?php echo urlencode($thumb[0]); ?>', 'sharer', 'toolbar=0,status=0,width=626,height=436');return false;">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    <i class="icon-socialfacebook fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
         </li>
@@ -477,7 +471,7 @@ function woo_story_sharing($title='Share:')
             <a target="_blank" class="social" href="https://twitter.com/share/?counturl=<?php the_permalink();?>&amp;url=<?php the_permalink();?>&amp;text=<?php the_title();?>">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    <i class="icon-socialtwitter fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
         </li>
@@ -493,7 +487,7 @@ function woo_story_sharing($title='Share:')
             <a class="social" href="#">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                    <i class="icon-sociallove fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
         </li>
@@ -504,40 +498,66 @@ function woo_story_sharing($title='Share:')
 
 if (!function_exists('woo_postnav')) {
     function woo_postnav($id) {
+        global $post;
 
         if ( is_single() ) {
-            $items = p2p_type('posts_to_trips')->get_adjacent_items($id);
+            $items = p2p_type('posts_to_trips')->get_adjacent_items($post->ID);
             ?>
             <div class="post-entries">
-                <?php if (!empty($items['previous'])) : ?>
-                    <div class="col-md-6 nav-entries-holder">
-                        <a href="<?php echo get_permalink($items['previous']);?>">
-                        <div class="nav-prev pull-left">
-                            <i class="fa fa-angle-left fa-5x"></i>
-                            <div class="nav-content">
-                                <span class="nav-trip"><?php echo get_the_title($items['parent']);?></span>
-                                <p><?php echo get_the_title($items['previous']);?></p>
+                <div class="row">
+                    <?php if (!empty($items['previous'])) : ?>
+                        <div class="col-md-6 border-right">
+                            <div class="nav-entries-holder">
+                                <a title="<?php echo get_the_title($items['previous']);?>" href="<?php echo get_permalink($items['previous']);?>">
+                                    <div class="nav-prev">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <div class="image-container">
+                                                    <?php echo get_the_post_thumbnail($items['previous']->ID,'thumbnail',array('class'=>'img-responsive img-circle') ); ?>
+                                                    <div class="circle-hover">
+                                                        <i class="icon-arrowleft fa-2x"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <div class="nav-content">
+                                                    <span class="nav-trip"><?php echo get_the_title($items['parent']);?></span>
+                                                    <h4 class="trunc"><?php echo get_the_title($items['previous']);?></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="clearfix"></div>
                         </div>
-                        </a>
-                    </div>
-                <?php endif; ?>
-                <?php if (!empty($items['next'])) : ?>
-                    <div class="col-md-6 nav-entries-holder pull-right">
-                        <a href="<?php echo get_permalink($items['next']);?>">
-                        <div class="nav-next pull-right">
-                            <i class="fa fa-angle-right fa-5x"></i>
-                            <div class="nav-content">
-                               <span class="nav-trip"><?php echo get_the_title($items['parent']);?></span>
-                                <p><?php echo get_the_title($items['next']); ?></p>
+                    <?php endif; ?>
+                    <?php if (!empty($items['next'])) : ?>
+                        <div class="col-md-6">
+                            <div class="nav-entries-holder">
+                                <a title="<?php echo get_the_title($items['next']);?>" href="<?php echo get_permalink($items['next']);?>">
+                                    <div class="nav-prev">
+                                        <div class="row">
+                                            <div class="col-xs-8">
+                                                <div class="nav-content">
+                                                    <span class="nav-trip"><?php echo get_the_title($items['parent']);?></span>
+                                                    <h4 class="trunc"><?php echo get_the_title($items['next']);?></h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="image-container">
+                                                    <?php echo get_the_post_thumbnail($items['next']->ID,'thumbnail',array('class'=>'img-responsive img-circle') ); ?>
+                                                    <div class="circle-hover">
+                                                        <i class="icon-arrowright fa-2x"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="clearfix"></div>
                         </div>
-                        </a>
-                    </div>
-                <?php endif; ?>
-            <div class="clearfix"></div>
+                    <?php endif; ?>
+                </div>
             </div><!--/.post-entires-->
         <?php
         }
@@ -730,9 +750,15 @@ if ( ! function_exists( 'category_menu' ) ) {
                 ?>
                 <li>
                     <a href="<?php echo get_term_link( $term ); ?>" title="<?php sprintf(__('View all post filed under %s', 'my_localization_domain'), $term->name);?>">
-                        <span class="fa-stack fa-5x">
+                        <!--<span class="fa-stack fa-5x">
                             <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa <?php echo $term->description;?> fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-stack-1x fa-inverse"></i>
+                        </span> -->
+                        <span class="fa-stack fa-3x">
+                            <i class="fa fa-circle svg-stack-2x"></i>
+                            <svg class="category-icon <?php echo $term->description;?> svg-stack-1x fa-inverse">
+                               <use xlink:href="#<?php echo $term->description;?>"></use>
+                            </svg>
                         </span>
                         <h4><?php echo $term->name; ?></h4>
                     </a>

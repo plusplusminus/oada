@@ -8,7 +8,9 @@ if ( $query->have_posts() ) : $count =0;?>
 	<section id="future" class="bg-dark">
 		<div class="container">
 			<div class="article-title">
-				<span class="fa fa-comment fa-3x"></span>
+				<svg class="title-icon shape-blog">
+				  <use xlink:href="#shape-blog"></use>
+				</svg>
 				<h3 class="title">Upcoming Articles</h3>
 			</div>
 			<div class="articles experiences row">
