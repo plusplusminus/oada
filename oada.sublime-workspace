@@ -4,12 +4,12 @@
 		"selected_items":
 		[
 			[
-				"ma",
+				"mar",
 				"margin-top"
 			],
 			[
-				"mar",
-				"margin-right"
+				"ma",
+				"margin-top"
 			],
 			[
 				"tex",
@@ -519,176 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "wp-content/themes/oada/functions.php",
-			"settings":
-			{
-				"buffer_size": 37613,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/header.php",
-			"settings":
-			{
-				"buffer_size": 4283,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/library/less/theme.less",
-			"settings":
-			{
-				"buffer_size": 20332,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/includes/js/ppm.js",
-			"settings":
-			{
-				"buffer_size": 1367,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/library/less/brew/tables.less",
-			"settings":
-			{
-				"buffer_size": 713,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/single.php",
-			"settings":
-			{
-				"buffer_size": 3260,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 12 files for \"slide-title\"\n\n0 matches across 0 files\n\n\nSearching 131 files for \"slide-title\"\n\n/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/css/style.css:\n 8709      text-align: left;\n 8710    }\n 8711:   .carousel-caption .slide-title {\n 8712      padding: 0px 20% 0px;\n 8713      font-size: 49px;\n ....\n 8715      text-transform: uppercase;\n 8716    }\n 8717:   .carousel-caption .slide-title a {\n 8718      color: #fff;\n 8719    }\n\n/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/theme.less:\n  185  	background: rgba(0,0,0,0.5);\n  186  	text-align: left;\n  187: 	.slide-title {\n  188  		padding: 0px 20% 0px;\n  189  		font-size: (@font-size-base * 3.5);\n\n3 matches across 2 files\n",
-			"settings":
-			{
-				"buffer_size": 732,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/single-places.php",
-			"settings":
-			{
-				"buffer_size": 7443,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/home-articles.php",
-			"settings":
-			{
-				"buffer_size": 1030,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/templates/content-upcoming.php",
-			"settings":
-			{
-				"buffer_size": 720,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/library/less/brew/nav.less",
-			"settings":
-			{
-				"buffer_size": 1673,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/home-upcoming.php",
-			"settings":
-			{
-				"buffer_size": 1312,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/library/less/OADA/oada.less",
-			"settings":
-			{
-				"buffer_size": 2057,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/home-slider.php",
-			"settings":
-			{
-				"buffer_size": 1582,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/footer.php",
-			"settings":
-			{
-				"buffer_size": 1631,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/single-trip.php",
-			"settings":
-			{
-				"buffer_size": 6243,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/sidebar-experience.php",
-			"settings":
-			{
-				"buffer_size": 4349,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/archive-trip.php",
-			"settings":
-			{
-				"buffer_size": 2454,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/library/less/style.less",
-			"settings":
-			{
-				"buffer_size": 3573,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/library/less/custom-variables.less",
-			"settings":
-			{
-				"buffer_size": 25509,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/oada/home-places.php",
-			"settings":
-			{
-				"buffer_size": 1921,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -729,34 +559,41 @@
 	},
 	"file_history":
 	[
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-places.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/custom-variables.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-upcoming.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/footer.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/single.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/functions.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/header.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/theme.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/nav.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-connect.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/template-blog.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/includes/js/ppm.js",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/single-places.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-articles.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/style.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/OADA/oada.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/footer.less",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/templates/content-upcoming.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive-trip.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/sidebar-experience.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/single-trip.php",
+		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-slider.php",
 		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-upcoming.php",
 		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-connect.php",
 		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/layouts/layout.liquid",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/sidebar-experience.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/custom-variables.less",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/header.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/form.less",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/functions.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/single.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/theme.less",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/content.less",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/comments.less",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/tables.less",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/template-trips.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/single-places.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/template-places.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/template-blog.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive-places.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive-trip.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/brew.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-upcoming.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/footer.less",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/footer.php",
 		"/Users/iaanvn/Sites/oada/wp-config-sample.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/nav.less",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-places.php",
-		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-slider.php",
 		"/Users/iaanvn/Sites/jennifer/library/less/custom-variables.less",
 		"/Users/iaanvn/Sites/jennifer/library/less/theme.less",
 		"/Users/iaanvn/Sites/oada/wp-config.php",
@@ -849,18 +686,11 @@
 		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/page-home.php",
 		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/functions.php",
 		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/template-about.php",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed/taxonomy-product-category.php",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/library/less/brew/footer.less",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed/library/bones.php",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/library/less/custom-variables.less",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/library/less/font-awesome/less/variables.less",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/template-services.php",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/rapidspill/template-products.php",
-		"/Users/admin/Documents/Sites/rapidspill/wp-content/plugins/show-some-love-kikicoza/show-some-love-plugin.php"
+		"/Users/admin/Documents/Sites/rapidspill/wp-content/themes/plussed/taxonomy-product-category.php"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -974,6 +804,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"post-",
+			"social",
+			"article-footer",
+			"social",
+			"share",
+			"label",
+			">\n",
+			";\n",
+			"active",
+			"class=\"pagination\"",
+			"paginate",
 			"slide-title",
 			"#content",
 			".nav-justified",
@@ -1090,18 +931,7 @@
 			"navicon",
 			"nav",
 			"height",
-			"registe",
-			"gallery",
-			"product",
-			"register_sidebar",
-			"nav {",
-			"nav",
-			"border-radius",
-			"border-",
-			"btn",
-			"button",
-			"primary",
-			"more_link"
+			"registe"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1187,646 +1017,8 @@
 	"groups":
 	[
 		{
-			"selected": 4,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "wp-content/themes/oada/functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 37613,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								22025,
-								22025
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 7822.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wp-content/themes/oada/header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4283,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3770,
-								3770
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 90.0,
-						"translation.y": 842.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/oada/library/less/theme.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20332,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3804,
-								3791
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS-sublime-master/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3550.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "wp-content/themes/oada/includes/js/ppm.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1367,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								572,
-								572
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wp-content/themes/oada/library/less/brew/tables.less",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 713,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS-sublime-master/LESS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "wp-content/themes/oada/single.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3260,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								734,
-								734
-							],
-							[
-								867,
-								867
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 4.0,
-						"translation.y": 63.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 732,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										252,
-										263
-									],
-									[
-										410,
-										421
-									],
-									[
-										616,
-										627
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								514,
-								514
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 2,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 68.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "wp-content/themes/oada/single-places.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7443,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4682,
-								4682
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2020.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "wp-content/themes/oada/home-articles.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1030,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								384,
-								384
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "wp-content/themes/oada/templates/content-upcoming.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 720,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								106,
-								94
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "wp-content/themes/oada/library/less/brew/nav.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1673,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1328,
-								1328
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS-sublime-master/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1510.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "wp-content/themes/oada/home-upcoming.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1312,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1132,
-								1132
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 30.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "wp-content/themes/oada/library/less/OADA/oada.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2057,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1264,
-								1249
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS-sublime-master/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1131.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "wp-content/themes/oada/home-slider.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1582,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								310,
-								310
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 133.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "wp-content/themes/oada/footer.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1631,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								738,
-								738
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 2.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "wp-content/themes/oada/single-trip.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6243,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2324,
-								2324
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 637.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "wp-content/themes/oada/sidebar-experience.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4349,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2231,
-								2231
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 682.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "wp-content/themes/oada/archive-trip.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2454,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								285,
-								285
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 170.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "wp-content/themes/oada/library/less/style.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3573,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2024,
-								2024
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS-sublime-master/LESS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 831.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "wp-content/themes/oada/library/less/custom-variables.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25509,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10225,
-								10225
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS-sublime-master/LESS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 6457.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "wp-content/themes/oada/home-places.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1921,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								642,
-								642
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 167.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				}
 			]
 		}
 	],

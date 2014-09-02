@@ -457,7 +457,7 @@ function woo_story_sharing($title='Share:')
     global $post;
 
     $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail');?>
-    <ul class="social list-inline">  
+    <ul class="social share list-inline">  
         <li class="share"><?php _e($title,'ppm');?></li>
         <?php $url = get_permalink();?>
         <?php $title = get_the_title();?>
@@ -466,7 +466,7 @@ function woo_story_sharing($title='Share:')
             <a href="#" class="social" onclick="window.open('http://www.facebook.com/sharer.php?s=100&p[title]=<?php echo urlencode($title); ?>&p[summary]=<?php echo urlencode($summary); ?>&p[url]=<?php echo urlencode($url); ?>&p[images][0]=<?php echo urlencode($thumb[0]); ?>', 'sharer', 'toolbar=0,status=0,width=626,height=436');return false;">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="icon-socialfacebook fa-stack-1x fa-inverse"></i>
+                    <i class="share-icon-holder"><svg class="share-icon social-facebook"><use xlink:href="#shape-social-facebook"></use></svg></i>
                 </span>
             </a>
         </li>
@@ -474,7 +474,7 @@ function woo_story_sharing($title='Share:')
             <a target="_blank" class="social" href="https://twitter.com/share/?counturl=<?php the_permalink();?>&amp;url=<?php the_permalink();?>&amp;text=<?php the_title();?>">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="icon-socialtwitter fa-stack-1x fa-inverse"></i>
+                    <i class="share-icon-holder"><svg class="share-icon social-twitter"><use xlink:href="#shape-social-twitter"></use></svg></i>
                 </span>
             </a>
         </li>
@@ -490,7 +490,7 @@ function woo_story_sharing($title='Share:')
             <a class="social" href="#">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="icon-sociallove fa-stack-1x fa-inverse"></i>
+                    <i class="share-icon-holder"><svg class="share-icon social-love"><use xlink:href="#shape-social-love"></use></svg></i>
                 </span>
             </a>
         </li>
@@ -518,7 +518,7 @@ if (!function_exists('woo_postnav')) {
                                                 <div class="image-container">
                                                     <?php echo get_the_post_thumbnail($items['previous']->ID,'thumbnail',array('class'=>'img-responsive img-circle') ); ?>
                                                     <div class="circle-hover">
-                                                        <i class="icon-arrowleft fa-2x"></i>
+                                                        <svg class="arrow"><use xlink:href="#shape-arrow-left"></use></svg>
                                                     </div>
                                                 </div>
                                             </div>
@@ -550,7 +550,7 @@ if (!function_exists('woo_postnav')) {
                                                 <div class="image-container">
                                                     <?php echo get_the_post_thumbnail($items['next']->ID,'thumbnail',array('class'=>'img-responsive img-circle') ); ?>
                                                     <div class="circle-hover">
-                                                        <i class="icon-arrowright fa-2x"></i>
+                                                        <svg class="arrow"><use xlink:href="#shape-arrow-right"></use></svg>
                                                     </div>
                                                 </div>
                                             </div>
