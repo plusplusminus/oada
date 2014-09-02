@@ -122,6 +122,33 @@ global $post;
 	</div>
 </section>
 
+<section id="gallery" class="bg-dark">
+	<div class="container">
+		<h2 class="title">Image Gallery</h2>
+		<div class="gallery-container row">
+			<div id="owl" class="col-md-8">
+				<div id="owl-example" class="owl-carousel">
+
+				  	<?php while ( $connected->have_posts() ) : $connected->the_post(); $count++; ?>
+				    	<?php $location = get_post_meta($post->ID,'_ppm_place_location',true); ?>
+				    	<?php $map_location .= '["'.get_the_title().'", '.$location['latitude'].', '.$location['longitude'].', '.$count.',"'.get_permalink().'"],'; ?>
+				    	<div class="">
+						<a href="<?php the_permalink();?>">
+					        <?php the_post_thumbnail('slide-image',$default); ?>
+					    </a>
+				    </div>
+				    <?php endwhile; ?>
+		    	</div>
+	    	</div>
+	    	<div "owl-overlay" class="col-md-4">
+	    		<h2><?php the_title(); ?></h2>
+	    		<p>View a gallery of our favourite images from this trip and share in our experience through our lens</p>
+	    		<a href="#" class="reinit">Open Gallery</a>
+	    	</div>
+	    </div>
+	</div>
+</section>
+
 
 <script type="text/javascript">
     var locations = [<?php echo substr($map_location,0,-1);?>];

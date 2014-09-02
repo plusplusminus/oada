@@ -18,7 +18,29 @@ jQuery(document).ready(function(){
     jQuery('#carousel-example-generic').on('slide.bs.carousel', function (e,f) {
       console.log(e.relatedTarget);
 
-    })
+    });
+
+    var owl = jQuery("#owl-example");
+    
+    owl.owlCarousel({
+        navigation : true, // Show next and prev buttons
+        singleItem:true,
+        pagination : false,
+        afterMove: moved,
+        navigationText : ['<span class="icon-wrap"><i class="fa fa-angle-left fa-3x"></i><img src="http://tympanus.net/Development/ArrowNavigationStyles/img/5.png" alt="Previous thumb"/></span>','<span class="icon-wrap"><i class="fa fa-angle-right fa-3x"></i><img src="http://tympanus.net/Development/ArrowNavigationStyles/img/5.png" alt="Previous thumb"/></span>'],
+    });
+
+
+    function moved() {
+    var jowl = jQuery(".owl-carousel").data('owlCarousel');
+    console.log(jowl);
+    }
+
+    owl.on('click', '.owl-item', function(e) {
+        var carousel = jQuery(this).data('owl.carousel');
+        e.preventDefault();
+        console.log(carousel);
+    });
 
       
 

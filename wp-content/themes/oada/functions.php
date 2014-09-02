@@ -9,10 +9,13 @@ function ppm_scripts_and_styles() {
     if (!is_admin()) {
 
         wp_register_script( 'third-party', get_stylesheet_directory_uri() . '/includes/js/third-party.js', array('jquery'), '3.0.0',true);
+        wp_register_script( 'owl', get_stylesheet_directory_uri() . '/includes/js/owl.min.js', array('jquery'), '3.0.0',true);
+      
         wp_register_script( 'ppm', get_stylesheet_directory_uri() . '/includes/js/ppm.js', array('third-party','jquery'), '3.0.0',true);
         
         
         wp_enqueue_script('third-party');
+        wp_enqueue_script('owl');
         wp_enqueue_script('ppm');
 
 
