@@ -36,9 +36,6 @@
 
 						</article> <?php // end article ?>
 
-						<?php woo_postnav(get_the_id()); ?>
-
-          				<?php comments_template(); ?>
 
 					<?php endwhile; ?>
 

@@ -31,6 +31,7 @@ query_posts( $query_args );
 		<div id="main" class="col-md-12 clearfix experiences" role="main">
 		  <?php global $brew_options; ?>
 		  <h1 class="archive-title">All Experiences</h1>
+		  <?php get_template_part( 'breadcrumb' ); ?>
 		  
 		<?php if (have_posts()) :  $count=0; ?>
 			<div class="row">
