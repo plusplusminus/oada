@@ -19,7 +19,7 @@
 						
 						<?php while (have_posts()) : the_post(); $count++; ?>
 
-						<div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
+						<div class="col-sm-6 col-md-4">
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
 
@@ -57,7 +57,7 @@
 
 							</article> <?php // end article ?>
 						</div>
-						<?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>
+						<?php if ($count == 3) echo '<div class="clearfix"></div>'; ?>
 
 							<?php endwhile; ?>
 
