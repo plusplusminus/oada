@@ -9071,6 +9071,17 @@ ul.share .share-icon-holder svg {
     margin-top: 50px;
   }
 }
+#gallery.bg-dark {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background: #0a0a0a;
+}
+#gallery .title {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
 .archive #content,
 .search #content,
 .page-template-default #content {
@@ -9551,6 +9562,64 @@ ul.share .share-icon-holder svg {
 .single-post .post-entries {
   margin-bottom: 25px;
   background: #fff;
+}
+.single-trip #gallery .title {
+  color: #fff;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.single-trip #gallery .gallery .row {
+  overflow: hidden;
+}
+.single-trip #gallery .gallery.open .gallery-content {
+  transform: translateX(100%);
+}
+.single-trip #gallery .gallery.open .owl-carousel {
+  width: 100%;
+}
+.single-trip #gallery .gallery .owl-carousel {
+  width: 65%;
+}
+.single-trip #gallery .gallery .gallery-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  padding: 35px;
+}
+.single-trip #gallery .gallery .gallery-content .gallery-heading {
+  font-size: 36px;
+  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0;
+}
+.single-trip #gallery .gallery .gallery-content .gallery-title a {
+  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 56px;
+  margin: 5px 0;
+  color: #fff;
+  font-weight: 400;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.single-trip #gallery .gallery .gallery-content .gallery-title a:hover {
+  text-decoration: none;
+}
+.single-trip #gallery .gallery .gallery-content .view-more {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 30px;
+  display: block;
+  letter-spacing: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.single-trip #gallery .gallery .gallery-content .view-more:hover {
+  text-decoration: none;
 }
 .single-places #experiences .title {
   color: #383838;

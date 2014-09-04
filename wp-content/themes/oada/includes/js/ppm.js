@@ -1,13 +1,13 @@
 jQuery(document).ready(function(){
 	    var touch = Modernizr.touch;
 
-    jQuery(window).scroll(function(){
-        if  (jQuery(window).scrollTop() >= 70){
-            jQuery('header').addClass('view');
-        }
-        else if  (jQuery(window).scrollTop() == 0){
-            jQuery('header').removeClass('view');
-        }
+
+    var owl = jQuery("#owl-example");
+
+    jQuery('.gallery-content .view-more').on('click',function(e){
+        e.preventDefault();
+        jQuery('.gallery').toggleClass('open');
+        owl.data('owlCarousel').reinit();
     });
 
     jQuery( ".menu-item-39" ).click(function(e) {
@@ -20,12 +20,14 @@ jQuery(document).ready(function(){
 
     });
 
-    var owl = jQuery("#owl-example");
+    
     
     owl.owlCarousel({
         navigation : true, // Show next and prev buttons
         singleItem:true,
         pagination : false,
+        items : 1,
+        lazyLoad : true,
         afterMove: moved,
         navigationText : ['<span class="icon-wrap"><i class="fa fa-angle-left fa-3x"></i><img src="http://tympanus.net/Development/ArrowNavigationStyles/img/5.png" alt="Previous thumb"/></span>','<span class="icon-wrap"><i class="fa fa-angle-right fa-3x"></i><img src="http://tympanus.net/Development/ArrowNavigationStyles/img/5.png" alt="Previous thumb"/></span>'],
     });
