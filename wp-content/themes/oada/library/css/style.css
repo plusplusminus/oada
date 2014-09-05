@@ -9085,27 +9085,27 @@ ul.share .share-icon-holder svg {
 .archive #content,
 .search #content,
 .page-template-default #content,
-.page-template-default #content {
+.page-template-template-full-php #content {
   margin-top: 0px;
 }
 @media (min-width: 992px) {
   .archive #content,
   .search #content,
   .page-template-default #content,
-  .page-template-default #content {
+  .page-template-template-full-php #content {
     margin-top: 50px;
   }
 }
 .archive .article-footer,
 .search .article-footer,
 .page-template-default .article-footer,
-.page-template-default .article-footer {
+.page-template-template-full-php .article-footer {
   background: #fff;
 }
 .archive .archive-title,
 .search .archive-title,
 .page-template-default .archive-title,
-.page-template-default .archive-title {
+.page-template-template-full-php .archive-title {
   font-size: 36px;
   color: #444444;
   text-align: center;
