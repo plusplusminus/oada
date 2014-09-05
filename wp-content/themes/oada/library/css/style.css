@@ -9084,23 +9084,27 @@ ul.share .share-icon-holder svg {
 }
 .archive #content,
 .search #content,
+.page-template-default #content,
 .page-template-default #content {
   margin-top: 0px;
 }
 @media (min-width: 992px) {
   .archive #content,
   .search #content,
+  .page-template-default #content,
   .page-template-default #content {
     margin-top: 50px;
   }
 }
 .archive .article-footer,
 .search .article-footer,
+.page-template-default .article-footer,
 .page-template-default .article-footer {
   background: #fff;
 }
 .archive .archive-title,
 .search .archive-title,
+.page-template-default .archive-title,
 .page-template-default .archive-title {
   font-size: 36px;
   color: #444444;
