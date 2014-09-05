@@ -10,7 +10,7 @@
 				</h1>
 				<?php get_template_part( 'breadcrumb' ); ?>
 
-				<div id="main" class="col-md-12 clearfix" role="main">
+				<div id="main" class="col-md-10 col-md-offset-1 clearfix" role="main">
         		
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
