@@ -76,32 +76,14 @@ function child_sections($sections){
                         'id'=>'twitter_url',
                         'type' => 'text',
                         'title' => __('Twitter', 'redux-framework-demo'),
-                        'desc' => __('Enter your twitter handle', 'redux-framework-demo'),
+                        'desc' => __('Enter your twitter url', 'redux-framework-demo'),
                         ),  
             array(
-                        'id'=>'googleplus_url',
+                        'id'=>'facebook_url',
                         'type' => 'text',
-                        'title' => __('Google Plus', 'redux-framework-demo'),
-                        'desc' => __('Enter your Google+ url', 'redux-framework-demo'),
+                        'title' => __('Facebook', 'redux-framework-demo'),
+                        'desc' => __('Enter your Facebook URL', 'redux-framework-demo'),
                         ),  
-            array(
-                        'id'=>'address',
-                        'type' => 'textarea',
-                        'title' => __('Address', 'redux-framework-demo'),
-                        'desc' => __('Enter your business address', 'redux-framework-demo'),
-                        ),    
-             array(
-                        'id'=>'telephone',
-                        'type' => 'textarea',
-                        'title' => __('Telephone Numebrs', 'redux-framework-demo'),
-                        'desc' => __('Enter your business telephone numbers', 'redux-framework-demo'),
-                        ),
-            array(
-                    'id'=>'email',
-                    'type' => 'text',
-                    'title' => __('Email Address', 'redux-framework-demo'),
-                    'desc' => __('Enter your business email address', 'redux-framework-demo'),
-                    ),   
         )
     );
 
@@ -564,8 +546,8 @@ if (!function_exists('woo_postnav')) {
                                             </div>
                                             <div class="col-xs-8">
                                                 <div class="nav-content">
-                                                    <span class="nav-trip"><?php echo get_the_title($items['parent']);?></span>
-                                                    <h4 class="trunc"><?php echo get_the_title($items['previous']);?></h4>
+                                                    
+                                                    <h4 class=""><?php echo get_the_title($items['previous']);?></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -582,8 +564,8 @@ if (!function_exists('woo_postnav')) {
                                         <div class="row">
                                             <div class="col-xs-8">
                                                 <div class="nav-content">
-                                                    <span class="nav-trip"><?php echo get_the_title($items['parent']);?></span>
-                                                    <h4 class="trunc"><?php echo get_the_title($items['next']);?></h4>
+                                                    
+                                                    <h4 class=""><?php echo get_the_title($items['next']);?></h4>
                                                 </div>
                                             </div>
                                             <div class="col-xs-4">

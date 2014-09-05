@@ -1,4 +1,5 @@
 <?php global $post; ?>
+<?php global $brew_options; ?>
 
 <section id="connect" class="bg-dark">
 	<div class="container">
@@ -38,7 +39,7 @@
 				<div class="social-widget bg-warning well">
 					<h3 class="title text-center">Keep in Touch With Us</h3>
 					<ul class="list-inline text-center">
-						<li><a data-tooltip="..on Facebook" href="#">
+						<li><a data-tooltip="..on Facebook" href="<?php echo $brew_options['facebook_url'];?>">
 								<span class="fa-stack fa-3x">
 									<i class="fa fa-circle svg-stack-2x"></i>
 									<svg class="social-icon shape-social-facebook svg-stack-1x fa-inverse">
@@ -47,7 +48,7 @@
 			  					</span>
 			  				</a>
 			  			</li>
-			  			<li><a data-tooltip="..on Twitter" href="#">
+			  			<li><a data-tooltip="..on Twitter" href="<?php echo $brew_options['twitter_url'];?>">
 								<span class="fa-stack fa-3x">
 									<i class="fa fa-circle svg-stack-2x"></i>
 									<svg class="social-icon shape-social-twitter svg-stack-1x fa-inverse">

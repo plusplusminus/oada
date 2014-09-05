@@ -65,9 +65,7 @@ global $post;
 
 							<?php } ?>
 						</div>
-						<div class="place-tags">
-							<?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
-						</div>
+						
 	  			</div>
 	  		</div>
 		    
@@ -90,7 +88,7 @@ global $post;
 	if ( $connected->have_posts() ) : $count =0;?>
 	    <div id="experiences" class="content bg-light">
 			<div class="container">
-	    	<h3 class="title">What we've experienced</h3>
+	    	<h3 class="title">What we experienced</h3>
 	    	<div class="highlight">
 	    		<div class="row">
 					    <?php while ( $connected->have_posts() ) : $connected->the_post(); $count++; ?>

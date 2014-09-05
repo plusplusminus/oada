@@ -3,10 +3,18 @@ global $post;
 ?>
 
 <?php get_header(); ?>
+<?php $temp = $post->ID; ?>
 <?php $default = array('class'=>'img-responsive');?>
 <div class="header-hero">
 	<?php $default = array('class'=>'img-responsive');?>
-	<?php the_post_thumbnail('slide-image',$default);?>
+	<?php $image_header = get_post_meta($post->ID,'_ppm_header_image_id',true); ?>
+	<?php if (!empty($image_header)) : ?>
+		 <?php echo wp_get_attachment_image( $image_header , 'slide-image','',$default ); ?>
+	<?php elseif (has_post_thumbnail()) : ?>
+		<?php the_post_thumbnail('slide-image',$default);?>
+	<?php else: ?>
+		<img class="img-responsive" src="http://placehold.it/1600x650&text=.">
+	<?php endif; ?>
 	<div class="container">
 	  	<div class="post-info">
 	  		<div class="circle-text">
@@ -22,30 +30,11 @@ global $post;
 			        <div class="trip-entry">
 			        	<?php echo wpautop(get_post_meta($post->ID,'_ppm_trip_summary',true));?>
 			        </div>
-			        <div class="trip-tags">
-			        	<?php the_tags( '<span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>    
-      				</div>
       			</div>
       		</div>
       	</div>
      </div>
 </div>
-
-<section id="content">
-	<div class="container">
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	           
-	      <div class="entry clearfix" itemprop="articleBody">
-	        <?php the_content(); ?>
-	    
-	      </div> <!-- end article section -->
-	              
-	    <?php endwhile; ?>    
-	    
-	    <?php endif; ?>
-    </div>
-
-</section>
 
 <section id="places" class="bg-light">
 	<div class="container">
@@ -96,11 +85,30 @@ global $post;
 	</div>
 </section>
 
+<section id="content">
+	<div class="container">
+		<h3 class="title">Itinerary</h3>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	           
+	      <div class="entry clearfix" itemprop="articleBody">
+	        <?php the_content(); ?>
+	    
+	      </div> <!-- end article section -->
+	              
+	    <?php endwhile; ?>    
+	    <?php wp_reset_query(); ?>
+	    <?php endif; ?>
+    </div>
+
+</section>
+
+
+
 <section id="experiences" class="bg-orange">
 	<div class="container">
-		<h2 class="title">What we've experienced</h2>
-		<?php $terms_connected = wp_get_post_terms($post->ID, 'category', array("fields" => "id"));
-			$terms = get_terms('category',array('include'=>$terms_connected));
+		<h2 class="title">What we experienced</h2>
+		<?php $terms = get_the_category($temp);
+
 		 	if ( !empty( $terms ) && !is_wp_error( $terms ) ){
 			echo '<ul class="nav-justified text-center">';
 			foreach ( $terms as $term ) { ?>
@@ -108,10 +116,12 @@ global $post;
 					<?php $page = get_page_by_title('Trips'); ?>
 					<?php $http_link = get_permalink($page->ID).$post->post_name.'/'.$term->slug.'/'; ?>
 					<a href="<?php _e($http_link,'ppm');?>" title="<?php sprintf(__('View all post filed under %s', 'my_localization_domain'), $term->name);?>">
-			   			<span class="fa-stack fa-5x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa <?php echo $term->description;?> fa-stack-1x fa-inverse"></i>
-						</span>
+			   			<span class="fa-stack fa-3x">
+                            <i class="fa fa-circle svg-stack-2x"></i>
+                            <svg class="category-icon <?php echo $term->description;?> svg-stack-1x fa-inverse">
+                               <use xlink:href="#<?php echo $term->description;?>"></use>
+                            </svg>
+                        </span>
 						<h4><?php echo $term->name; ?></h4>
 					</a>
 	  			</li>
@@ -121,7 +131,12 @@ global $post;
 		?>
 	</div>
 </section>
-
+<?php
+$gallery_connected = new WP_Query( array(
+	      'connected_type' => 'gallery_to_trips',
+	      'connected_items' => get_queried_object(),
+	      'nopaging' => true,
+	    ) );?>
 <section id="gallery" class="bg-dark">
 	<div class="container">
 		<h2 class="title">Image Gallery</h2>
@@ -129,11 +144,38 @@ global $post;
 			<div class="row">
 		    	<div class="gallery-image col-md-12">
 		    		<div id="owl-example" class="owl-carousel">
-					  	<?php while ( $connected->have_posts() ) : $connected->the_post(); $count++; ?>
-								<div class="">
-							        <?php the_post_thumbnail('large',$default); ?>
-					    		</div>
+
+					  	<?php while ( $gallery_connected->have_posts() ) : $gallery_connected->the_post(); $count++;
+					  			
+					  			$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+								$args = array(
+								    'order'          => 'ASC',
+								    'post_type'      => 'attachment',
+								    'post_parent'    => $post->ID,
+								    'post_mime_type' => 'image',
+								    'numberposts'    => -1,
+								    'orderby' => 'menu_order',
+								    //'exclude'=>$post_thumbnail_id
+								);
+
+								$attachments = get_posts($args); 
+
+								foreach ($attachments as $attachment) { $count++;
+									$image_attributes = wp_get_attachment_image_src( $attachment->ID,'thumbnail');
+									$image_attributes_1 = wp_get_attachment_image_src( $attachment->ID,'full');
+									$image_array[] = array('full'=>$image_attributes_1,'thumbnail'=>$image_attributes);
+								}
+
+
+								foreach ($image_array as $key => $image) { ?>
+								<?php echo print_r(); ?>
+									<div data-thumbnail-prev="<?php echo $image_array[$key-1]['thumbnail'][0];?>" data-thumbnail-next="<?php echo $image_array[$key+1]['thumbnail'][0];?>" class="item">
+						        		<img class="lazyOwl" data-src="<?php echo $image['full'][0];?>" class="img-responsive"/>
+				    				</div>
+								<?php } ?>
+
 					    <?php endwhile; ?>
+					    
 			    	</div>
 			    	<div class="gallery-content">
 			        	<h3 class="gallery-title"><a href="#"><?php the_title(); ?></a></h2>

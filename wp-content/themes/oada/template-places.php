@@ -68,7 +68,6 @@ $experiences = new WP_Query( array(
               </article> <?php // end article ?>
               <footer class="article-footer clearfix">
                     <?php $count <= 2 ? the_excerpt() : '';?>
-                <?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
               </footer> <?php // end article footer ?>
             </div>
             <?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>

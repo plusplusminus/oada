@@ -16,7 +16,21 @@
 
 							<header class="article-header">
 								<div class="titlewrap clearfix">
-									<h1 class="single-title entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+									<?php $rating = get_post_meta($post->ID,'_ppm_experience_rating',true); ?>
+									<?php if (!empty($rating)) : ?>
+										<div class="row">
+											<div class="col-sm-10">
+												<h1 class="single-title entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+											</div>
+											<div class="col-sm-2">
+												<div class="rating text-right"><?php echo ppm_star_rating($rating); ?></div>
+											</div>
+										</div>
+									<?php else : ?>
+										<h1 class="single-title entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+									<?php endif; ?>
+
+									
 									<div class="row">
 										<div class="col-xs-4">
 											<span class="post-author">Writen by: <?php the_author_link(); ?></span>
@@ -53,7 +67,7 @@
 							</section> <?php // end article section ?>
 
 							<footer class="article-footer single-footer clearfix">
-								<?php the_tags( '<span class="tags"><span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span>', ' / ', '' ); ?></span>
+								<?php //the_tags( '<span class="tags"><span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span>', ' / ', '' ); ?></span>
               					<?php get_ratings($post->ID); ?>
               					<?php woo_story_sharing(); ?>
             				</footer> <?php // end article footer ?>	

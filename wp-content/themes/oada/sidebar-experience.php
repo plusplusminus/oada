@@ -25,9 +25,7 @@
 					<?php echo ppm_star_rating($rating); ?>
 					<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
 	            	<p><?php _e(get_post_meta($post->ID,'_ppm_trip_date',true));?></p>
-					<div class="tags">
-						<?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
-					</div>
+					
 				</div>
 
 	           
@@ -99,7 +97,7 @@
   	
   	var myLatlng = new google.maps.LatLng(<?php echo $location['latitude']; ?>, <?php echo $location['longitude']; ?>);
    	var myOptions = {
-	    zoom: 5,
+	    zoom: 15,
 	    scrollwheel: false,
 	    center: myLatlng,
 	    mapTypeId: google.maps.MapTypeId.ROADMAP,
