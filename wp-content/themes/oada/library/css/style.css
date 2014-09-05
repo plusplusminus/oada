@@ -9107,7 +9107,8 @@ ul.share .share-icon-holder svg {
   text-align: center;
   text-transform: uppercase;
 }
-.page-template-default .entry-content {
+.page-template-default .entry-content,
+.page-template-template-full-php .entry-content {
   padding: 20px;
 }
 .bg-dark {
@@ -9123,7 +9124,7 @@ ul.share .share-icon-holder svg {
 .bg-orange {
   background: #f4881b;
   padding-bottom: 60px;
-  padding-top: 60px;
+  padding-top: 120px;
 }
 #places.bg-dark {
   padding-top: 70px;
