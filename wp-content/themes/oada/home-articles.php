@@ -1,6 +1,6 @@
 <?php
 // Find connected pages
-$query = new WP_Query( array( 'post_type'=>'post','post_status'=>'future','posts_per_page'=>4,'tag'=>'future' ) );
+$query = new WP_Query( array( 'post_type'=>'post','post_status'=>'future','posts_per_page'=>4,'tag'=>'future','order'=>'ASC' ) );
 $default = array('class'=>'img-responsive'); 
 
 // Display connected pages
