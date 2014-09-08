@@ -11,7 +11,6 @@ global $post;
 
 		<div class="inner-info">
 			<?php $cat = get_the_category(); ?>
-			<?php $connected = p2p_type( 'places_to_trips' )->get_connected( $post->ID ); ?>
 			<?php if (is_page_template('template-blog.php' )) : ?>
 				<h5 class="category-title"><?php echo $cat[0]->cat_name ?></h5>
 				<span class="date"><?php the_time( get_option( 'date_format' ) ); ?> </span>
