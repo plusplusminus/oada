@@ -32,14 +32,15 @@
 
 									
 									<div class="row">
-										<div class="col-xs-4">
-											<span class="post-author">Writen by: <?php the_author_link(); ?></span>
+										<div class="col-xs-6">
+											<span class="post-author">Writen by <?php the_author_link(); ?> - <?php the_time( get_option( 'date_format' ) ); ?></span>
 										</div>
-										<div class="col-xs-8 text-right">
+										<div class="col-xs-6 text-right">
+
 											<?php $terms = wp_get_post_terms($post->ID, 'category', array("fields" => "all"));
 											 	if ( !empty( $terms ) && !is_wp_error( $terms ) ){
-												echo '<ul class="list-inline terms">';
-												foreach ( $terms as $term ) { ?>
+												echo '<ul class="list-inline terms">'; ?>
+												<?php foreach ( $terms as $term ) { ?>
 													<li>
 												   		<i class="fa <?php echo $term->description;?> fa-inverse"></i>
 														<span class="term"><?php echo $term->name; ?></span>

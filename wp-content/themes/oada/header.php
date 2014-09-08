@@ -81,7 +81,7 @@
 						    <div class="input-group">
 						      <input type="text" name="s" class="form-control">
 						      <span class="input-group-btn">
-						        <button class="btn btn-primary" type="button">Search</button>
+						        <button class="btn btn-primary" type="submit">Search</button>
 						      </span>
 						    </div><!-- /input-group -->
 						</form>

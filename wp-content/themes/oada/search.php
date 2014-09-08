@@ -17,23 +17,27 @@
 						<div class="row">
 							<?php while (have_posts()) : the_post(); $count++; ?>
 
-							<div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
-
-								<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
-
-									<a href="<?php the_permalink();?>">
-								        <?php the_post_thumbnail('large',$default); ?>
-								        <div class="experience-info">
-								        	<h4 class="trunc"><?php the_title();?></h4>
-								        	<div class="inner-info">
-							        			<span class="date"><?php _e(wpautop(get_post_meta($post->ID,'_ppm_trip_date',true)));?></span>
-								        	</div>
-								        </div>
-								    </a>
-
-								</article> <?php // end article ?>
-							</div>
-							<?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>
+							<article id="post-<?php the_ID(); ?>" <?php post_class('entry-content clearfix'); ?> role="article">
+              				
+				              <header>
+				                <?php the_post_thumbnail('thumbnail',array('class'=>'img-responsive pull-left alignleft')); ?>
+				                <h3><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+				                
+				                <p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_date(); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
+				              
+				              </header> <!-- end article header -->
+				            
+				              <section class="post_content">
+				                <?php the_excerpt('<span class="read-more">' . __("Read more on","bonestheme") . ' "'.the_title('', '', false).'" &raquo;</span>'); ?>
+				            
+				              </section> <!-- end article section -->
+				              
+				              <footer>
+				            
+				                
+				              </footer> <!-- end article footer -->
+				            
+				            </article> <!-- end article -->
 
 						<?php endwhile; ?>
 					</div>
