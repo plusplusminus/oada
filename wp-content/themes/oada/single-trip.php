@@ -143,52 +143,133 @@ $gallery_connected = new WP_Query( array(
 		<div class="gallery">
 			<div class="row">
 		    	<div class="gallery-image col-md-12">
-		    		<div id="owl-example" class="owl-carousel">
 
 					  	<?php while ( $gallery_connected->have_posts() ) : $gallery_connected->the_post(); $count++;
 					  			
-					  			$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
-								$args = array(
-								    'order'          => 'ASC',
-								    'post_type'      => 'attachment',
-								    'post_parent'    => $post->ID,
-								    'post_mime_type' => 'image',
-								    'numberposts'    => -1,
-								    'orderby' => 'menu_order',
-								    //'exclude'=>$post_thumbnail_id
-								);
+					  			global $post;
+						        $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+						        $args = array(
+						            'order'          => 'ASC',
+						            'post_type'      => 'attachment',
+						            'post_parent'    => $post->ID,
+						            'post_mime_type' => 'image',
+						            'numberposts'    => -1,
+						            'orderby' => 'menu_order',
+						            //'exclude'=>$post_thumbnail_id
+						        );
 
-								$attachments = get_posts($args); 
+						        $attachments = get_posts($args);  
+						        ?>
+						        <div class="gamma-container gamma-loading flexslider" id="gamma-container">
 
-								foreach ($attachments as $attachment) { $count++;
-									$image_attributes = wp_get_attachment_image_src( $attachment->ID,'thumbnail');
-									$image_attributes_1 = wp_get_attachment_image_src( $attachment->ID,'full');
-									$image_array[] = array('full'=>$image_attributes_1,'thumbnail'=>$image_attributes);
-								}
+						                <ul class="gamma-gallery slides">
+						                <?php foreach ($attachments as $attachment) { ?>
+						                <?php 
+						                    $image_attributes = wp_get_attachment_image_src( $attachment->ID,'full'); 
+						                    $image_attributes_m = wp_get_attachment_image_src( $attachment->ID,'medium'); 
 
 
-								foreach ($image_array as $key => $image) { ?>
-								<?php echo print_r(); ?>
-									<div data-thumbnail-prev="<?php echo $image_array[$key-1]['thumbnail'][0];?>" data-thumbnail-next="<?php echo $image_array[$key+1]['thumbnail'][0];?>" class="item">
-						        		<img class="lazyOwl" data-src="<?php echo $image['full'][0];?>" class="img-responsive"/>
-				    				</div>
-								<?php } ?>
+						                    $image_attributes_l = wp_get_attachment_image_src( $attachment->ID,'large'); 
+						                    $image_attributes_t = wp_get_attachment_image_src( $attachment->ID,'thumbnail'); 
+
+						                    if ($image_attributes_m[1] < $image_attributes_m[2])
+						                    {
+						                       $image_attributes_m =  $image_attributes_l;
+						                    }
+						                ?>
+						                    <li>
+						                        <div data-alt="img03" data-description="mdkamkldmas" data-max-width="1800" data-max-height="1350">
+						                            <div data-src="<?php echo $image_attributes[0];?>" data-min-width="1300"></div>
+						                            <div data-src="<?php echo $image_attributes_l[0];?>" data-min-width="1000"></div>
+						                            <div data-src="<?php echo $image_attributes_l[0];?>" data-min-width="700"></div>
+						                            <div data-src="<?php echo $image_attributes_m[0];?>" data-min-width="300"></div>
+						                            <div data-src="<?php echo $image_attributes_m[0];?>" data-min-width="200"></div>
+						                            <div data-src="<?php echo $image_attributes_m[0];?>" data-min-width="140"></div>
+						                            <div data-src="<?php echo $image_attributes_l[0];?>"></div>
+						                            <noscript>
+						                                <img src="<?php echo $image_attributes_m[0];?>" alt="img03"/>
+						                            </noscript>
+						                        </div>
+						                    </li>
+						                  
+
+
+						                <?php } ?>
+
+						                
+						            </ul>
+						            <div class="gamma-overlay"></div>
+						        </div>
+
+						        <div class="gallery-content">
+						        	<h3 class="gallery-title"><a href="#"><?php the_title(); ?></a></h2>
+						    		<?php the_excerpt();?>
+						    		<a href="#" class="view-more">Open Gallery <span class="fa fa-angle-right"></span></a>
+						        </div>
+
+						        <?php wp_reset_query();?>
 
 					    <?php endwhile; ?>
 					    
-			    	</div>
-			    	<div class="gallery-content">
-			        	<h3 class="gallery-title"><a href="#"><?php the_title(); ?></a></h2>
-			    		<?php the_excerpt();?>
-			    		<a href="#" class="view-more">Open Gallery <span class="fa fa-angle-right"></span></a>
-			        </div>
-			    	
 		        </div>
 		        
 		    </div>
 		</div>
 	</div>
 </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri();?>/includes/js/jquery.masonry.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri();?>/includes/js/jquery.history.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri();?>/includes/js/js-url.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri();?>/includes/js/jquerypp.custom.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri();?>/includes/js/gamma.js"></script>
+    <script type="text/javascript">
+      
+      jQuery(function() {
+
+        var GammaSettings = {
+            // order is important!
+            historyapi : false,
+            viewport : [ {
+              width : 1200,
+              columns : 1
+            }, {
+              width : 900,
+              columns : 1
+            }, {
+              width : 500,
+              columns : 1
+            }, { 
+              width : 320,
+              columns : 1
+            }, { 
+              width : 0,
+              columns : 2
+            } ]
+        };
+
+        Gamma.init( GammaSettings, fncallback );
+
+
+        // Example how to add more items (just a dummy):
+
+        var page = 0,
+          items = ['<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li>']
+
+        function fncallback() {
+
+          jQuery('.gamma-container').flexslider({
+		        animation : "slide",
+		        animationLoop : false,
+		        prevText: "",           //String: Set the text for the "previous" directionNav item
+		        nextText: "",               //String: Set the text for the "next" directionNav item
+		  });
+
+        }
+
+      });
+
+    </script> 
 
 
 <script type="text/javascript">

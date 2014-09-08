@@ -24,6 +24,10 @@ and more scalable.
 			max-width: 50px;
 			margin-left: 15px;
 			@media (@md) {
+				max-width: 50%;
+				margin-left: 0px;
+			}
+			@media (@lg) {
 				max-width: 100%;
 				margin-left: 0px;
 			}
@@ -108,8 +112,16 @@ and more scalable.
 
 		a { 
 			@media (@md) {
+				padding-top: 30px;
+				padding-bottom: 30px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			@media (@lg) {
 				padding-top: 50px;
 				padding-bottom: 50px;
+				padding-left: 15px;
+				padding-right: 15px;
 			}
 			&:hover, &:focus {
 

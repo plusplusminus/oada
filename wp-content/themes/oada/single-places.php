@@ -106,10 +106,7 @@ global $post;
 								</span>
 								<p class="date"><?php _e(get_post_meta($post->ID,'_ppm_experience_date',true));?></p>
 					        	<?php the_excerpt();?>
-					        	<div class="tags">
-					        		<?php the_tags( '<span class="tags-title">' . __( 'Tags: ', 'bonestheme' ) . '</span> ', ' / ', '' ); ?>
-					        	</div>
-					      
+
 					        </div>
 					        <?php if ($count % 2 == 0) echo '<div class="clearfix"></div>';?>
 					    <?php endwhile; ?>

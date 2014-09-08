@@ -8,12 +8,13 @@ function ppm_scripts_and_styles() {
     global $brew_options;
     if (!is_admin()) {
 
-        wp_register_script( 'third-party', get_stylesheet_directory_uri() . '/includes/js/third-party.js', array('jquery'), '3.0.0',true);
+       wp_register_script( 'third-party', get_stylesheet_directory_uri() . '/includes/js/third-party.js', array('jquery'), '3.0.0',true);
+      
         wp_register_script( 'owl', get_stylesheet_directory_uri() . '/includes/js/owl.min.js', array('jquery'), '3.0.0',true);
       
         wp_register_script( 'ppm', get_stylesheet_directory_uri() . '/includes/js/ppm.js', array('third-party','jquery'), '3.0.0',true);
         
-        
+
         wp_enqueue_script('third-party');
         wp_enqueue_script('owl');
         wp_enqueue_script('ppm');
@@ -62,8 +63,17 @@ function child_sections($sections){
                         'desc'=> __('Add a website icon', 'ppm'),
                         'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),
                         ),  
+                array(
+                    'id'       => 'opt-multi-select',
+                    'type'     => 'select',
+                    'multi'    => true,
+                    'title'    => __('Select categories to exclude from blog', 'redux-framework-demo'), 
+                    //Must provide key => value pairs for radio options
+                    'data'  => 'categories'    
+                )
         )
     );
+
 
      $sections[] = array(
         'icon'          => 'ok',
@@ -795,6 +805,32 @@ if ( ! function_exists( 'category_menu' ) ) {
     }
 }
 
+function ppm_exclude_categories_blogpage ( $query ) {
+    if ( ! function_exists( 'ppm_prepare_category_ids_from_option' ) ) { return $query; }
+
+    $excluded_cats = array();
+
+    // Process the category data and convert all categories to IDs.
+    $excluded_cats = ppm_prepare_category_ids_from_option( 'woo_exclude_cats_home' );
+
+    // Homepage logic.
+    if ( $query->is_home() && ( count( $excluded_cats ) > 0 ) ) {
+        $query->set( 'category__not_in', $excluded_cats );
+    }
+
+    $query->parse_query();
+
+    return $query;
+} // End woo_exclude_categories_homepage()
+
+
+if ( ! function_exists( 'ppm_prepare_category_ids_from_option' ) ) {
+    function ppm_prepare_category_ids_from_option ( $option ) {
+        global $brew_options;
+        return $brew_options['opt-multi-select'];
+        
+    } // End woo_prepare_category_ids_from_option()
+}
 
 function demo_exclude_category( $wp_query ) 
 { 
@@ -803,6 +839,7 @@ function demo_exclude_category( $wp_query )
         $exclude = array('31');
         set_query_var( 'tag__not_in', $exclude );
     } // end if
+
 }
 add_action( 'pre_get_posts', 'demo_exclude_category' );
 

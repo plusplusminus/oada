@@ -18,6 +18,9 @@ if ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); }
 if ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }
 $paged = intval( $paged );
 
+// Exclude categories on the homepage.
+add_filter( 'pre_get_posts', 'ppm_exclude_categories_blogpage', 10 );
+
 $query_args = array(
 		  'post_type' => 'post', 
 		  'paged' => $paged
@@ -30,7 +33,7 @@ query_posts( $query_args );
 	  <div id="content" class="clearfix row">
 		<div id="main" class="col-md-12 clearfix experiences" role="main">
 		  <?php global $brew_options; ?>
-		  <h1 class="archive-title">All Experiences</h1>
+		  <h1 class="archive-title"><?php the_title();?></h1>
 		  <br>
 		  <?php get_template_part( 'breadcrumb' ); ?>
 		  
