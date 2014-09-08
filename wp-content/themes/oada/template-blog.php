@@ -42,7 +42,7 @@ query_posts( $query_args );
 			  	<?php  while (have_posts()) : the_post(); $count++; ?>
 				 	<div class="col-sm-6 col-md-4">
 						<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
-							<?php get_template_part('templates/content','experience'); ?>
+							<?php get_template_part('templates/content','blog'); ?>
 						</article> <?php // end article ?>
 					</div>
 					<?php if ($count == 3) echo '<div class="clearfix"></div>'; ?>

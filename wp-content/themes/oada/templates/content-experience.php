@@ -12,6 +12,7 @@ global $post;
 		<div class="inner-info">
 			<?php $cat = get_the_category(); ?>
 			<?php if (is_page_template('template-blog.php' )) : ?>
+				123123123123
 				<h5 class="category-title"><?php echo $cat[0]->cat_name ?></h5>
 				<span class="date"><?php the_time( get_option( 'date_format' ) ); ?> </span>
 			<?php elseif (is_category()) : ?>
