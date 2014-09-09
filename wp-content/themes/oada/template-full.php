@@ -3,7 +3,7 @@
 
     <div class="container"> 
 
-		<div id="content" class="clearfix row">
+		<div id="content" class="page-item clearfix row">
 
 				<h1 class="archive-title h2">
 					<?php the_title();?>

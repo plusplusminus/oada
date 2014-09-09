@@ -40,6 +40,12 @@
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
 
+		<script>
+			// Picture element HTML shim|v it for old IE (pairs with Picturefill.js)
+			document.createElement( "picture" );
+		</script>
+		<script async="true" src="<?php echo get_stylesheet_directory_uri();?>/includes/js/picturefill.min.js"></script>
+
 	</head>
 
 	<body <?php body_class(); ?>>

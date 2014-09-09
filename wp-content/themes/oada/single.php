@@ -5,11 +5,21 @@
 		<div id="content" class="clearfix row">
 
 				<?php get_template_part( 'breadcrumb' ); ?>
+				<?php $layout = get_post_meta($post->ID,'_ppm_single_layout',true);?>
+				<?php switch ($layout) {
+					case 'full':
+						$class = "col-md-10 col-md-offset-1";
+						$sidebar = false;
+						break;
+					case 'sidebar':
+					default: 
+						$class = "col-md-8";
+						$sidebar = true;
+				}
+				?>
+				<div id="main" class="<?php echo $class; ?> clearfix" role="main">
 
-				<div id="main" class="col-md-8 clearfix" role="main">
-
-        		
-
+   
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 						<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -33,16 +43,16 @@
 									
 									<div class="row">
 										<div class="col-xs-6">
-											<span class="post-author">Writen by <?php the_author_link(); ?> - <?php the_time( get_option( 'date_format' ) ); ?></span>
+											<span class="post-author">Writen by <?php the_author_link(); ?></span>
 										</div>
 										<div class="col-xs-6 text-right">
 
 											<?php $terms = wp_get_post_terms($post->ID, 'category', array("fields" => "all"));
 											 	if ( !empty( $terms ) && !is_wp_error( $terms ) ){
 												echo '<ul class="list-inline terms">'; ?>
+												<li><span class="term"><?php the_time( get_option( 'date_format' ) ); ?></span></li>
 												<?php foreach ( $terms as $term ) { ?>
 													<li>
-												   		<i class="fa <?php echo $term->description;?> fa-inverse"></i>
 														<span class="term"><?php echo $term->name; ?></span>
 										  			</li>
 												<?php }
@@ -101,7 +111,7 @@
 
 				</div> <?php // end #main ?>
 
-				<?php get_sidebar('experience'); ?>
+				<?php if ($sidebar) get_sidebar('experience'); ?>
 
 			</div> <?php // end #content ?>
 

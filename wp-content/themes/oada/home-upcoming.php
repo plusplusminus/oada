@@ -43,7 +43,7 @@
 					<svg class="title-icon shape-sharetips">
 					  	<use xlink:href="#shape-sharetips"></use>
 					</svg>
-					Share your tips
+					GET IN TOUCH WITH US
 				</h3>
 				<div class="home-contact-form">
 					<?php gravity_form(1, false, false, false, '', true, 12); ?>

@@ -9,9 +9,27 @@ global $post;
 	<?php $default = array('class'=>'img-responsive');?>
 	<?php $image_header = get_post_meta($post->ID,'_ppm_header_image_id',true); ?>
 	<?php if (!empty($image_header)) : ?>
-		 <?php echo wp_get_attachment_image( $image_header , 'slide-image','',$default ); ?>
+		<?php $phone = wp_get_attachment_image_src( $image_header, 'medium' ); ?>
+		<?php $medium = wp_get_attachment_image_src( $image_header, 'image-750' ); ?>
+	   	<?php $large = wp_get_attachment_image_src( $image_header, 'slide-image' ); ?>
+	    <picture>
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+			<source srcset="<?php echo $large[0]; ?>" media="(min-width: 750px)">
+			<source srcset="<?php echo $phone[0]; ?>" media="(min-width: 370px)">
+			<!--[if IE 9]></video><![endif]-->
+			<img srcset="<?php echo $medium[0]; ?>" alt="" class="img-responsive">
+		</picture>
 	<?php elseif (has_post_thumbnail()) : ?>
-		<?php the_post_thumbnail('slide-image',$default);?>
+		<?php $phone = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium' ); ?>
+		<?php $medium = wp_get_attachment_image_src( get_post_thumbnail_id(), 'image-750' ); ?>
+	   	<?php $large = wp_get_attachment_image_src( get_post_thumbnail_id(), 'slide-image' ); ?>
+	    <picture>
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+			<source srcset="<?php echo $large[0]; ?>" media="(min-width: 750px)">
+			<source srcset="<?php echo $phone[0]; ?>" media="(min-width: 370px)">
+			<!--[if IE 9]></video><![endif]-->
+			<img srcset="<?php echo $medium[0]; ?>" alt="" class="img-responsive">
+		</picture>
 	<?php else: ?>
 		<img class="img-responsive" src="http://placehold.it/1600x650&text=.">
 	<?php endif; ?>
@@ -110,6 +128,7 @@ global $post;
 		<?php $terms = get_the_category($temp);
 
 		 	if ( !empty( $terms ) && !is_wp_error( $terms ) ){
+		 		print_r($terms);
 			echo '<ul class="nav-justified text-center">';
 			foreach ( $terms as $term ) { ?>
 				<li>

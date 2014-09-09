@@ -24,6 +24,7 @@ function ppm_scripts_and_styles() {
 }
 
 add_image_size('slide-image',1600,650,true);
+add_image_size('image-750',750,500,true);
 
 function child_sections($sections){
     //$sections = array();
@@ -192,6 +193,29 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
             )
         );
 
+     $meta_boxes['layout_metabox'] = array(
+            'id'         => 'layout_metabox',
+            'title'      => __( 'Layout Information', 'cmb' ),
+            'pages'      => array( 'post', ), // Post type
+            'context'    => 'normal',
+            'priority'   => 'high',
+            'show_names' => true, // Show field names on the left
+            // 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
+            'fields'     => array(
+                    array(
+                    'name'    => 'Layout Options',
+                    'desc'    => 'Select an option',
+                    'id'      => $prefix . 'single_layout',
+                    'type'    => 'select',
+                    'options' => array(
+                        'sidebar' => __( 'With Sidebar', 'cmb' ),
+                        'full'   => __( 'Full Width', 'cmb' ),
+                    ),
+                    'default' => 'sidebar',
+                 ),
+            ),
+        );
+
         $meta_boxes['experience_metabox'] = array(
             'id'         => 'experience_metabox',
             'title'      => __( 'Experience Information', 'cmb' ),
@@ -205,6 +229,12 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
                     'name' => 'Experience Date',
                     'desc' => 'Enter the trip date...',
                     'id' => $prefix . 'experience_date',
+                    'type' => 'text',
+                ),
+                array(
+                    'name' => __( 'Overall Experience Rating Description', 'cmb' ),
+                    'desc' => __( 'enter the trip rating description...', 'cmb' ),
+                    'id'   => $prefix . 'experience_rating_desc',
                     'type' => 'text',
                 ),
                 array(
@@ -699,8 +729,40 @@ function ppm_custom_breadcrumb() {
 }
 
 function ppm_star_rating($num) {
-        for ($i=0; $i < $num; $i++) { 
-            $html .= '<span class="fa fa-star"></span>';
+        $stars = floor($num * 2) / 2;
+
+        switch ($stars) {
+            case 0.5:
+                $html .= '<span class="fa fa-star-half"></span>';
+                break;
+            case 1.5:
+                $html .= '<span class="fa fa-star"></span><span class="fa fa-star-half"></span>';
+                break;
+            case 2.5:
+                $html .= '<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half"></span>';
+                break;
+            case 3.5:
+                $html .= '<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half"></span>';
+                break;
+            case 4.5:
+                $html .= '<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half"></span>';
+                break;
+            case 1:
+                $html .= '<span class="fa fa-star"></span>';
+                break;
+            case 2:
+                $html .= '<span class="fa fa-star"></span><span class="fa fa-star"></span>';
+                break;
+            case 3:
+                $html .= '<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>';
+                break;
+            case 4:
+                $html .= '<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>';
+                break;
+            case 5:
+                $html .= '<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>';
+                break;
+
         }
     return $html;
 }
@@ -708,6 +770,7 @@ function ppm_star_rating($num) {
 function get_ratings($id) {
     $ratings = get_post_meta($id,'_ppm_rating_group',true); 
     $overall = get_post_meta($id,'_ppm_experience_rating',true); 
+    $desc = get_post_meta($id,'_ppm_experience_rating_desc',true); 
     $size = sizeof($ratings) + 1;
     if (!empty($overall)) : 
         $html .= '<table class="table ratings">';
@@ -715,25 +778,9 @@ function get_ratings($id) {
                 $html .= '<tr>';
                     $html .= '<td class="summary" rowspan="'.$size.'">';
                         $html .= '<div class="text-center">';
-                            switch ($overall){
-                                case 5:
-                                    $html .= '<p class="lead">Amazing!</p>';
-                                    break;
-                                case 4:
-                                    $html .= '<p class="lead">Excellent!</p>';
-                                    break;
-                                case 3:
-                                    $html .= '<p class="lead">Good</p>';
-                                    break;
-                                case 2:
-                                    $html .= '<p class="lead">Average</p>';
-                                    break;
-                                case 1:
-                                    $html .= '<p class="lead">Below Average</p>';
-                                    break;
-                            }
-                            $html .= '<span class="score">'.ppm_star_rating($overall['score']).'</span>';
-                            $html .= '<h2>'.$overall.'/5</h2>';
+                        $html .= '<p class="lead">'.$desc.'</p>';
+                        $html .= '<span class="score">'.ppm_star_rating($overall).'</span>';
+                        $html .= '<h2>'.$overall.'/5</h2>';
                         $html .= '</div>';
                     $html .= '</td>'; 
                     foreach ($ratings as $key => $value) {

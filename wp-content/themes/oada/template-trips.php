@@ -33,7 +33,7 @@ $experiences = new WP_Query( array(
 			  	<div class="row ">
 					<?php while ($experiences->have_posts()) : $experiences->the_post(); $count++; ?>
 
-					<div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
+					<div class="col-md-4">
 
 					  <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
 
@@ -42,7 +42,7 @@ $experiences = new WP_Query( array(
 					  </article> <?php // end article ?>
 					 
 					</div>
-					<?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>
+					<?php if ($count == 3) echo '<div class="clearfix"></div>'; ?>
 
 				  <?php endwhile; ?>
 				</div>

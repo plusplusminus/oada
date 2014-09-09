@@ -32,7 +32,7 @@ $experiences = new WP_Query( array(
           <?php if ($experiences->have_posts()) :  $count=0;
             while ($experiences->have_posts()) : $experiences->the_post(); $count++; ?>
 
-            <div class="<?php echo $count <= 2 ? 'col-md-6' : 'col-md-4';?>">
+            <div class="col-md-4">
 
               <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix experience' ); ?> role="article">
 
@@ -70,7 +70,7 @@ $experiences = new WP_Query( array(
                     <?php $count <= 2 ? the_excerpt() : '';?>
               </footer> <?php // end article footer ?>
             </div>
-            <?php if ($count == 2) echo '<div class="clearfix"></div>'; ?>
+            <?php if ($count == 3) echo '<div class="clearfix"></div>'; ?>
 
           <?php endwhile; ?>
 

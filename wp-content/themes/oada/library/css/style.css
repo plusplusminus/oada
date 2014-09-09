@@ -8472,8 +8472,8 @@ and more scalable.
 }
 @media (min-width: 1200px) {
   .navbar-nav li a {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -8757,8 +8757,15 @@ body {
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 120px;
+    padding-top: 80px;
   }
+}
+.slider-bg {
+  background: #111;
+}
+.slider-bg .carousel {
+  max-width: 1600px;
+  margin: auto;
 }
 .icon {
   display: inline-block;
@@ -9132,6 +9139,9 @@ ul.share .share-icon-holder svg {
 .header-hero {
   position: relative;
   overflow: hidden;
+  margin: auto;
+  background-color: #fff;
+  max-width: 1600px;
 }
 @media (min-width: 992px) {
   .header-hero .post-info {
@@ -9143,8 +9153,10 @@ ul.share .share-icon-holder svg {
   }
   .header-hero .circle-text {
     width: 100%;
-    max-height: 480px;
+    max-height: 400px;
     overflow: hidden;
+    max-width: 960px;
+    margin: auto;
   }
   .header-hero .circle-text:after {
     content: "";
@@ -9235,6 +9247,10 @@ ul.share .share-icon-holder svg {
 .experiences .experience .content-wrap:hover .experience-info {
   background: #f69431;
   max-height: 600px;
+}
+.experiences .experience a:hover .experience-info .trunc,
+.experiences .experience .content-wrap:hover .experience-info .trunc {
+  white-space: normal;
 }
 .experiences .experience a .experience-info,
 .experiences .experience .content-wrap .experience-info {
@@ -9361,27 +9377,31 @@ ul.share .share-icon-holder svg {
 .archive #content,
 .search #content,
 .page-template-default #content,
-.page-template-template-full-php #content {
+.page-template-template-full-php #content,
+.page-template-template-contact-php #content {
   margin-top: 0px;
 }
 @media (min-width: 992px) {
   .archive #content,
   .search #content,
   .page-template-default #content,
-  .page-template-template-full-php #content {
+  .page-template-template-full-php #content,
+  .page-template-template-contact-php #content {
     margin-top: 50px;
   }
 }
 .archive .article-footer,
 .search .article-footer,
 .page-template-default .article-footer,
-.page-template-template-full-php .article-footer {
+.page-template-template-full-php .article-footer,
+.page-template-template-contact-php .article-footer {
   background: #fff;
 }
 .archive .archive-title,
 .search .archive-title,
 .page-template-default .archive-title,
-.page-template-template-full-php .archive-title {
+.page-template-template-full-php .archive-title,
+.page-template-template-contact-php .archive-title {
   font-size: 36px;
   color: #444444;
   text-align: center;
@@ -9643,10 +9663,21 @@ ul.share .share-icon-holder svg {
 .single-post .post .article-header .terms {
   margin-bottom: 0px;
 }
+.single-post .post .article-header .terms li {
+  padding: 0;
+}
+.single-post .post .article-header .terms > li + li:before {
+  content: "|";
+  padding: 0 5px;
+  color: #cccccc;
+}
 .single-post .post .article-header .terms .term {
   font-family: 'Satisfy', Georgia, "Times New Roman", Times, serif;
   font-size: 1.1em;
   color: #aaaaaa;
+}
+#contact {
+  margin: 65px 0;
 }
 .upcoming-trip {
   text-align: center;

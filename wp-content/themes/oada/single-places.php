@@ -8,9 +8,27 @@ global $post;
 	<?php $default = array('class'=>'img-responsive');?>
 	<?php $image_header = get_post_meta($post->ID,'_ppm_header_image_id',true); ?>
 	<?php if (!empty($image_header)) : ?>
-		 <?php echo wp_get_attachment_image( $image_header , 'slide-image','',$default ); ?>
+		<?php $phone = wp_get_attachment_image_src( $image_header, 'medium' ); ?>
+		<?php $medium = wp_get_attachment_image_src( $image_header, 'image-750' ); ?>
+	   	<?php $large = wp_get_attachment_image_src( $image_header, 'slide-image' ); ?>
+	    <picture>
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+			<source srcset="<?php echo $large[0]; ?>" media="(min-width: 750px)">
+			<source srcset="<?php echo $phone[0]; ?>" media="(min-width: 370px)">
+			<!--[if IE 9]></video><![endif]-->
+			<img srcset="<?php echo $medium[0]; ?>" alt="" class="img-responsive">
+		</picture>
 	<?php elseif (has_post_thumbnail()) : ?>
-		<?php the_post_thumbnail('slide-image',$default);?>
+		<?php $phone = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium' ); ?>
+		<?php $medium = wp_get_attachment_image_src( get_post_thumbnail_id(), 'image-750' ); ?>
+	   	<?php $large = wp_get_attachment_image_src( get_post_thumbnail_id(), 'slide-image' ); ?>
+	    <picture>
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+			<source srcset="<?php echo $large[0]; ?>" media="(min-width: 750px)">
+			<source srcset="<?php echo $phone[0]; ?>" media="(min-width: 370px)">
+			<!--[if IE 9]></video><![endif]-->
+			<img srcset="<?php echo $medium[0]; ?>" alt="" class="img-responsive">
+		</picture>
 	<?php else: ?>
 		<img class="img-responsive" src="http://placehold.it/1600x650&text=.">
 	<?php endif; ?>
@@ -74,27 +92,36 @@ global $post;
 </div> <!-- end #banner-->
 
 <?php wp_reset_postdata(); ?>
-		
-	<?php
-	// Find connected pages
-	$connected = new WP_Query( array(
-	  	'connected_type' => 'posts_to_places',
-	  	'connected_items' => get_queried_object(),
-	  	'nopaging' => true,
-		'connected_meta' => array( 'featured' => '1' )
-	) );
+<div id="experiences" class="content bg-light">
+	<div class="container">
+		<?php
+		// Find connected pages
+		$connected = new WP_Query( array(
+		  	'connected_type' => 'posts_to_places',
+		  	'connected_items' => get_queried_object(),
+		  	'nopaging' => true,
+			'connected_meta' => array( 'featured' => '1' )
+		) );
 
-	// Display connected pages
-	if ( $connected->have_posts() ) : $count =0;?>
-	    <div id="experiences" class="content bg-light">
-			<div class="container">
-	    	<h3 class="title">What we experienced</h3>
+		// Display connected pages
+		if ( $connected->have_posts() ) : $count =0;?>
+    		<h3 class="title">What we experienced</h3>
 	    	<div class="highlight">
 	    		<div class="row">
 					    <?php while ( $connected->have_posts() ) : $connected->the_post(); $count++; ?>
 					    	<?php $exclude[] = $post->ID; ?>
 					    	<div class="highlight-image col-md-8">
-							        <a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_post_thumbnail('large',$default); ?></a>
+							        <a href="<?php the_permalink();?>" title="<?php the_title();?>">
+							        	<?php $medium = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium' ); ?>
+									   	<?php $large = wp_get_attachment_image_src( get_post_thumbnail_id(), 'image-750' ); ?>
+									    <picture>
+											<!--[if IE 9]><video style="display: none;"><![endif]-->
+											<source srcset="<?php echo $large[0]; ?>" media="(min-width: 480px)">
+											<source srcset="<?php echo $medium[0]; ?>" media="(min-width: 400px)">
+											<!--[if IE 9]></video><![endif]-->
+											<img srcset="<?php echo $large[0]; ?>" alt="" class="img-responsive">
+										</picture>
+							        </a>
 					        </div>
 					        <div class="highlight-content col-md-4">
 					        	<span class="highlight-heading">Place Highlight:</span>
@@ -116,8 +143,6 @@ global $post;
 		    // Prevent weirdness
 		    wp_reset_postdata();
 	    endif; ?>
-			</div>
-		</div>
 
 	    <?php
 	    // Find connected pages
@@ -130,32 +155,41 @@ global $post;
 
 	    // Display connected pages
 	    if ( $connected_2->have_posts() ) : $count =0;?>
-		    <div class="experiences">
-		    	<div class="container">
-	    		<div class="row">
-				    <?php while ( $connected_2->have_posts() ) : $connected_2->the_post(); $count++; ?>
-				    	<div class="experience col-sm-6 col-md-4">
-				    		<a href="<?php the_permalink();?>">
-						        <?php the_post_thumbnail('large',$default); ?>
-						        <div class="experience-info">
+		    	<div class="experiences">
+		    		<div class="row">
+					    <?php while ( $connected_2->have_posts() ) : $connected_2->the_post(); $count++; ?>
+					    	<div class="experience col-sm-6 col-md-4">
+					    		<a href="<?php the_permalink();?>">
+					    			<?php $medium = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium' ); ?>
+								   	<?php $large = wp_get_attachment_image_src( get_post_thumbnail_id(), 'image-750' ); ?>
+								    <picture>
+										<!--[if IE 9]><video style="display: none;"><![endif]-->
+										<source srcset="<?php echo $medium[0]; ?>" media="(min-width: 767px)">
+										<source srcset="<?php echo $large[0]; ?>" media="(min-width: 480px)">
+										<source srcset="<?php echo $medium[0]; ?>" media="(min-width: 370px)">
+										<!--[if IE 9]></video><![endif]-->
+										<img srcset="<?php echo $large[0]; ?>" alt="" class="img-responsive">
+									</picture>
+							        <div class="experience-info">
 
-						        	<h4 class="trunc"><?php the_title();?></h4>
-						        	<div class="inner-info">
-						        		<span class="date"><p><?php _e(get_post_meta($post->ID,'_ppm_experience_date',true));?></p></span>
-						        	</div>
-						        </div>
-						    </a>
-				        </div>
-				        <?php if ($count % 3 == 0) echo '<div class="clearfix"></div>';?>
-				    <?php endwhile; ?>
+							        	<h4 class="trunc"><?php the_title();?></h4>
+							        	<div class="inner-info">
+							        		<span class="date"><p><?php _e(get_post_meta($post->ID,'_ppm_experience_date',true));?></p></span>
+							        	</div>
+							        </div>
+							    </a>
+					        </div>
+					        <?php if ($count % 3 == 0) echo '<div class="clearfix"></div>';?>
+					    <?php endwhile; ?>
+					</div>
 				</div>
-			</div>
-			</div>
 		    <?php 
 		    // Prevent weirdness
 		    wp_reset_postdata();
 	    endif;
 	    ?>
+	</div>
+</div>
     
 
 <div id="places" class="bg-dark">

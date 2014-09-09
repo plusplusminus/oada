@@ -3,7 +3,16 @@
 body {
 	padding-top: 80px;
 	@media (@md) {
-		padding-top: 120px;
+		padding-top: 80px;
+	}
+}
+
+.slider-bg {
+	background:#111;
+	
+	.carousel {
+		max-width: 1600px;
+		margin: auto;
 	}
 }
 
@@ -379,6 +388,9 @@ width: 100%;
 {
 	position: relative;
 	overflow: hidden;
+	margin: auto;
+	background-color: #fff;
+	max-width: 1600px;
 	@media (min-width:@screen-md) {
 		.post-info
 		{
@@ -389,9 +401,11 @@ width: 100%;
 			color: #fff;	
 		}
 		.circle-text {
-		    width:100%;
-		    max-height: 480px;
-		    overflow: hidden;
+		    width: 100%;
+			max-height: 400px;
+			overflow: hidden;
+			max-width: 960px;
+			margin: auto;
 		}
 		.circle-text:after {
 		    content: "";
@@ -484,6 +498,9 @@ width: 100%;
 					background: @brand-warning;
 					max-height: 600px;
 					.inner-info {
+					}
+					.trunc {
+						white-space: normal;
 					}
 				}
 			}
@@ -596,7 +613,7 @@ width: 100%;
 	}
 }
 
-.archive,.search,.page-template-default,.page-template-template-full-php
+.archive,.search,.page-template-default,.page-template-template-full-php,.page-template-template-contact-php
 {	
 	#content {
 		margin-top: 0px;
@@ -886,6 +903,14 @@ width: 100%;
 			}
 			.terms {
 				margin-bottom: 0px;
+				li {
+					padding: 0;
+				}
+				> li + li:before {
+					content: "|";
+					padding: 0 5px;
+					color: #cccccc;
+				}
 				.term {
 					font-family: @font-family-serif;
 					font-size: 1.1em;
@@ -894,6 +919,10 @@ width: 100%;
 			}
 		}
 	}
+}
+
+#contact {
+	margin: 65px 0;
 }
 
 .upcoming-trip {
@@ -1188,6 +1217,7 @@ width: 100%;
 		}
 	}
 }
+
 
 .single-places {
 	#experiences {
