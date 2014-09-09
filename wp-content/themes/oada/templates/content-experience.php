@@ -5,7 +5,7 @@ global $post;
 
 <a href="<?php the_permalink();?>">
 	<?php $medium = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium' ); ?>
-   	<?php $large = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' ); ?>
+   	<?php $large = wp_get_attachment_image_src( get_post_thumbnail_id(), 'image-750' ); ?>
     <picture>
 		<!--[if IE 9]><video style="display: none;"><![endif]-->
 		<source srcset="<?php echo $medium[0]; ?>" media="(min-width: 767px)">
