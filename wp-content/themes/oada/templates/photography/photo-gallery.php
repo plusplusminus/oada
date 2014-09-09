@@ -31,8 +31,6 @@
 						        <div class="place-info">
 						        	<h4><?php the_title();?></h4>
 						        	<div class="inner-info">
-						        		<?php $connected = p2p_type( 'places_to_trips' )->get_connected( $post->ID ); ?>
-						        		<h5 class="trip-title"><?php echo get_the_title($connected->post->ID);?></h5>
 						        		<span class="date"><?php _e(wpautop(get_post_meta($post->ID,'_ppm_place_date',true)));?></span>
 						        	</div>
 						        </div>
