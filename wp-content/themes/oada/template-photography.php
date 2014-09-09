@@ -9,7 +9,7 @@ Template Name: Photography
 
 	<?php get_template_part('templates/photography/photo','slider'); ?>
 
-	<?php get_template_part('templates/photography/photo','galleries'); ?>
+	<?php get_template_part('templates/photography/photo','gallery'); ?>
 
 	<?php get_template_part('templates/photography/photo','connect'); ?>
 
