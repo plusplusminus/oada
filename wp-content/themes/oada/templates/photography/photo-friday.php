@@ -30,7 +30,7 @@
 					        	<h3 class="highlight-title"><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title();?></a></h3>
 								<p class="date"><?php _e(get_post_meta($post->ID,'_ppm_experience_date',true));?></p>
 					        	<?php the_excerpt();?>
-					        	<a class="view-more" href="<?php echo get_tag_link(34);?>">View Past Photo Friday's <span class="fa fa-angle-right"></span></a>
+					        	<a class="view-more" href="<?php echo get_tag_link(34);?>">View Past Photo Friday Images <span class="fa fa-angle-right"></span></a>
 
 					        </div>
 					        <?php if ($count % 2 == 0) echo '<div class="clearfix"></div>';?>
