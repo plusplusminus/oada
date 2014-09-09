@@ -1218,75 +1218,86 @@ width: 100%;
 	}
 }
 
+.highlight {
+	background: #fff;
+	.row{
+		overflow: hidden;
+	}
+	.highlight-content{
+		background: #fff;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		margin-bottom: -99999px;
+		padding-bottom: 99999px;
+		background-color:#fff;
+		font-family: @font-entry;
+		.highlight-heading {
+			font-size:@font-size-small;
+			font-family: @font-family-sans-serif;
+			text-transform: uppercase;
+			color: #383838;
+			margin-bottom: 0;
+		}
+		.highlight-title a{
+			font-family: @font-family-sans-serif;
+			margin: 5px 0;
+			color: #383838;
+			font-weight: 400;
+			.transition(0.3s);
+			&:hover{
+				text-decoration: none;
+				color: @brand-primary;
+			}
+		}
+		.rating {
+			.fa {
+				color: @brand-info;
+			}
+		}
+		.tags {
+			margin:15px 0 15px;
+			.tags();
+		}
+		.view-more {
+			color: #383838;
+			text-transform: uppercase;
+			font-family: @font-family-sans-serif;
+			margin-top: 30px;
+			display: block;
+			.kerning();
+			.transition(0.3s);
+			&:hover{
+				color: @brand-primary;
+				text-decoration: none;
+			}
+		}
+		.date {
+			font-family: @font-family-serif;
+			margin: 20px 0px;
+			font-size: 1.2em;
+			color: @brand-primary;
+		}
+	}
+}
+
+#photoFriday {
+	.title {
+		color: #383838;
+		margin-bottom: 35px;
+		text-transform: uppercase;
+		.text-center();
+	}
+	.highlight();
+}
 
 .single-places {
 	#experiences {
+		.highlight();
 		.title {
 			color: #383838;
 			margin-bottom: 35px;
 			text-transform: uppercase;
 			.text-center();
-		}
-		.highlight {
-			background: #fff;
-			.row{
-				overflow: hidden;
-			}
-			.highlight-content{
-				background: #fff;
-				padding-top: 25px;
-				padding-bottom: 25px;
-				margin-bottom: -99999px;
-    			padding-bottom: 99999px;
-    			background-color:#fff;
-    			font-family: @font-entry;
-				.highlight-heading {
-					font-size:@font-size-small;
-					font-family: @font-family-sans-serif;
-					text-transform: uppercase;
-					color: #383838;
-					margin-bottom: 0;
-				}
-				.highlight-title a{
-					font-family: @font-family-sans-serif;
-					margin: 5px 0;
-					color: #383838;
-					font-weight: 400;
-					.transition(0.3s);
-					&:hover{
-						text-decoration: none;
-						color: @brand-primary;
-					}
-				}
-				.rating {
-					.fa {
-						color: @brand-info;
-					}
-				}
-				.tags {
-					margin:15px 0 15px;
-					.tags();
-				}
-				.view-more {
-					color: #383838;
-					text-transform: uppercase;
-					font-family: @font-family-sans-serif;
-					margin-top: 30px;
-					display: block;
-					.kerning();
-					.transition(0.3s);
-					&:hover{
-						color: @brand-primary;
-						text-decoration: none;
-					}
-				}
-				.date {
-					font-family: @font-family-serif;
-					margin: 20px 0px;
-					font-size: 1.2em;
-					color: @brand-primary;
-				}
-			}
 		}
 		.experience {
 			.terms {

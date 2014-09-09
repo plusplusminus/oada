@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="place-title">
 			<svg class="title-icon shape-trips">
-			  <use xlink:href="#shape-photo"></use>
+			  <use xlink:href="#shape-photos-large"></use>
 			</svg>
 			<h3 class="title">Galleries</h3>
 		</div>
@@ -31,8 +31,6 @@
 						        <div class="place-info">
 						        	<h4><?php the_title();?></h4>
 						        	<div class="inner-info">
-						        		<?php $connected = p2p_type( 'places_to_trips' )->get_connected( $post->ID ); ?>
-						        		<h5 class="trip-title"><?php echo get_the_title($connected->post->ID);?></h5>
 						        		<span class="date"><?php _e(wpautop(get_post_meta($post->ID,'_ppm_place_date',true)));?></span>
 						        	</div>
 						        </div>
@@ -45,7 +43,7 @@
 			    	?>
 			    	<?php endif; ?>
 			    <?php endwhile; ?>
-			    <?php $html .= '<li> | <a class="view-more" href="'.get_post_type_archive_link('places').'" title="All Places">VIEW THEM ALL</a> <span class="fa fa-angle-right"></span></li>'; ?>
+			    <?php $html .= '<li> | <a class="view-more" href="'.get_post_type_archive_link('gallery').'" title="All Galleries">VIEW THEM ALL</a> <span class="fa fa-angle-right"></span></li>'; ?>
 			    <?php echo '<div class="other-places"><div class="col-md-12 text-center"><ul class="list-inline"><li>...</li>'.$html.'</ul></div></div>'; ?>
 			</div>
 
