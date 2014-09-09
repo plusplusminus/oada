@@ -128,7 +128,6 @@ global $post;
 		<?php $terms = get_the_category($temp);
 
 		 	if ( !empty( $terms ) && !is_wp_error( $terms ) ){
-		 		print_r($terms);
 			echo '<ul class="nav-justified text-center">';
 			foreach ( $terms as $term ) { ?>
 				<li>
