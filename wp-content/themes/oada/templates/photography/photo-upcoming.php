@@ -5,7 +5,7 @@
 		<div class="row">
 			<?php
 			// The Query
-			$the_query = new WP_Query( array('post_type'=>'post','tag'=>'upcoming-events','posts_per_page'=>1));
+			$the_query = new WP_Query( array('post_type'=>'post','tag'=>'upcoming-event','posts_per_page'=>1));
 			$default = array('class'=>'img-responsive img-circle');
 			// The Loop
 			if ( $the_query->have_posts() ) : $count = 0;?>

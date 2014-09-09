@@ -1,4 +1,4 @@
-<div id="photoFriday" class="content bg-light">
+<section id="photoFriday" class="content bg-orange">
 	<div class="container">
 		<?php
 		// Find connected pages
@@ -87,4 +87,4 @@
 	    endif;
 	    ?>
 	</div>
-</div>
+</section>
