@@ -15,6 +15,8 @@ Template Name: Photography
 
 	<?php get_template_part('templates/photography/photo','friday' ); ?>
 
+	
+
 	<?php //get_template_part('home','articles' ); ?>
 
 	<?php //get_template_part('home','upcoming' ); ?>
