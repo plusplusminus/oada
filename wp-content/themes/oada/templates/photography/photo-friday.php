@@ -2,7 +2,7 @@
 	<div class="container">
 		<?php
 		// Find connected pages
-		$args = array('post_type'=>'post','tag'=>'photo-friday','posts_per_page'=>1);
+		$args = array('post_type'=>'post','tag_id'=>34,'posts_per_page'=>1);
 		$connected = new WP_Query($args);
 
 		// Display connected pages
@@ -30,6 +30,7 @@
 					        	<h3 class="highlight-title"><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title();?></a></h3>
 								<p class="date"><?php _e(get_post_meta($post->ID,'_ppm_experience_date',true));?></p>
 					        	<?php the_excerpt();?>
+					        	<a class="view-more" href="<?php echo get_tag_link(34);?>">View Past Photo Friday's</a>
 
 					        </div>
 					        <?php if ($count % 2 == 0) echo '<div class="clearfix"></div>';?>
