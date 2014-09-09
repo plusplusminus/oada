@@ -8,11 +8,6 @@ jQuery(document).ready(function(){
         e.preventDefault();
         jQuery( '.search' ).toggleClass( "open" );
     });
-
-    jQuery('#carousel-example-generic').on('slide.bs.carousel', function (e,f) {
-      console.log(e.relatedTarget);
-
-    });
       
 
     jQuery( ".social-widget a" ).hover(
