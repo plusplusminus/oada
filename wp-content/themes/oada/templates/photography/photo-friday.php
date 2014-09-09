@@ -1,4 +1,4 @@
-<div id="experiences" class="content bg-light">
+<div id="photoFriday" class="content bg-light">
 	<div class="container">
 		<?php
 		// Find connected pages
