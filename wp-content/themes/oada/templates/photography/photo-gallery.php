@@ -9,7 +9,7 @@
 		</div>
 	    <?php
 	    // Find connected pages
-	    $query = new WP_Query( array( 'post_type'=>'galleries','posts_per_page'=>10,'orderby'=>'rand' ) );
+	    $query = new WP_Query( array( 'post_type'=>'gallery','posts_per_page'=>10,'orderby'=>'rand' ) );
 	    $default = array('class'=>'img-responsive'); 
 
 	    // Display connected pages
