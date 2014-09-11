@@ -40,8 +40,8 @@
 
 			<div class="col-md-offset-1 col-sm-5 form-tips">
 				<h3 class="title">
-					<svg class="title-icon shape-photos-large">
-					  	<use xlink:href="#shape-photos-large"></use>
+					<svg class="title-icon shape-contact">
+					  	<use xlink:href="#shape-contact"></use>
 					</svg>
 					Share your photos
 				</h3>

@@ -1,4 +1,4 @@
-<?php global $post; ?>
+contact<?php global $post; ?>
 
 <section id="upcoming" class="bg-light">
 	<div class="container">
@@ -40,8 +40,8 @@
 
 			<div class="col-md-offset-1 col-sm-5 form-tips">
 				<h3 class="title">
-					<svg class="title-icon shape-sharetips">
-					  	<use xlink:href="#shape-sharetips"></use>
+					<svg class="title-icon shape-contact">
+					  	<use xlink:href="#shape-contact"></use>
 					</svg>
 					GET IN TOUCH WITH US
 				</h3>

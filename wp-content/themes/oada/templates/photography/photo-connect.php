@@ -22,7 +22,7 @@
 								<?php echo get_the_post_thumbnail($post->ID,'thumbnail',array('class'=>'img-responsive img-circle') ); ?>
 							</div>
 							<div class="col-md-8">
-								<h3 class="title"><svg class="icon shape-photos-large"><use xlink:href="#shape-photos-large"></use></svg>	<?php the_title(); ?></h3>
+								<h3 class="title"><svg class="icon shape-photography"><use xlink:href="#shape-photography"></use></svg>	<?php the_title(); ?></h3>
 								<?php the_excerpt(); ?>
 							</div>
 						</div>

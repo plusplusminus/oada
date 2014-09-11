@@ -7,7 +7,7 @@
 
 		// Display connected pages
 		if ( $connected->have_posts() ) : $count =0;?>
-    		<h3 class="title">Photo Friday</h3>
+    		<h2 class="title">Photo Friday</h2>
 	    	<div class="highlight">
 	    		<div class="row">
 					    <?php while ( $connected->have_posts() ) : $connected->the_post(); $count++; ?>
