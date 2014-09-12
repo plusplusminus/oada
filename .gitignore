@@ -11,6 +11,7 @@ wp-config.php
 wp-includes/
 wp-admin/
 wp-content/blogs.dir/
+wp-content/uploads/*
 wp-content/upgrade/*
 wp-content/backup-db/*
 wp-content/advanced-cache.php
