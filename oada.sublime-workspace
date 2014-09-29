@@ -4,12 +4,41 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
 				"font-s",
 				"font-size-base"
 			],
 			[
 				"back",
 				"background"
+=======
+				"get_tag",
+				"get_tag_link"
+			],
+			[
+				"get_style",
+				"get_stylesheet_directory_uri"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"mar",
+				"margin"
+>>>>>>> ee8c9e2fcb8340e902b630adba18bcecbeb488ef
 			],
 			[
 				"te",
@@ -24,20 +53,8 @@
 				"entry-content"
 			],
 			[
-				"pa",
-				"padding-left"
-			],
-			[
 				"wp_reset",
 				"wp_reset_query"
-			],
-			[
-				"mar",
-				"margin-top"
-			],
-			[
-				"ma",
-				"margin-top"
 			],
 			[
 				"fon",
@@ -190,10 +207,6 @@
 			[
 				"the_post",
 				"the_post_thumbnail"
-			],
-			[
-				"margin-",
-				"margin-top"
 			],
 			[
 				"in",
@@ -502,23 +515,22 @@
 			[
 				"ima",
 				"images"
-			],
-			[
-				"sid",
-				"sidebar-nav-fixed"
-			],
-			[
-				"at",
-				"attachment"
-			],
-			[
-				"attachmen",
-				"attachments"
 			]
 		]
 	},
 	"buffers":
 	[
+<<<<<<< HEAD
+=======
+		{
+			"file": "wp-content/themes/oada/functions.php",
+			"settings":
+			{
+				"buffer_size": 43409,
+				"line_ending": "Unix"
+			}
+		}
+>>>>>>> ee8c9e2fcb8340e902b630adba18bcecbeb488ef
 	],
 	"build_system": "",
 	"command_palette":
@@ -559,6 +571,7 @@
 	},
 	"expanded_folders":
 	[
+<<<<<<< HEAD
 		"/Users/iaanvn/Sites/oada",
 		"/Users/iaanvn/Sites/oada/wp-content",
 		"/Users/iaanvn/Sites/oada/wp-content/themes",
@@ -594,17 +607,57 @@
 		"/Users/iaanvn/Desktop/lindytest.html",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/includes/js/test.min.js",
 		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/search.php",
+=======
+		"/Users/admin/Documents/Sites/oada",
+		"/Users/admin/Documents/Sites/oada/wp-content",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less"
+	],
+	"file_history":
+	[
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/templates/photography/photo-gallery.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/theme.less",
+		"/Users/admin/Documents/Sites/retutpro/package.json",
+>>>>>>> ee8c9e2fcb8340e902b630adba18bcecbeb488ef
 		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/single-trip.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/template-photography.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/templates/photography/photo-upcoming.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/templates/photography/photo-slider.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/templates/photography/photo-connect.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-upcoming.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/templates/photography/photo-friday.php",
+		"/Users/admin/Documents/Sites/retutpro/gruntfile.js",
+		"/Users/admin/Documents/Sites/retutpro/.ftppass",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/template-contact.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/template-full.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/includes/js/ppm.js",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/includes/js/picturefill.min.js",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/templates/content-blog.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-places.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/archive-trip.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/archive-places.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/templates/content-experience.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/includes/js/third-party.js",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/custom-variables.less",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/library/less/brew/nav.less",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/header.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/single.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/functions.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/templates/content-upcoming.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-articles.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/template-blog.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-slider.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-experience.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/includes/js/test.min.js",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/template-trips.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/sidebar-experience.php",
 		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/single-places.php",
 		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/template-places.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/single.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/sidebar-experience.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/templates/content-experience.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-places.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/template-full.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/functions.php",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/includes/js/gamma.js",
+		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/search.php",
 		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-connect.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/template-blog.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-places.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-upcoming.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/footer.php",
@@ -616,7 +669,6 @@
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/archive-trip.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/sidebar-experience.php",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/home-slider.php",
-		"/Users/admin/Documents/Sites/oada/wp-content/themes/oada/home-upcoming.php",
 		"/Users/iaanvn/Sites/momentumgolf/prototype/templates/layouts/layout.liquid",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/form.less",
 		"/Users/iaanvn/Sites/oada/wp-content/themes/oada/library/less/brew/content.less",
@@ -682,6 +734,7 @@
 		"/Users/iaanvn/Sites/aimeejones/prototype/templates/contact.liquid",
 		"/Users/iaanvn/Sites/aimeejones/prototype/templates/includes/footer.liquid",
 		"/Users/iaanvn/Sites/aimeejones/prototype/templates/model.liquid",
+<<<<<<< HEAD
 		"/Users/iaanvn/Sites/aimeejones/prototype/templates/layouts/layout.liquid",
 		"/Users/iaanvn/Sites/vnl/wp-content/themes/vnl/custom.less",
 		"/Users/iaanvn/Sites/vnl/wp-content/themes/vnl/template-sitemap.php",
@@ -698,6 +751,9 @@
 		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/plussed/library/brew.php",
 		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/page-home.php",
 		"/Users/iaanvn/Sites/rapidspill/wp-content/themes/rapidspill/includes/js/third-party.js"
+=======
+		"/Users/iaanvn/Sites/aimeejones/prototype/templates/layouts/layout.liquid"
+>>>>>>> ee8c9e2fcb8340e902b630adba18bcecbeb488ef
 	],
 	"find":
 	{
@@ -819,6 +875,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
 			"focus",
 			"brew",
 			".shape-contact",
@@ -837,6 +894,18 @@
 			"<a href=\"\"><img class=\"alignnone",
 			"href=\"\"",
 			"/>",
+=======
+			"oada/library",
+			"#upcoming",
+			"circle",
+			"stuck",
+			"terms",
+			"upcomin",
+			"full",
+			"EXPERIEN",
+			"ppm_star_rating",
+			"circle-",
+>>>>>>> ee8c9e2fcb8340e902b630adba18bcecbeb488ef
 			"widget",
 			"logo",
 			"gallery-con",
@@ -946,7 +1015,19 @@
 			"max-hei",
 			"experience",
 			"inner-info",
+<<<<<<< HEAD
 			"transition"
+=======
+			"transition",
+			"experiences",
+			"place-info",
+			"carousel-caption",
+			"line-",
+			"padding-top",
+			"navbar-nav",
+			"widgettitle",
+			"body"
+>>>>>>> ee8c9e2fcb8340e902b630adba18bcecbeb488ef
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -954,7 +1035,11 @@
 		"regex": false,
 		"replace_history":
 		[
+<<<<<<< HEAD
 			"",
+=======
+			"bootstrap",
+>>>>>>> ee8c9e2fcb8340e902b630adba18bcecbeb488ef
 			"What we experienced",
 			"WHAT WE EXPERIENCED",
 			"ppm_paginate",
@@ -1035,6 +1120,7 @@
 	"groups":
 	[
 		{
+<<<<<<< HEAD
 			"sheets":
 			[
 			]
@@ -1042,6 +1128,41 @@
 		{
 			"sheets":
 			[
+=======
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "wp-content/themes/oada/functions.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 43409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6899,
+								6120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2077.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+>>>>>>> ee8c9e2fcb8340e902b630adba18bcecbeb488ef
 			]
 		}
 	],
@@ -1090,7 +1211,7 @@
 	"project": "oada.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
