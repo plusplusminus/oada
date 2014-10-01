@@ -1088,6 +1088,26 @@ width: 100%;
 	}
 }
 
+.widget-trip-info,
+.widget-trip-sidebar{
+	position: relative;
+	&:hover .title-container{
+		color: darken(#fff, 80%);
+	}
+	.title-container{
+		font-family: @font-family-serif;
+		font-size: 2em;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 10px;
+		text-align: center;
+		width: 100%;
+		.transition(0.3s);
+	}
+}
+
 .form-tips{
 	.title{
 		text-transform: uppercase;
@@ -1319,6 +1339,14 @@ width: 100%;
 		text-transform: uppercase;
 		.text-center();
 	}
+	.highlight-title{
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+	.view-more{
+		margin-top: -22px;
+	}
+
 }
 
 .single-places {
@@ -1361,11 +1389,10 @@ width: 100%;
 	.header-hero {
 		.post-info {
 			.circle-text {
-				.trip-title {
-					a {
-						color: @brand-info;
-					}
+				.trip-title a{
 					margin-top: 15px;
+					color: @brand-info;
+					font-family: @font-family-sans-serif;
 				}
 				.place-title {
 					color: #fff;
@@ -1432,6 +1459,8 @@ width: 100%;
 					color: #fff;
 					margin-top: 0px;
 					margin-bottom: 15px;
+					font-family: @font-family-sans-serif;
+					font-size: 3em;
 				}
 				.trip-rating {
 					margin: 30px 0px;
@@ -2310,7 +2339,7 @@ width: 100%;
 
 .fancybox-skin {
 	position: relative;
-	background: #f9f9f9;
+	background: transparent;
 	color: #444;
 	text-shadow: none;
 	-webkit-border-radius: 4px;
@@ -2323,9 +2352,9 @@ width: 100%;
 }
 
 .fancybox-opened .fancybox-skin {
-	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
 }
 
 .fancybox-outer, .fancybox-inner {
@@ -2357,6 +2386,7 @@ width: 100%;
 .fancybox-image {
 	max-width: 100%;
 	max-height: 100%;
+	margin: auto;
 }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
